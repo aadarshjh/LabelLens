@@ -1,0 +1,33 @@
+Ingredient:
+Seasoning
+
+Aliases:
+Seasonings
+Seasoning Mix
+Seasoning Blend
+Savory Seasoning
+
+Category:
+Seasoning / Flavouring Blend
+
+Function:
+Provides characteristic savory flavor profile, aroma, taste enhancement, and seasoning surface coating to snack foods, extruded products, and prepared dishes.
+
+Description:
+A formulated composite blend of spices, condiments, salts, hydrolyzed proteins, yeast extracts, sugars, and permitted flavoring agents applied to food products to impart specific flavor profiles (such as cheese, spicy, or tangy notes).
+
+Regulatory Information:
+In India, FSSAI regulates spices, condiments, and composite seasonings under Regulation 2.9 (Spices and Condiments) and the Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011. In the United States, FDA regulates seasonings and flavor blends under 21 CFR 101.22 (Spices, flavorings, colorings and chemical preservatives) and 21 CFR Part 182.
+
+Assessment Notes:
+Seasonings are composite ingredient preparations rather than single chemical substances. Individual sub-ingredients (such as salt, spices, flavor enhancers, or dairy solids) are typically declared in parenthetical sub-ingredient lists on product labels according to statutory labeling requirements.
+
+Sources:
+- Organization: Food Safety and Standards Authority of India (FSSAI)
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 - Regulation 2.9: Spices and Condiments
+  URL: https://www.fssai.gov.in
+  Access/reference information: Section 2.9 standards for spices, condiments and seasoning preparations
+- Organization: US Food and Drug Administration (FDA)
+  Document/page title: 21 CFR 101.22 - Foods; labeling of spices, flavorings, colorings and chemical preservatives
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=101.22
+  Access/reference information: Regulatory requirements for seasoning and flavoring labeling

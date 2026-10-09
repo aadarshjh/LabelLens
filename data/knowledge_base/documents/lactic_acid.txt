@@ -1,0 +1,38 @@
+Ingredient:
+Lactic Acid
+
+Aliases:
+INS 270
+E270
+2-Hydroxypropanoic acid
+DL-lactic acid
+L-lactic acid
+
+Category:
+Acidity Regulator
+
+Function:
+Adjusts and buffers food acidity, inhibits bacterial spoilage, functions as a mild flavoring agent, and preserves dairy, fermented, and processed foods.
+
+Description:
+Organic alpha-hydroxy acid naturally present in sour milk products and fermented foods, commercially produced via bacterial fermentation of carbohydrates (glucose or sucrose) by Lactobacillus species or through chemical synthesis.
+
+Regulatory Information:
+US FDA affirms lactic acid as Generally Recognized as Safe (GRAS) under 21 CFR 184.1061. JECFA evaluated lactic acid and its salts and established an ADI of "not limited" / "not specified". FSSAI permits lactic acid under Good Manufacturing Practice (GMP) in diverse food categories.
+
+Assessment Notes:
+L-lactic acid is an endogenous intermediate in human cellular carbohydrate metabolism. In infant foods, JECFA and EFSA note that D-lactic acid should be limited because infant metabolism processes the D-isomer more slowly.
+
+Sources:
+- Organization: US Food and Drug Administration (FDA)
+  Document/page title: 21 CFR 184.1061 - Lactic acid
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1061
+  Access/reference information: Direct food substance affirmed as GRAS
+- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA)
+  Document/page title: Lactic acid Evaluation Summary (JECFA Evaluation 1973)
+  URL: https://apps.who.int/food-additives-contaminants-jecfa-database/
+  Access/reference information: 17th meeting (1973), ADI not limited
+- Organization: Food Safety and Standards Authority of India (FSSAI)
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011
+  URL: https://www.fssai.gov.in
+  Access/reference information: Permitted acidity regulator INS 270 under GMP

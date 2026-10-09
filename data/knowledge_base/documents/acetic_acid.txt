@@ -1,0 +1,38 @@
+Ingredient:
+Acetic Acid
+
+Aliases:
+INS 260
+E 260
+E260
+Ethanoic Acid
+Glacial Acetic Acid
+
+Category:
+Acidity Regulator / Preservative
+
+Function:
+Controls pH, adjusts tartness and acidity, provides antimicrobial preservation by lowering water pH, and acts as a flavoring agent.
+
+Description:
+Acetic acid is a two-carbon organic acid (CH3COOH). In commercial food applications, it is produced either by microbiological fermentation of ethanol by acetobacter bacteria (as found in vinegar) or via industrial synthetic carbonylation of methanol followed by purification to food grade standards.
+
+Regulatory Information:
+Affirmed as Generally Recognized as Safe (GRAS) by the US FDA under 21 CFR 184.1005 for use as an antimicrobial, flavoring, and pH control agent. Evaluated by JECFA (JECFA No. 81) with an Acceptable Daily Intake (ADI) of "not limited" / "not specified". Authorized as an approved food additive in the European Union as E 260 under Regulation (EC) No 1333/2008 at quantum satis.
+
+Assessment Notes:
+Acetic acid is an intermediate in normal human metabolism (Krebs cycle). Non-toxic at dietary consumption levels; pure undiluted glacial acetic acid is corrosive, but food-grade dilutions are considered safe and biologically well-tolerated.
+
+Sources:
+- Organization: US Food and Drug Administration
+  Document/page title: 21 CFR 184.1005 Acetic acid
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1005
+  Access/reference information: Title 21 Code of Federal Regulations, Direct food substances affirmed as GRAS.
+- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA)
+  Document/page title: JECFA Evaluation: Acetic acid (JECFA No. 81)
+  URL: https://www.who.int/groups/joint-fao-who-expert-committee-on-food-additives-(jecfa)
+  Access/reference information: Evaluation records establishing ADI "not limited" (17th Report, TRS 539-JECFA 17/36).
+- Organization: European Food Safety Authority (EFSA)
+  Document/page title: Scientific Opinion on the re-evaluation of acetic acid (E 260) as a food additive
+  URL: https://www.efsa.europa.eu
+  Access/reference information: Authorized under Regulation (EC) No 1333/2008; EFSA evaluation confirming no numerical ADI needed.

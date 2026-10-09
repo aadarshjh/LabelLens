@@ -1,0 +1,41 @@
+Ingredient:
+Iodised Salt
+
+Aliases:
+Iodized Salt
+Iodized Table Salt
+lodized Salt
+Salt
+Table Salt
+Common Salt
+Edible Common Salt
+Sodium Chloride
+
+Category:
+Seasoning / Fortified Salt
+
+Function:
+Serves as an essential mineral seasoning, dietary sodium and chloride nutrient, flavour enhancer, and food preservation agent by controlling microbial growth and water activity; acts as a public health delivery vehicle for dietary iodine.
+
+Description:
+Iodised salt is food-grade crystalline sodium chloride (NaCl) fortified with trace quantities of iodine, typically in the form of potassium iodate (KIO3) or potassium iodide (KI). It is produced by solar evaporation of seawater or mining of rock salt deposits, followed by refining and spray-fortification with food-grade iodizing agents to ensure uniform distribution.
+
+Regulatory Information:
+In India, regulated under FSSAI Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011, Regulation 2.4.1 (Standards for Edible Common Salt / Iodised Salt), mandating that salt for direct human consumption must contain not less than 30 ppm of iodine on dry basis at the manufacturing level and not less than 15 ppm at retail. Internationally governed by Codex Alimentarius Standard for Food Grade Salt (CXS 150-1985) and affirmed as GRAS by US FDA under 21 CFR 182.1.
+
+Assessment Notes:
+Safe and essential mineral staple. Universal salt iodisation is recognized by the World Health Organization (WHO) and UNICEF as the primary, most cost-effective public health strategy to eliminate iodine deficiency disorders (IDD), goiter, and preventable cognitive deficits. WHO guidelines recommend moderate overall sodium intake (less than 2g sodium / 5g salt per day) while maintaining universal salt iodisation.
+
+Sources:
+- Organization: Food Safety and Standards Authority of India (FSSAI)
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011
+  URL: https://www.fssai.gov.in
+  Access/reference information: Regulation 2.4.1 Standards for Edible Common Salt and Iodised Salt.
+- Organization: Codex Alimentarius Commission (FAO/WHO)
+  Document/page title: Codex Standard for Food Grade Salt (CXS 150-1985)
+  URL: https://www.fao.org/fao-who-codexalimentarius
+  Access/reference information: International standard for food grade salt and iodisation requirements.
+- Organization: World Health Organization (WHO)
+  Document/page title: Guideline: Fortification of Food-Grade Salt with Iodine
+  URL: https://www.who.int/publications/i/item/9789241507929
+  Access/reference information: WHO guidance on universal salt iodisation for prevention of iodine deficiency disorders.

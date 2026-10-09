@@ -1,0 +1,37 @@
+Ingredient:
+Maltodextrin
+
+Aliases:
+Corn maltodextrin
+Wheat maltodextrin
+Tapioca maltodextrin
+Dextrin maltose
+
+Category:
+Thickener/Bulking Agent
+
+Function:
+Provides viscosity, bulk, mouthfeel, and texture without high sweetness; serves as a spray-drying carrier, dispersing agent, and stabilizer in powdered and processed foods.
+
+Description:
+Nonsweet, nutritive saccharide polymer consisting of D-glucose units linked primarily by alpha-1,4 bonds, obtained by partial enzymatic or acid hydrolysis of edible plant starches with a Dextrose Equivalent (DE) of less than 20.
+
+Regulatory Information:
+US FDA affirms maltodextrin as Generally Recognized as Safe (GRAS) under 21 CFR 184.1444. EFSA recognizes maltodextrin as a standard food ingredient and evaluated its digestibility and energy contribution without safety concerns. FSSAI authorizes maltodextrin as a food additive and bulking agent under Good Manufacturing Practice (GMP).
+
+Assessment Notes:
+Rapidly broken down into glucose by alpha-amylase and mucosal enzymes in the human small intestine, exhibiting a high glycemic index comparable to pure glucose.
+
+Sources:
+- Organization: US Food and Drug Administration (FDA)
+  Document/page title: 21 CFR 184.1444 - Maltodextrin
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1444
+  Access/reference information: Direct food substance affirmed as GRAS
+- Organization: European Food Safety Authority (EFSA)
+  Document/page title: Scientific Opinion on dietary reference values for carbohydrates and dietary fibre (EFSA Journal 2010; 8(3):1462)
+  URL: https://www.efsa.europa.eu/en/efsajournal/pub/1462
+  Access/reference information: Digestibility and nutritional assessment of starch hydrolysates
+- Organization: Food Safety and Standards Authority of India (FSSAI)
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011
+  URL: https://www.fssai.gov.in
+  Access/reference information: Permitted bulking agent and food additive under GMP

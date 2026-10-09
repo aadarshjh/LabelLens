@@ -1,0 +1,36 @@
+Ingredient:
+Citric Acid
+
+Aliases:
+INS 330
+E330
+2-Hydroxypropane-1,2,3-tricarboxylic acid
+
+Category:
+Acidity Regulator
+
+Function:
+Controls pH, provides a tart acidic taste, enhances antioxidant activity, and acts as a preservative and chelating agent in foods and beverages.
+
+Description:
+Weak organic tricarboxylic acid found naturally in citrus fruits, commercially produced by microbial fermentation of carbohydrate substrates such as molasses using Aspergillus niger.
+
+Regulatory Information:
+US FDA affirms citric acid as Generally Recognized as Safe (GRAS) under 21 CFR 184.1033. EFSA re-evaluated citric acid in 2010 and concluded it presents no safety concern at typical uses, assigning an ADI "not specified". FSSAI permits its use under Good Manufacturing Practice (GMP) as an acidity regulator and antioxidant synergist.
+
+Assessment Notes:
+Citric acid is an essential physiological intermediate in the cellular citric acid (Krebs) cycle and is fully metabolized by the human body.
+
+Sources:
+- Organization: US Food and Drug Administration (FDA)
+  Document/page title: 21 CFR 184.1033 - Citric acid
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1033
+  Access/reference information: Direct food substance affirmed as GRAS
+- Organization: European Food Safety Authority (EFSA)
+  Document/page title: Scientific Opinion on the safety and efficacy of citric acid
+  URL: https://www.efsa.europa.eu/en/efsajournal/pub/3944
+  Access/reference information: Evaluated as safe food additive, ADI not specified
+- Organization: Food Safety and Standards Authority of India (FSSAI)
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011
+  URL: https://www.fssai.gov.in
+  Access/reference information: Permitted acidity regulator INS 330 under GMP

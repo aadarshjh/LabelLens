@@ -1,0 +1,37 @@
+Ingredient:
+Palm Olein Oil
+
+Aliases:
+Palmolein Oil
+Palm Olein
+RBD Palm Olein
+Refined Bleached Deodorized Palm Olein
+
+Category:
+Edible Vegetable Oil
+
+Function:
+Used as a frying oil, cooking oil, shortening ingredient, and confectionery fat, providing thermal stability, texture, and oxidative resistance.
+
+Description:
+Liquid fraction separated by thermal crystallization and fractionation of refined palm oil extracted from the fleshy mesocarp of the oil palm fruit (Elaeis guineensis).
+
+Regulatory Information:
+FSSAI establishes compositional and purity standards for Palmolein under Regulation 2.2.1(18) of the Food Safety and Standards Regulations, 2011. The Codex Alimentarius Commission (FAO/WHO) establishes international quality and identity standards under CXS 210-1999 (Standard for Named Vegetable Oils). US FDA regulates edible vegetable oils including palm olein as safe food substances under Title 21 CFR.
+
+Assessment Notes:
+Composed primarily of oleic acid (approx. 40-43%), palmitic acid (approx. 40-45%), and linoleic acid (approx. 10-12%). Liquid at ambient room temperature, it can cloud or form reversible crystals at cooler storage temperatures.
+
+Sources:
+- Organization: Food Safety and Standards Authority of India (FSSAI)
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 - Regulation 2.2.1: Oils
+  URL: https://www.fssai.gov.in
+  Access/reference information: Standards and specifications for Palmolein
+- Organization: Codex Alimentarius Commission (FAO/WHO)
+  Document/page title: Standard for Named Vegetable Oils (CXS 210-1999, amended 2019)
+  URL: https://www.fao.org/fao-who-codexalimentarius/
+  Access/reference information: International standard covering palm olein specifications
+- Organization: US Food and Drug Administration (FDA)
+  Document/page title: Title 21 Code of Federal Regulations - Food for Human Consumption
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm
+  Access/reference information: Authorized edible vegetable oil classification

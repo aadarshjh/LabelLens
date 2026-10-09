@@ -1,0 +1,35 @@
+Ingredient:
+Corn Meal
+
+Aliases:
+Cornmeal
+Corn Flour
+Maize Flour
+Degerminated Corn Meal
+Maize Meal
+Corn Grits
+
+Category:
+Cereal Grain Product
+
+Function:
+Serves as a primary grain base, structural starch component, texture former, and bulking ingredient in extruded snacks, baked goods, cereals, and batters.
+
+Description:
+Corn meal is a coarse flour ground from clean, sound dried maize kernels (Zea mays). It can be whole grain or degerminated, where the germ and outer bran are removed during dry milling to enhance shelf stability and starch content.
+
+Regulatory Information:
+Standardized in the United States by the FDA under 21 CFR Part 137 (Cereal Flours and Related Products), including 21 CFR 137.250 (White corn meal), 21 CFR 137.275 (Yellow corn meal), and 21 CFR 137.285 (Degerminated yellow corn meal). In India, regulated by FSSAI under Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011, Regulation 2.4.24 covering Degermed Maize (Corn) Meal and Maize Grits.
+
+Assessment Notes:
+Inherently gluten-free cereal grain, though cross-contact with gluten-containing grains (such as wheat) may occur during shared agricultural or milling processes unless certified gluten-free. Consumed as a staple food ingredient with no established ADI.
+
+Sources:
+- Organization: US Food and Drug Administration
+  Document/page title: 21 CFR Part 137 - Cereal Flours and Related Products, Subpart B - Requirements for Specific Standardized Cereal Flours and Related Products
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?cfrpart=137
+  Access/reference information: 21 CFR 137.250 through 21 CFR 137.285, standards of identity for corn meals.
+- Organization: Food Safety and Standards Authority of India
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011
+  URL: https://www.fssai.gov.in
+  Access/reference information: Regulation 2.4.24 Standards for Degermed Maize Meal and Maize Grits.

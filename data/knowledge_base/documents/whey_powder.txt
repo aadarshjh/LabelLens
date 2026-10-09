@@ -1,0 +1,38 @@
+Ingredient:
+Whey Powder
+
+Aliases:
+Whey
+Dried Whey
+Sweet Whey Powder
+Acid Whey Powder
+Demineralized Whey Powder
+
+Category:
+Dairy Ingredient
+
+Function:
+Provides dairy solids, enhances texture, binds water, improves browning, and serves as a carrier for flavorings and seasonings.
+
+Description:
+Whey powder is obtained by spray drying liquid whey, the fluid co-product resulting from the coagulation of milk by rennet or acid during cheese or casein manufacturing. It consists primarily of lactose, whey proteins (beta-lactoglobulin and alpha-lactalbumin), and mineral salts.
+
+Regulatory Information:
+Affirmed as Generally Recognized as Safe (GRAS) by the US FDA under 21 CFR 184.1979. Regulated in India by FSSAI under Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011, Regulation 2.1.18. Governed internationally under Codex Alimentarius Standard CXS 289-1995.
+
+Assessment Notes:
+Contains milk protein and lactose; subject to mandatory declaration as a milk allergen in major regulatory jurisdictions. Consumed as a macronutrient food ingredient rather than an additive, with no numerical Acceptable Daily Intake (ADI) limit established under Good Manufacturing Practice.
+
+Sources:
+- Organization: US Food and Drug Administration
+  Document/page title: 21 CFR 184.1979 Whey
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1979
+  Access/reference information: Title 21 Code of Federal Regulations, Direct food substances affirmed as GRAS.
+- Organization: Food Safety and Standards Authority of India
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011
+  URL: https://www.fssai.gov.in
+  Access/reference information: Regulation 2.1.18 Standards for Whey Powder.
+- Organization: Codex Alimentarius Commission
+  Document/page title: Standard for Whey Powders (CXS 289-1995)
+  URL: https://www.fao.org/fao-who-codexalimentarius/codex-texts/standards/en/
+  Access/reference information: Adopted 1995, Revised 2003, Amended 2010.

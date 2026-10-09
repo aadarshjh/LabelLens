@@ -1,0 +1,192 @@
+{
+  "caramel_iv.txt": {
+    "ingredient": "Caramel IV",
+    "aliases": ["Caramel 150d", "Sulfite Ammonia Caramel", "INS 150d", "E150d"],
+    "category": "Color Additive",
+    "source": {
+      "organization": "Food Safety and Standards Authority of India (FSSAI)",
+      "title": "Compendium of Food Additives Regulations, 31 January 2022",
+      "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+    }
+  },
+  "butylated_hydroxyanisole.txt": {
+    "ingredient": "Butylated Hydroxyanisole",
+    "aliases": ["BHA", "INS 320", "E320"],
+    "category": "Antioxidant",
+    "source": {
+      "organization": "Food Safety and Standards Authority of India (FSSAI)",
+      "title": "Compendium of Food Additives Regulations, 31 January 2022",
+      "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+    }
+  },
+  "monosodium_glutamate.txt": {
+    "ingredient": "Monosodium Glutamate",
+    "aliases": ["MSG", "INS 621", "E621", "Sodium glutamate", "Monosodium L-glutamate"],
+    "category": "Flavour Enhancer",
+    "source": {
+      "organization": "US FDA / JECFA / FSSAI",
+      "title": "Questions and Answers on Monosodium glutamate (MSG); JECFA 31st Report; FSSAI Food Additives Regulations 2011",
+      "url": "https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg"
+    }
+  },
+  "citric_acid.txt": {
+    "ingredient": "Citric Acid",
+    "aliases": ["INS 330", "E330", "2-Hydroxypropane-1,2,3-tricarboxylic acid"],
+    "category": "Acidity Regulator",
+    "source": {
+      "organization": "US FDA / EFSA / FSSAI",
+      "title": "21 CFR 184.1033 - Citric acid; EFSA Scientific Opinion; FSSAI Food Additives Regulations 2011",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1033"
+    }
+  },
+  "lactic_acid.txt": {
+    "ingredient": "Lactic Acid",
+    "aliases": ["INS 270", "E270", "2-Hydroxypropanoic acid", "DL-lactic acid", "L-lactic acid"],
+    "category": "Acidity Regulator",
+    "source": {
+      "organization": "US FDA / JECFA / FSSAI",
+      "title": "21 CFR 184.1061 - Lactic acid; JECFA evaluations; FSSAI Food Additives Regulations 2011",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1061"
+    }
+  },
+  "disodium_ribonucleotides.txt": {
+    "ingredient": "Disodium 5'-Ribonucleotides",
+    "aliases": ["Disodium ribonucleotides", "INS 635", "E635", "Sodium 5'-ribonucleotide"],
+    "category": "Flavour Enhancer",
+    "source": {
+      "organization": "JECFA / EFSA / FSSAI",
+      "title": "JECFA evaluations; EFSA Scientific Opinion; FSSAI Food Additives Regulations 2011",
+      "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/"
+    }
+  },
+  "maltodextrin.txt": {
+    "ingredient": "Maltodextrin",
+    "aliases": ["Corn maltodextrin", "Wheat maltodextrin", "Tapioca maltodextrin"],
+    "category": "Thickener/Bulking Agent",
+    "source": {
+      "organization": "US FDA / EFSA / FSSAI",
+      "title": "FDA GRAS; EFSA evaluation; FSSAI Food Additives Regulations 2011",
+      "url": "https://www.fda.gov"
+    }
+  },
+  "potassium_chloride.txt": {
+    "ingredient": "Potassium Chloride",
+    "aliases": ["KCl", "INS 508", "E508", "Potassium salt", "Muriate of potash"],
+    "category": "Salt Substitute",
+    "source": {
+      "organization": "US FDA / JECFA / EFSA",
+      "title": "21 CFR 184.1622 - Potassium chloride; JECFA evaluations; EFSA opinion",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1622"
+    }
+  },
+  "palm_olein_oil.txt": {
+    "ingredient": "Palm Olein Oil",
+    "aliases": ["Palmolein Oil", "Palm Olein", "RBD Palm Olein"],
+    "category": "Edible Vegetable Oil",
+    "source": {
+      "organization": "FSSAI / FAO/WHO Codex / US FDA",
+      "title": "FSSAI Oil Regulations; Codex Alimentarius CODEX STAN 210; FDA",
+      "url": "https://www.fssai.gov.in"
+    }
+  },
+  "whey_powder.txt": {
+    "ingredient": "Whey Powder",
+    "aliases": ["Whey", "Dried Whey", "Sweet Whey Powder", "Acid Whey Powder"],
+    "category": "Dairy Ingredient",
+    "source": {
+      "organization": "US FDA / FSSAI / Codex Alimentarius",
+      "title": "21 CFR 184.1979; FSSAI Dairy Regulations; Codex CXS 289-1995",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1979"
+    }
+  },
+  "milk_powder.txt": {
+    "ingredient": "Milk Powder",
+    "aliases": ["Dried Milk", "Powdered Milk", "Whole Milk Powder", "Nonfat Dry Milk", "Skimmed Milk Powder"],
+    "category": "Dairy Ingredient",
+    "source": {
+      "organization": "US FDA / FSSAI / Codex Alimentarius",
+      "title": "21 CFR 131.125; FSSAI Dairy Regulations; Codex CXS 207-1999",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=131.125"
+    }
+  },
+  "cheese_powder.txt": {
+    "ingredient": "Cheese Powder",
+    "aliases": ["Powdered Cheese", "Dried Cheese", "Dehydrated Cheese", "Cheese Seasoning Base"],
+    "category": "Dairy Ingredient",
+    "source": {
+      "organization": "US FDA / FSSAI",
+      "title": "21 CFR Part 133 - Cheeses; FSSAI Standards for Cheese Products",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?CFRPart=133"
+    }
+  },
+  "corn_meal.txt": {
+    "ingredient": "Corn Meal",
+    "aliases": ["Cornmeal", "Corn Flour", "Maize Flour", "Degerminated Corn Meal", "Maize Meal", "Corn Grits"],
+    "category": "Cereal Grain Product",
+    "source": {
+      "organization": "US FDA / FSSAI",
+      "title": "21 CFR Part 137 - Cereal Flours; FSSAI Grain Regulations",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?CFRPart=137"
+    }
+  },
+  "acetic_acid.txt": {
+    "ingredient": "Acetic Acid",
+    "aliases": ["INS 260", "E260", "E 260", "Ethanoic Acid", "Glacial Acetic Acid"],
+    "category": "Acidity Regulator / Preservative",
+    "source": {
+      "organization": "US FDA / JECFA / EFSA",
+      "title": "21 CFR 184.1005 - Acetic acid; JECFA evaluations; EFSA opinion",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1005"
+    }
+  },
+  "silicon_dioxide.txt": {
+    "ingredient": "Silicon Dioxide",
+    "aliases": ["INS 551", "E551", "Silica", "Amorphous Silica", "Synthetic Amorphous Silica"],
+    "category": "Anticaking Agent",
+    "source": {
+      "organization": "EFSA / US FDA / JECFA",
+      "title": "EFSA E 551 evaluation; 21 CFR 172.480; JECFA INS 551",
+      "url": "https://www.efsa.europa.eu"
+    }
+  },
+  "sugar.txt": {
+    "ingredient": "Sugar",
+    "aliases": ["Sucrose", "Cane Sugar", "Beet Sugar", "Granulated Sugar", "Refined Sugar"],
+    "category": "Sweetener",
+    "source": {
+      "organization": "US FDA / FSSAI / WHO",
+      "title": "21 CFR 184.1854; FSSAI Sugar Standards; WHO Guideline on Free Sugars Intake",
+      "url": "https://www.who.int/publications/i/item/9789241549028"
+    }
+  },
+  "edible_vegetable_oil.txt": {
+    "ingredient": "Edible Vegetable Oil",
+    "aliases": ["Vegetable Oil", "Edible Veg Oil", "Veg Oil", "Cooking Oil", "Refined Vegetable Oil"],
+    "category": "Edible Vegetable Oil",
+    "source": {
+      "organization": "FSSAI / Codex / US FDA",
+      "title": "FSSAI Regulations 2.2; Codex CXS 210-1999; 21 CFR 101.4",
+      "url": "https://www.fssai.gov.in"
+    }
+  },
+  "seasoning.txt": {
+    "ingredient": "Seasoning",
+    "aliases": ["Seasonings", "Seasoning Mix", "Seasoning Blend", "Savory Seasoning"],
+    "category": "Seasoning / Flavouring Blend",
+    "source": {
+      "organization": "FSSAI / US FDA",
+      "title": "FSSAI Regulations 2.9 (Spices and Condiments); US FDA 21 CFR 101.22",
+      "url": "https://www.fssai.gov.in"
+    }
+  },
+  "iodised_salt.txt": {
+    "ingredient": "Iodised Salt",
+    "aliases": ["Iodized Salt", "Iodized Table Salt", "lodized Salt", "Salt", "Table Salt", "Common Salt", "Edible Common Salt", "Sodium Chloride"],
+    "category": "Seasoning / Fortified Salt",
+    "source": {
+      "organization": "FSSAI / Codex Alimentarius / WHO",
+      "title": "FSSAI Regulation 2.4.1 (Edible Common Salt / Iodised Salt); Codex CXS 150-1985; WHO Fortification Guideline",
+      "url": "https://www.fssai.gov.in"
+    }
+  }
+}

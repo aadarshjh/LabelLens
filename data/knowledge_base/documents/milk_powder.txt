@@ -1,0 +1,39 @@
+Ingredient:
+Milk Powder
+
+Aliases:
+Dried Milk
+Powdered Milk
+Whole Milk Powder
+Dry Whole Milk
+Nonfat Dry Milk
+Skimmed Milk Powder
+
+Category:
+Dairy Ingredient
+
+Function:
+Provides dairy solids, contributes milk flavor and creaminess, enhances nutritional content, binds moisture, and acts as an emulsifier and structure builder in bakery and confectionery products.
+
+Description:
+Milk powder is a manufactured dairy product made by evaporating liquid pasteurized whole or skim milk to dryness, typically through spray drying or roller drying. The process removes nearly all water while retaining milk fats, proteins, lactose, and minerals.
+
+Regulatory Information:
+Regulated by the US FDA under Standards of Identity 21 CFR 131.125 (Nonfat dry milk) and 21 CFR 131.147 (Dry whole milk). Regulated in India by FSSAI under Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011, Regulation 2.1.11. Standardized internationally under Codex Standard CXS 207-1999 (Standard for Milk Powders and Cream Powder).
+
+Assessment Notes:
+Contains dairy proteins (casein, whey) and lactose; classified as a major food allergen (milk) requiring mandatory labeling. Serves as a standard dietary ingredient with no numerical Acceptable Daily Intake (ADI) applicable.
+
+Sources:
+- Organization: US Food and Drug Administration
+  Document/page title: 21 CFR Part 131 - Milk and Cream, Subpart B - Requirements for Specific Standardized Milk and Cream
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?cfrpart=131
+  Access/reference information: 21 CFR 131.125 (Nonfat dry milk) and 21 CFR 131.147 (Dry whole milk).
+- Organization: Food Safety and Standards Authority of India
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011
+  URL: https://www.fssai.gov.in
+  Access/reference information: Regulation 2.1.11 Standards for Milk Powders.
+- Organization: Codex Alimentarius Commission
+  Document/page title: Standard for Milk Powders and Cream Powder (CXS 207-1999)
+  URL: https://www.fao.org/fao-who-codexalimentarius/codex-texts/standards/en/
+  Access/reference information: Codex Standard 207-1999, Revised 2018.

@@ -1,0 +1,38 @@
+Ingredient:
+Sugar
+
+Aliases:
+Sucrose
+Cane Sugar
+Beet Sugar
+Granulated Sugar
+Refined Sugar
+
+Category:
+Sweetener
+
+Function:
+Provides sweet taste, enhances flavor profiles, contributes bulk and mouthfeel, acts as a humectant to retain moisture, depresses freezing point, and assists in preservation by lowering water activity.
+
+Description:
+Sugar is a disaccharide carbohydrate composed of glucose and fructose subunits (C12H22O11). It is commercially extracted and refined by pressing juice from sugarcane (Saccharum officinarum) or sugar beets (Beta vulgaris), followed by clarification, evaporation, and crystallization.
+
+Regulatory Information:
+Affirmed as Generally Recognized as Safe (GRAS) by the US FDA under 21 CFR 184.1854. In India, regulated by FSSAI under Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011, Regulation 2.8.1 covering Refined Sugar and Plantation White Sugar.
+
+Assessment Notes:
+Classified nutritionally as a macronutrient and a free/added sugar. World Health Organization guidelines recommend limiting free sugar intake to less than 10 percent of total dietary energy intake (with a conditional target below 5 percent) to reduce risk of dental caries and unhealthy weight gain.
+
+Sources:
+- Organization: US Food and Drug Administration
+  Document/page title: 21 CFR 184.1854 Sucrose
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1854
+  Access/reference information: Title 21 Code of Federal Regulations, Direct food substances affirmed as GRAS.
+- Organization: Food Safety and Standards Authority of India
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011
+  URL: https://www.fssai.gov.in
+  Access/reference information: Regulation 2.8.1 Standards for Sugar and Sugar Products.
+- Organization: World Health Organization
+  Document/page title: Guideline: Sugars Intake for Adults and Children
+  URL: https://www.who.int/publications/i/item/9789241549028
+  Access/reference information: WHO nutritional guideline on free sugars intake, ISBN 978 92 4 154902 8.

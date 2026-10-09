@@ -1,0 +1,29 @@
+Ingredient:
+Caramel IV
+
+Aliases:
+Caramel 150d
+Sulfite Ammonia Caramel
+INS 150d
+E150d
+
+Category:
+Color Additive
+
+Function:
+Provides brown color to foods.
+
+Description:
+The Food Safety and Standards Authority of India identifies Caramel IV as sulfite ammonia caramel and assigns it International Numbering System (INS) number 150d.
+
+Regulatory Information:
+The cited FSSAI compendium lists Caramel IV (INS 150d) in specified food categories. Permitted food categories and use levels are category-specific; this entry does not establish a general permission or safety conclusion.
+
+Assessment Notes:
+This entry supports the identity mapping for INS 150d. Confirm the current applicable regulation and food category before making a regulatory claim.
+
+Sources:
+- Organization: Food Safety and Standards Authority of India (FSSAI)
+  Document/page title: Compendium of Food Additives Regulations, 31 January 2022
+  URL: https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf
+  Access/reference information: Lists Caramel IV - sulfite ammonia caramel as INS 150d; use permissions depend on food category.

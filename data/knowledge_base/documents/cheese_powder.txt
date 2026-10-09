@@ -1,0 +1,33 @@
+Ingredient:
+Cheese Powder
+
+Aliases:
+Powdered Cheese
+Dried Cheese
+Dehydrated Cheese
+Cheese Seasoning Base
+
+Category:
+Dairy Ingredient
+
+Function:
+Imparts savory cheese flavor, aroma, and color to snack coatings, seasonings, sauces, prepared mixes, and baked goods.
+
+Description:
+Cheese powder is produced by melting natural or processed cheese into a liquid slurry, often with the addition of water, emulsifying salts, and sometimes milk solids, and subsequently spray drying the mixture into a fine, free-flowing dry powder.
+
+Regulatory Information:
+In the US, regulated under FDA food standards in 21 CFR Part 133 (Cheeses and Related Cheese Products) and general food labeling provisions under 21 CFR Part 101. In India, regulated by FSSAI under the Food Safety and Standards (Food Products Standards and Food Additives) Regulations, with specific compositional criteria covering moisture (max 5.0%) and milk fat (min 40.0% on dry matter basis).
+
+Assessment Notes:
+Manufactured from dairy cheese and dairy solids; classified as a milk allergen requiring allergen declaration. It is consumed as a food ingredient/seasoning component rather than an additive, with no numerical ADI limit established.
+
+Sources:
+- Organization: US Food and Drug Administration
+  Document/page title: 21 CFR Part 133 - Cheeses and Related Cheese Products
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?cfrpart=133
+  Access/reference information: US Code of Federal Regulations Title 21, standards for cheese and related cheese products.
+- Organization: Food Safety and Standards Authority of India
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations - Standards for Cheese and Cheese Products
+  URL: https://www.fssai.gov.in
+  Access/reference information: FSSAI dairy product standards establishing identity and compositional parameters for cheese powders.

@@ -1,0 +1,28 @@
+Ingredient:
+Butylated Hydroxyanisole
+
+Aliases:
+BHA
+INS 320
+E320
+
+Category:
+Antioxidant
+
+Function:
+Used as an antioxidant food additive.
+
+Description:
+The Food Safety and Standards Authority of India identifies butylated hydroxyanisole (BHA) with International Numbering System (INS) number 320.
+
+Regulatory Information:
+The cited FSSAI compendium lists BHA (INS 320) for specified food categories. Permitted food categories and use levels are category-specific; this entry does not establish a general permission or safety conclusion.
+
+Assessment Notes:
+This entry supports the identity mapping for INS 320. Confirm the current applicable regulation and food category before making a regulatory claim.
+
+Sources:
+- Organization: Food Safety and Standards Authority of India (FSSAI)
+  Document/page title: Compendium of Food Additives Regulations, 31 January 2022
+  URL: https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf
+  Access/reference information: Lists butylated hydroxyanisole (BHA) as INS 320; use permissions depend on food category.

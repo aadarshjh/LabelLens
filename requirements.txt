@@ -1,0 +1,11 @@
+# Stable runtime and test dependencies for the complete LabelLens pipeline.
+opencv-python==5.0.0.93
+pytesseract==0.3.13
+Pillow==12.3.0
+numpy==2.5.3
+rapidfuzz==3.14.6
+sentence-transformers==6.1.0
+faiss-cpu==1.15.1
+groq==1.7.0
+pydantic==2.13.5
+pytest==9.1.1

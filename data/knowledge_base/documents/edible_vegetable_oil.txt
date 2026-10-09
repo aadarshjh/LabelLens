@@ -1,0 +1,38 @@
+Ingredient:
+Edible Vegetable Oil
+
+Aliases:
+Vegetable Oil
+Edible Veg Oil
+Veg Oil
+Cooking Oil
+Refined Vegetable Oil
+
+Category:
+Edible Vegetable Oil
+
+Function:
+Serves as a frying medium, cooking medium, lipid base, and textural component in processed foods and snacks, providing mouthfeel, crispness, and dietary energy.
+
+Description:
+Edible vegetable oil is a broad regulatory classification for food-grade refined, cold-pressed, or blended oils extracted from plant sources (such as oilseeds, legumes, grains, or fruit mesocarp). In food manufacturing and packaged snacks, the term denotes plant-derived lipids suitable for human consumption without designating a singular botanical species.
+
+Regulatory Information:
+In India, FSSAI regulates edible vegetable oils under Regulation 2.2 of the Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011, establishing quality, purity, acid value, and labeling parameters for single and blended edible vegetable oils. Codex Alimentarius Commission establishes international quality parameters under CXS 210-1999 (Standard for Named Vegetable Oils) and CXS 19-1981 (Standard for Edible Fats and Oils). In the United States, FDA regulations under 21 CFR 101.4(b)(14) govern vegetable oil ingredient declarations.
+
+Assessment Notes:
+Generic edible vegetable oil declarations are nonspecific as to the exact plant origin unless qualified by specific parenthetical oil declarations on the product packaging. Edible vegetable oils are standard food macro-ingredients composed of fatty acid triglycerides with no established Acceptable Daily Intake (ADI) limit.
+
+Sources:
+- Organization: Food Safety and Standards Authority of India (FSSAI)
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 - Regulation 2.2: Fats, Oils and Fat Emulsions
+  URL: https://www.fssai.gov.in
+  Access/reference information: Section 2.2 standards for edible vegetable oils and fats
+- Organization: Codex Alimentarius Commission (FAO/WHO)
+  Document/page title: Codex General Standard for Fats and Oils (CXS 19-1981) and Named Vegetable Oils (CXS 210-1999)
+  URL: https://www.fao.org/fao-who-codexalimentarius/
+  Access/reference information: International standards for edible plant oils and fats
+- Organization: US Food and Drug Administration (FDA)
+  Document/page title: 21 CFR 101.4 - Food; designation of ingredients
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=101.4
+  Access/reference information: 21 CFR 101.4(b)(14) governing vegetable oil declarations

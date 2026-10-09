@@ -1,0 +1,517 @@
+[
+  {
+    "_comment": "=== BASIC INGREDIENTS (common in Indian snack labels) ===",
+    "canonical_name": "Corn Meal",
+    "aliases": [
+      "Cornmeal",
+      "Corn Flour",
+      "Maize Flour",
+      "Com Med"
+    ],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Sugar",
+    "aliases": [
+      "Sucrose",
+      "Cane Sugar"
+    ],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Water",
+    "aliases": [],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Maltodextrin",
+    "aliases": [],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Iodised Salt",
+    "aliases": [
+      "Iodized Salt",
+      "Iodized Table Salt",
+      "lodized Salt"
+    ],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Whey Powder",
+    "aliases": [
+      "Whey",
+      "Dried Whey"
+    ],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Milk Powder",
+    "aliases": [
+      "Dried Milk",
+      "Powdered Milk",
+      "Skim Milk Powder"
+    ],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Cheese Powder",
+    "aliases": [
+      "Powdered Cheese",
+      "Dried Cheese"
+    ],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Potassium Chloride",
+    "aliases": [
+      "KCl",
+      "Potassium sate T Fara Chloride"
+    ],
+    "codes": [
+      "E508"
+    ],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Palm Olein Oil",
+    "aliases": [
+      "Palmolein Oil",
+      "Palm Oil",
+      "Palmolein",
+      "Palm Olein"
+    ],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Sodium Chloride",
+    "aliases": [
+      "Table Salt",
+      "Common Salt",
+      "NaCl",
+      "Salt"
+    ],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Wheat Flour",
+    "aliases": [
+      "Atta",
+      "Whole Wheat Flour",
+      "Wheat Flour (Atta)"
+    ],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Refined Wheat Flour",
+    "aliases": [
+      "Maida",
+      "All Purpose Flour",
+      "Refined Wheat Flour (Maida)"
+    ],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Wheat Solids",
+    "aliases": [],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Cocoa Solids",
+    "aliases": [
+      "Cocoa",
+      "Cocoa Powder"
+    ],
+    "codes": [],
+    "is_generic": false
+  },
+  {
+    "_comment": "=== FOOD ADDITIVES WITH INS/E CODES ===",
+    "canonical_name": "Lactic Acid",
+    "aliases": [
+      "INS 270",
+      "E270",
+      "270"
+    ],
+    "codes": [
+      "INS 270",
+      "E270"
+    ],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Citric Acid",
+    "aliases": [
+      "INS 330",
+      "E330",
+      "330"
+    ],
+    "codes": [
+      "INS 330",
+      "E330"
+    ],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Acetic Acid",
+    "aliases": [
+      "INS 260",
+      "E260",
+      "260",
+      "Glacial Acetic Acid"
+    ],
+    "codes": [
+      "INS 260",
+      "E260"
+    ],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "DL-Malic Acid",
+    "aliases": [
+      "Malic Acid",
+      "INS 296",
+      "E296",
+      "296"
+    ],
+    "codes": [
+      "INS 296",
+      "E296"
+    ],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Disodium 5'-Ribonucleotides",
+    "aliases": [
+      "INS 635",
+      "E635",
+      "635",
+      "Flavour Enhancer 635",
+      "Flavor Enhancer 635",
+      "Disodium Ribonucleotides"
+    ],
+    "codes": [
+      "INS 635",
+      "E635"
+    ],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Silicon Dioxide",
+    "aliases": [
+      "INS 551",
+      "E551",
+      "551",
+      "Anticaking Agent 551",
+      "Anti-caking Agent 551"
+    ],
+    "codes": [
+      "INS 551",
+      "E551"
+    ],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Monosodium Glutamate",
+    "aliases": [
+      "MSG",
+      "INS 621",
+      "E621",
+      "621",
+      "Flavour Enhancer 621",
+      "Flavor Enhancer 621"
+    ],
+    "codes": [
+      "INS 621",
+      "E621"
+    ],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Sodium Benzoate",
+    "aliases": [
+      "INS 211",
+      "E211",
+      "211"
+    ],
+    "codes": [
+      "INS 211",
+      "E211"
+    ],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Ascorbic Acid",
+    "aliases": [
+      "Vitamin C",
+      "INS 300",
+      "E300",
+      "300"
+    ],
+    "codes": [
+      "INS 300",
+      "E300"
+    ],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Tartrazine",
+    "aliases": [
+      "INS 102",
+      "E102",
+      "102"
+    ],
+    "codes": [
+      "INS 102",
+      "E102"
+    ],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Calcium Carbonate",
+    "aliases": [
+      "INS 170",
+      "E170",
+      "170",
+      "Chalk"
+    ],
+    "codes": [
+      "INS 170",
+      "E170"
+    ],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Caramel IV",
+    "aliases": [
+      "Caramel 150d",
+      "Sulfite Ammonia Caramel",
+      "Sulphite Ammonia Caramel",
+      "INS 150d",
+      "E150d",
+      "150d",
+      "Colour (INS 150d)",
+      "Color (INS 150d)"
+    ],
+    "codes": [
+      "INS 150d",
+      "E150d"
+    ],
+    "is_generic": false
+  },
+  {
+    "canonical_name": "Butylated Hydroxyanisole",
+    "aliases": [
+      "BHA",
+      "INS 320",
+      "E320",
+      "320",
+      "Antioxidant (INS 320)",
+      "Antioxidant 320"
+    ],
+    "codes": [
+      "INS 320",
+      "E320"
+    ],
+    "is_generic": false
+  },
+  {
+    "_comment": "=== GENERIC / AMBIGUOUS INGREDIENTS ===",
+    "_explanation": "These are real ingredient names but too vague to identify a specific substance. They are marked is_generic=true so the system reports them as 'ambiguous' rather than 'matched'.",
+    "canonical_name": "Edible Vegetable Oil",
+    "aliases": [
+      "Vegetable Oil",
+      "Veg Oil",
+      "Edible Vegetable Sega ct Hs Oil)",
+      "Edible Vegetable Sega ct Hs Oil"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Spices",
+    "aliases": [
+      "Mixed Spices",
+      "Spice Mix",
+      "Spice"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Spices and Condiments",
+    "aliases": [
+      "Spices & Condiments",
+      "Condiments and Spices",
+      "Condiments & Spices"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Natural Flavour",
+    "aliases": [
+      "Natural Flavoring",
+      "Natural Flavours",
+      "Natural Flavorings",
+      "Flavour Natural",
+      "Flavor Natural"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Flavouring Substances",
+    "aliases": [
+      "Flavoring Substances",
+      "Flavourings",
+      "Flavorings",
+      "Nature Identical Flavouring Substances",
+      "Nature Identical Flavoring Substances"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Milk Solids",
+    "aliases": [
+      "Milk Solid"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Seasoning",
+    "aliases": [
+      "Seasonings",
+      "Seasoning Mix"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Acidity Regulator",
+    "aliases": [
+      "Acidity Regulators",
+      "Acidity Regulating Agent"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Flavour Enhancer",
+    "aliases": [
+      "Flavor Enhancer",
+      "Flavour Enhancers",
+      "Flavor Enhancers"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Anticaking Agent",
+    "aliases": [
+      "Anti-caking Agent",
+      "Anticaking Agents",
+      "Anti-caking Agents",
+      "Anti Caking Agent"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Salt Substitute",
+    "aliases": [
+      "Salt Substitutes"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Vitamins",
+    "aliases": [
+      "Vitamin Blend",
+      "Vitamin Mix",
+      "Added Vitamins",
+      "Vitamins & Minerals",
+      "Vitamins and Minerals"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Minerals",
+    "aliases": [
+      "Mineral Blend",
+      "Mineral Mix",
+      "Added Minerals"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Cereal Extract",
+    "aliases": [
+      "Cereal Extracts",
+      "Malt Extract",
+      "Barley Malt Extract"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Permitted Natural Colour",
+    "aliases": [
+      "Permitted Natural Color",
+      "Natural Colour",
+      "Natural Color",
+      "Permitted Natural Colours"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Added Flavours",
+    "aliases": [
+      "Added Flavors",
+      "Flavours",
+      "Flavors",
+      "Added Flavour",
+      "Added Flavor"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Colour",
+    "aliases": [
+      "Color",
+      "Food Colour",
+      "Food Color",
+      "Permitted Colour"
+    ],
+    "codes": [],
+    "is_generic": true
+  },
+  {
+    "canonical_name": "Antioxidant",
+    "aliases": [
+      "Antioxidants"
+    ],
+    "codes": [],
+    "is_generic": true
+  }
+]

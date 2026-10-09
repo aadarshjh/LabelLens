@@ -1,0 +1,38 @@
+Ingredient:
+Disodium 5'-Ribonucleotides
+
+Aliases:
+Disodium ribonucleotides
+Disodium 5'-ribonucleotide
+INS 635
+E635
+Sodium 5'-ribonucleotide
+
+Category:
+Flavour Enhancer
+
+Function:
+Enhances and intensifies umami and savory flavors synergistically when combined with monosodium glutamate, used in savory snacks, seasonings, and packaged noodles.
+
+Description:
+Equimolar mixture of disodium 5'-inosinate (IMP, INS 631) and disodium 5'-guanylate (GMP, INS 627), manufactured by enzymatic degradation of yeast ribonucleic acid (RNA) or microbial carbohydrate fermentation.
+
+Regulatory Information:
+JECFA evaluated disodium 5'-ribonucleotides in 1974 and re-evaluated them in 1993, assigning an ADI of "not specified". EFSA re-evaluated ribonucleotides in 2020 and confirmed that they present no safety concern at permitted uses. FSSAI authorizes INS 635 as a flavour enhancer under Good Manufacturing Practice (GMP) in specified foods.
+
+Assessment Notes:
+Ribonucleotides are naturally occurring purine derivatives metabolized into uric acid in the human body. Individuals with clinical metabolic purine disorders such as hyperuricemia or gout typically manage dietary purine intake.
+
+Sources:
+- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA)
+  Document/page title: Disodium 5'-ribonucleotides Evaluation (TRS 557-JECFA 18/27)
+  URL: https://apps.who.int/food-additives-contaminants-jecfa-database/
+  Access/reference information: ADI not specified allocated at 18th meeting
+- Organization: European Food Safety Authority (EFSA)
+  Document/page title: Re-evaluation of inosinic acid, guanylic acid and their salts (EFSA Journal 2020;18(12):6332)
+  URL: https://www.efsa.europa.eu/en/efsajournal/pub/6332
+  Access/reference information: Safety confirmed without need for a numerical ADI
+- Organization: Food Safety and Standards Authority of India (FSSAI)
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011
+  URL: https://www.fssai.gov.in
+  Access/reference information: Permitted flavour enhancer INS 635 under GMP

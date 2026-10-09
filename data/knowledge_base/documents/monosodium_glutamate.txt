@@ -1,0 +1,38 @@
+Ingredient:
+Monosodium Glutamate
+
+Aliases:
+MSG
+INS 621
+E621
+Sodium glutamate
+Monosodium L-glutamate
+
+Category:
+Flavour Enhancer
+
+Function:
+Enhances savory and umami taste in foods and balances overall savory flavor profiles.
+
+Description:
+Sodium salt of the common amino acid L-glutamic acid, commercially manufactured by bacterial fermentation of carbohydrate sources such as sugar beet, sugar cane, or molasses using Corynebacterium glutamicum.
+
+Regulatory Information:
+US FDA classifies MSG as Generally Recognized as Safe (GRAS) under 21 CFR 182.1. JECFA allocated an Acceptable Daily Intake (ADI) of "not specified" in 1987. FSSAI approves its use under Good Manufacturing Practice (GMP) in specified food categories per Food Safety and Standards Regulations.
+
+Assessment Notes:
+Extensive scientific evaluations by JECFA, FDA, and EFSA have found no causal relationship between MSG consumption at typical dietary levels and reported adverse symptoms in the general population.
+
+Sources:
+- Organization: US Food and Drug Administration (FDA)
+  Document/page title: Questions and Answers on Monosodium glutamate (MSG)
+  URL: https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg
+  Access/reference information: GRAS affirmation under 21 CFR 182.1
+- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA)
+  Document/page title: Monosodium L-glutamate - Evaluation Report (TRS 759-JECFA 31/18)
+  URL: https://apps.who.int/food-additives-contaminants-jecfa-database/
+  Access/reference information: 31st Report, allocated ADI not specified in 1987
+- Organization: Food Safety and Standards Authority of India (FSSAI)
+  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011
+  URL: https://www.fssai.gov.in
+  Access/reference information: Permitted flavour enhancer INS 621 under GMP

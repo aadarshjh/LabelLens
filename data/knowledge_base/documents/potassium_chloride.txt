@@ -1,0 +1,38 @@
+Ingredient:
+Potassium Chloride
+
+Aliases:
+KCl
+INS 508
+E508
+Potassium salt
+Muriate of potash
+
+Category:
+Salt Substitute
+
+Function:
+Replaces sodium chloride to reduce sodium content while contributing salty flavor, and functions as a mineral nutrient, flavor enhancer, and firming agent.
+
+Description:
+Naturally occurring inorganic metal halide salt composed of potassium and chlorine, extracted from mineral deposits such as sylvite or carnallite and purified through crystallization.
+
+Regulatory Information:
+US FDA affirms potassium chloride as Generally Recognized as Safe (GRAS) under 21 CFR 184.1622 and permits the alternate name "potassium salt" on ingredient statements. JECFA evaluated potassium chloride in 1979 and assigned an ADI of "not limited". EFSA re-evaluated potassium chloride (E 508) in 2019 and concluded that it raises no safety concern at reported food additive uses.
+
+Assessment Notes:
+Provides bioavailable potassium, an essential dietary electrolyte. It imparts a salty taste profile that can carry bitter or metallic notes at higher sodium-substitution ratios.
+
+Sources:
+- Organization: US Food and Drug Administration (FDA)
+  Document/page title: 21 CFR 184.1622 - Potassium chloride; and Guidance for Industry: The Declaration of Potassium Chloride on Food Labels
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1622
+  Access/reference information: GRAS direct food substance; guidance on potassium salt declaration
+- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA)
+  Document/page title: Potassium chloride Evaluation Summary (TRS 648-JECFA 23/27)
+  URL: https://apps.who.int/food-additives-contaminants-jecfa-database/
+  Access/reference information: 23rd meeting (1979), ADI not limited
+- Organization: European Food Safety Authority (EFSA)
+  Document/page title: Re-evaluation of hydrochloric acid (E 507), potassium chloride (E 508), calcium chloride (E 509) and magnesium chloride (E 511)
+  URL: https://www.efsa.europa.eu/en/efsajournal/pub/5751
+  Access/reference information: EFSA Journal 2019;17(7):5751, no safety concern at reported uses

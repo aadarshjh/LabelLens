@@ -1,0 +1,38 @@
+Ingredient:
+Silicon Dioxide
+
+Aliases:
+INS 551
+E551
+Silica
+Amorphous Silica
+Synthetic Amorphous Silica
+
+Category:
+Anticaking Agent
+
+Function:
+Prevents clumping and caking, promotes powder flowability, adsorbs excess moisture, and serves as a carrier for flavors and active components in dry food mixtures.
+
+Description:
+Silicon dioxide is a chemical compound of silicon and oxygen (SiO2). For food use, it exists exclusively in synthetic amorphous (non-crystalline) form, produced via wet processes (precipitated silica or silica gel) or vapor thermal processes (pyrogenic/fumed silica).
+
+Regulatory Information:
+Approved by the US FDA under 21 CFR 172.480 as a direct food additive for anticaking use at levels not exceeding 2 percent by weight of the food. Evaluated by JECFA (INS 551) with a group ADI of "not specified". Authorized in the European Union as food additive E 551 under Regulation (EC) No 1333/2008, with EFSA re-evaluations confirming no safety concern across authorized uses.
+
+Assessment Notes:
+Synthetic amorphous silica does not possess crystalline quartz toxicity; it is biologically inert, insoluble in gastrointestinal fluids, and largely excreted unabsorbed. No safety concern identified at permitted regulatory levels.
+
+Sources:
+- Organization: European Food Safety Authority (EFSA)
+  Document/page title: Scientific Opinion on the re-evaluation of silicon dioxide (E 551) as a food additive
+  URL: https://www.efsa.europa.eu/en/efsajournal/pub/5088
+  Access/reference information: EFSA Journal evaluations of E 551 safety in food.
+- Organization: US Food and Drug Administration
+  Document/page title: 21 CFR 172.480 Silicon dioxide
+  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=172.480
+  Access/reference information: Title 21 Code of Federal Regulations, Direct food additives permitted in food for human consumption.
+- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA)
+  Document/page title: JECFA Evaluation: Silicon dioxide, amorphous (INS 551)
+  URL: https://www.who.int/groups/joint-fao-who-expert-committee-on-food-additives-(jecfa)
+  Access/reference information: 17th and 29th JECFA meetings establishing group ADI "not specified".
