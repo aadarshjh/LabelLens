@@ -19,10 +19,10 @@ USAGE:
   python -m src.pipeline.ingredient_pipeline --file path/to/ocr.txt
 
   # With inline text:
-  python src/main.py --text "Ingredients: Sugar, Salt, MSG"
+  python -m src.pipeline.ingredient_pipeline --text "Ingredients: Sugar, Salt, MSG"
 
   # Auto-detect Phase 1 output:
-  python src/main.py
+  python -m src.pipeline.ingredient_pipeline
 
 INTEGRATION:
   Phase 2 is independently testable with sample strings. When used
@@ -91,9 +91,9 @@ def get_ocr_text(args):
 
     print("\n  ERROR: No input text provided.")
     print("  Usage:")
-    print('    python src/main.py --text "Ingredients: Sugar, Salt"')
-    print("    python src/main.py --file path/to/ocr_output.txt")
-    print("    python src/main.py   (auto-detects Phase 1 output)")
+    print('    python -m src.pipeline.ingredient_pipeline --text "Ingredients: Sugar, Salt"')
+    print("    python -m src.pipeline.ingredient_pipeline --file path/to/ocr_output.txt")
+    print("    python -m src.pipeline.ingredient_pipeline   (auto-detects Phase 1 output)")
     sys.exit(1)
 
 

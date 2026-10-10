@@ -1,5 +1,6 @@
 """HTTP boundary and concurrency regression tests for the frontend server."""
 import http.client
+import json
 import os
 import threading
 import time
@@ -226,3 +227,48 @@ def test_upload_timeout_releases_analysis_slot(monkeypatch):
         assert wait_for_analysis_slot()
         assert post_raw(port, body)[0] == 200
     assert calls == [True]
+
+
+def test_invalid_image_upload_returns_400_and_server_remains_healthy(monkeypatch):
+    calls = []
+    monkeypatch.setattr(server, "run_end_to_end_pipeline", lambda *a, **k: calls.append(True) or ([], {"total": 0}))
+    monkeypatch.setattr(server, "serialize_for_frontend", lambda *a: {"ok": True})
+
+    boundary = b"test-boundary"
+    invalid_data = (b"--" + boundary + b"\r\nContent-Disposition: form-data; name=\"file\"; filename=\"corrupt.png\"\r\n"
+                    b"Content-Type: image/png\r\n\r\nnot-an-image-data\r\n--" + boundary + b"--\r\n")
+
+    _, valid_body = image_multipart()
+
+    with running_server() as port:
+        status, resp_body = post_raw(port, invalid_data)
+        assert status == 400
+        data = json.loads(resp_body)
+        assert data.get("error") is True
+        assert "not a readable image" in data.get("message", "").lower()
+
+        # Confirm server remains alive and subsequent valid request succeeds
+        status_valid, _ = post_raw(port, valid_body)
+        assert status_valid == 200
+
+    assert calls == [True]
+
+
+def test_repeated_analyses_reuse_retriever(monkeypatch):
+    passed_retrievers = []
+
+    def mock_pipeline(*args, **kwargs):
+        passed_retrievers.append(kwargs.get("retriever"))
+        return [], {"total": 0}
+
+    monkeypatch.setattr(server, "run_end_to_end_pipeline", mock_pipeline)
+    monkeypatch.setattr(server, "serialize_for_frontend", lambda *a: {"ok": True})
+
+    _, body = image_multipart()
+    with running_server() as port:
+        assert post_raw(port, body)[0] == 200
+        assert post_raw(port, body)[0] == 200
+
+    assert len(passed_retrievers) == 2
+    assert passed_retrievers[0] is not None
+    assert passed_retrievers[0] is passed_retrievers[1]

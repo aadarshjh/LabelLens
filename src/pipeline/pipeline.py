@@ -1,5 +1,6 @@
 """Composable LabelLens pipeline orchestration."""
 
+import threading
 from pathlib import Path
 from typing import Any
 
@@ -18,8 +19,32 @@ from src.pipeline.ingredient_pipeline import run_pipeline as run_ingredient_pipe
 from src.rag.retriever import IngredientRetriever
 from src.safety.assessment import assess_ingredient_tree
 
+_SHARED_RETRIEVER: IngredientRetriever | None = None
+_SHARED_RETRIEVER_DIR: str | None = None
+_RETRIEVER_LOCK = threading.Lock()
 
-def run_pre_llm_pipeline(image_path: str | Path) -> dict[str, Any]:
+
+def get_shared_retriever(store_dir: str | Path | None = None) -> IngredientRetriever:
+    """Return a thread-safe shared IngredientRetriever instance, cached by directory."""
+    global _SHARED_RETRIEVER, _SHARED_RETRIEVER_DIR
+    target_dir = str(store_dir or VECTORSTORE_DIR)
+    if _SHARED_RETRIEVER is None or _SHARED_RETRIEVER_DIR != target_dir:
+        with _RETRIEVER_LOCK:
+            if _SHARED_RETRIEVER is None or _SHARED_RETRIEVER_DIR != target_dir:
+                _SHARED_RETRIEVER = IngredientRetriever(store_dir=target_dir)
+                _SHARED_RETRIEVER_DIR = target_dir
+    return _SHARED_RETRIEVER
+
+
+def clear_shared_retriever() -> None:
+    """Clear the cached shared retriever (useful for testing or cache busting)."""
+    global _SHARED_RETRIEVER, _SHARED_RETRIEVER_DIR
+    with _RETRIEVER_LOCK:
+        _SHARED_RETRIEVER = None
+        _SHARED_RETRIEVER_DIR = None
+
+
+def run_pre_llm_pipeline(image_path: str | Path, retriever: IngredientRetriever | None = None) -> dict[str, Any]:
     """Run OCR through RAG and build LLM inputs without external API calls."""
     image = load_image(str(image_path))
     all_ocr_results = []
@@ -64,7 +89,8 @@ def run_pre_llm_pipeline(image_path: str | Path) -> dict[str, Any]:
         STAGE_OCR_EXTRACTION_COMPLETED,
         f"OCR strategy={best_ocr.get('strategy')}, confidence={best_ocr.get('confidence', 0.0):.1f}%, extracted {len(phase2.get('ingredients', []))} ingredients"
     )
-    phase3 = IngredientRetriever(store_dir=str(VECTORSTORE_DIR)).retrieve_for_phase2(phase2)
+    active_retriever = retriever if retriever is not None else IngredientRetriever(store_dir=str(VECTORSTORE_DIR))
+    phase3 = active_retriever.retrieve_for_phase2(phase2)
     phase3 = assess_ingredient_tree(phase3)
     audit_log(
         STAGE_RAG_COMPLETED,
@@ -112,7 +138,12 @@ def _flatten_phase3_nodes(nodes: list[dict[str, Any]], prefix: str = "") -> list
     return flat
 
 
-def run_batch_end_to_end_pipeline(image_path: str | Path, api_key: str | None = None, correlation_id: str | None = None):
+def run_batch_end_to_end_pipeline(
+    image_path: str | Path,
+    api_key: str | None = None,
+    correlation_id: str | None = None,
+    retriever: IngredientRetriever | None = None,
+):
     """Run full pipeline with exactly ONE Groq batch request for all ingredients."""
     from src.llm.prompt_builder import build_batch_analysis_prompt
     from src.llm.validator import validate_batch_llm_analysis
@@ -121,7 +152,7 @@ def run_batch_end_to_end_pipeline(image_path: str | Path, api_key: str | None = 
     if correlation_id:
         set_correlation_id(correlation_id)
 
-    pre_llm = run_pre_llm_pipeline(image_path)
+    pre_llm = run_pre_llm_pipeline(image_path, retriever=retriever)
     flat_items = _flatten_phase3_nodes(pre_llm["phase3"])
 
     if not flat_items:
@@ -218,12 +249,20 @@ def run_batch_end_to_end_pipeline(image_path: str | Path, api_key: str | None = 
     return results, summary
 
 
-def run_end_to_end_pipeline(image_path: str | Path, api_key: str | None = None, batch: bool = False, correlation_id: str | None = None):
+def run_end_to_end_pipeline(
+    image_path: str | Path,
+    api_key: str | None = None,
+    batch: bool = False,
+    correlation_id: str | None = None,
+    retriever: IngredientRetriever | None = None,
+):
     """Run full pipeline. If batch=True, executes in exactly ONE Groq batch request."""
     if batch:
-        return run_batch_end_to_end_pipeline(image_path, api_key=api_key, correlation_id=correlation_id)
+        return run_batch_end_to_end_pipeline(
+            image_path, api_key=api_key, correlation_id=correlation_id, retriever=retriever
+        )
 
-    pre_llm = run_pre_llm_pipeline(image_path)
+    pre_llm = run_pre_llm_pipeline(image_path, retriever=retriever)
     if not pre_llm["phase3"]:
         summary = dict(pre_llm["phase2"].get("summary", {}))
         if "allergens" in pre_llm["phase2"]:

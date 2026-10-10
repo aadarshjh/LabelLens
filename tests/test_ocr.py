@@ -71,17 +71,17 @@ class TestImageLoading:
         assert image.ndim >= 2
         assert image.shape[0] > 0 and image.shape[1] > 0
 
-    def test_load_invalid_image_exits(self, tmp_path):
-        """load_image calls sys.exit for a corrupt/nonexistent file."""
+    def test_load_invalid_image_raises(self, tmp_path):
+        """load_image raises ValueError for a corrupt/nonexistent file."""
         fake_path = str(tmp_path / "nonexistent.jpg")
-        with pytest.raises(SystemExit):
+        with pytest.raises(ValueError):
             load_image(fake_path)
 
-    def test_load_corrupt_image_exits(self, tmp_path):
-        """load_image calls sys.exit for a file that exists but is not an image."""
+    def test_load_corrupt_image_raises(self, tmp_path):
+        """load_image raises ValueError for a file that exists but is not an image."""
         corrupt_file = tmp_path / "corrupt.jpg"
         corrupt_file.write_text("this is not an image")
-        with pytest.raises(SystemExit):
+        with pytest.raises(ValueError):
             load_image(str(corrupt_file))
 
 

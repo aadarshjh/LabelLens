@@ -14,7 +14,7 @@ import cv2
 import numpy as np
 
 from src.config import FRONTEND_DIR
-from src.pipeline.pipeline import run_end_to_end_pipeline
+from src.pipeline.pipeline import run_end_to_end_pipeline, get_shared_retriever
 from src.frontend.serializer import serialize_for_frontend
 
 PORT = int(os.environ.get("PORT", "8000"))
@@ -116,7 +116,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 self._send_json(400, {"error": True, "message": "No image was included in the upload."})
                 return
 
-            decoded_image = cv2.imdecode(np.frombuffer(image_data, dtype=np.uint8), cv2.IMREAD_UNCHANGED)
+            decoded_image = cv2.imdecode(np.frombuffer(image_data, dtype=np.uint8), cv2.IMREAD_COLOR)
             if decoded_image is None or decoded_image.size == 0:
                 self._send_json(400, {"error": True, "message": "The uploaded file is not a readable image."})
                 return
@@ -135,11 +135,19 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
             current_api_key = os.environ.get("GROQ_API_KEY", API_KEY)
             phase4_results, phase2_summary = run_end_to_end_pipeline(
-                tmp_path, current_api_key, batch=True, correlation_id=corr_id
+                tmp_path, current_api_key, batch=True, correlation_id=corr_id,
+                retriever=get_shared_retriever()
             )
             self._send_json(200, serialize_for_frontend(phase4_results, phase2_summary, "Scanned Product"))
         except (TimeoutError, ConnectionError):
             self._send_json(400, {"error": True, "message": "Incomplete upload request."})
+        except ValueError as e:
+            msg = str(e)
+            if "not a readable image" in msg.lower() or "could not read image" in msg.lower() or "corrupted" in msg.lower():
+                user_msg = "The uploaded file is not a readable image."
+            else:
+                user_msg = msg or "The uploaded image could not be processed."
+            self._send_json(400, {"error": True, "message": user_msg})
         except Exception as e:
             print(f"Analysis request failed: {type(e).__name__}")
             self._send_json(500, {"error": True, "message": "We couldn't analyze this label. Please try again."})
@@ -189,6 +197,12 @@ class ThreadingHTTPServer(socketserver.ThreadingMixIn, http.server.HTTPServer):
 
 def run():
     ThreadingHTTPServer.allow_reuse_address = True
+    try:
+        get_shared_retriever()
+        print("✓ Knowledge-base retriever initialized.")
+    except Exception as exc:
+        print(f"Notice: Retriever could not be pre-initialized: {exc}")
+
     with ThreadingHTTPServer(("", PORT), Handler) as httpd:
         print(f"Serving at port {PORT}")
         httpd.serve_forever()

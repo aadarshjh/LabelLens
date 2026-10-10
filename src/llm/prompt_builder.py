@@ -162,7 +162,11 @@ def build_batch_analysis_prompt(
 ) -> str:
     """
     Constructs a single bulk prompt for the LLM based on all Phase 3 ingredients.
-    Uses a simple fixed budget for the B.Tech academic project.
+
+    Note: `safe_budget` and `auto_compact` are preserved for backward-compatible
+    API contracts. Prompt budget protection is enforced deterministically by
+    _render_batch_prompt_variant using compact evidence text, capped chunks per
+    item, and omission of ungrounded unknown-item evidence.
     """
     return _render_batch_prompt_variant(
         phase3_items=phase3_items,

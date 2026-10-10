@@ -324,3 +324,24 @@ def test_small_label2_retries_ocr_at_higher_resolution():
         item.get("normalized", "").casefold() == "sugar"
         for item in result["phase2"]["ingredients"]
     )
+
+
+def test_shared_retriever_is_cached_and_reused():
+    from src.pipeline.pipeline import get_shared_retriever, clear_shared_retriever
+    clear_shared_retriever()
+    r1 = get_shared_retriever()
+    r2 = get_shared_retriever()
+    assert r1 is r2
+    clear_shared_retriever()
+    r3 = get_shared_retriever()
+    assert r3 is not r1
+    clear_shared_retriever()
+
+
+def test_pre_llm_pipeline_accepts_injected_retriever(mock_pipeline_dependencies):
+    from unittest.mock import MagicMock
+    from src.pipeline.pipeline import run_pre_llm_pipeline
+    custom_retriever = MagicMock()
+    custom_retriever.retrieve_for_phase2.return_value = []
+    out = run_pre_llm_pipeline("dummy.jpg", retriever=custom_retriever)
+    assert custom_retriever.retrieve_for_phase2.called

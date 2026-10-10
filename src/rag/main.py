@@ -12,18 +12,18 @@ This is the main entry point for RAG. It supports two modes:
 
 USAGE:
   # Build the index (run once, or after adding new documents):
-  python src/main.py --build
+  python -m src.rag.main --build
 
   # Query a single ingredient:
-  python src/main.py --ingredient "Monosodium Glutamate"
-  python src/main.py --ingredient "MSG"
-  python src/main.py --ingredient "INS 621"
+  python -m src.rag.main --ingredient "Monosodium Glutamate"
+  python -m src.rag.main --ingredient "MSG"
+  python -m src.rag.main --ingredient "INS 621"
 
   # Retrieve evidence for all normalized ingredients:
-  python src/rag/main.py --input artifacts/reference_runs/extraction/extraction_results.json
+  python -m src.rag.main --input artifacts/reference_runs/extraction/extraction_results.json
 
   # Both build and query:
-  python src/main.py --build --ingredient "Citric Acid"
+  python -m src.rag.main --build --ingredient "Citric Acid"
 
 DESIGN:
   RAG is RETRIEVAL ONLY. It does not generate LLM answers,
@@ -308,9 +308,9 @@ def main():
             results = query_input(input_path, top_k=args.top_k)
         else:
             print("\n  No mode specified. Usage:")
-            print("    python src/main.py --build")
-            print('    python src/main.py --ingredient "Monosodium Glutamate"')
-            print("    python src/rag/main.py --input path/to/normalized_results.json")
+            print("    python -m src.rag.main --build")
+            print('    python -m src.rag.main --ingredient "Monosodium Glutamate"')
+            print("    python -m src.rag.main --input path/to/normalized_results.json")
             sys.exit(1)
 
 

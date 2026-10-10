@@ -224,13 +224,13 @@ class VectorStore:
         if not os.path.isfile(index_path):
             raise FileNotFoundError(
                 f"FAISS index not found: {index_path}\n"
-                f"Run the index builder first: python src/main.py --build"
+                f"Run the index builder first: python -m src.rag.main --build"
             )
 
         if not os.path.isfile(metadata_path):
             raise FileNotFoundError(
                 f"Metadata file not found: {metadata_path}\n"
-                f"Run the index builder first: python src/main.py --build"
+                f"Run the index builder first: python -m src.rag.main --build"
             )
 
         # Load FAISS index

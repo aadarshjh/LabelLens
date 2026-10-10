@@ -255,3 +255,66 @@ def test_static_allergen_and_identification_labels_remain_present():
     assert "Identified" in html
     assert "Needs a closer look" in html
     assert "Not identified" in html
+
+
+def test_multiple_chunks_same_section_preserve_all_evidence_and_provenance():
+    """Verify that multiple chunks sharing the same section name from different sources
+    both survive through safety assessment without overwriting each other."""
+    chunk1 = {
+        "section": "regulatory",
+        "text": "Permitted in specified food categories under FSSAI regulations.",
+        "source": {
+            "organization": "FSSAI",
+            "title": "Compendium of Food Additives Regulations",
+            "url": "https://fssai.gov.in/compendium.pdf",
+            "jurisdiction": "India",
+            "document_date": "2022-01-31",
+            "source_type": "official_regulatory_compendium"
+        }
+    }
+    chunk2 = {
+        "section": "regulatory",
+        "text": "Authorized in the European Union under Regulation (EC) No 1333/2008.",
+        "source": {
+            "organization": "European Commission",
+            "title": "Food Additives Database",
+            "url": "https://food.ec.europa.eu/additives",
+            "jurisdiction": "European Union",
+            "source_type": "official_conditions_of_use_database"
+        }
+    }
+    node_item = node(evidence=[chunk1, chunk2])
+    result = assess_ingredient_safety(node_item)
+
+    # Both references survive with distinct source titles, URLs, and jurisdictions
+    refs = result["evidence"]
+    assert len(refs) == 2
+    urls = {r["url"] for r in refs}
+    assert "https://fssai.gov.in/compendium.pdf" in urls
+    assert "https://food.ec.europa.eu/additives" in urls
+    orgs = {r.get("organization") for r in refs}
+    assert "FSSAI" in orgs
+    assert "European Commission" in orgs
+    jurisdictions = {r.get("jurisdiction") for r in refs}
+    assert "India" in jurisdictions
+    assert "European Union" in jurisdictions
+
+
+def test_conflicting_evidence_across_chunks_does_not_discard_data():
+    """Verify that when one chunk states safe use and another states adverse effects,
+    both chunks are preserved in references and conflicting_evidence is reported."""
+    chunk_safe = {
+        "section": "assessment",
+        "text": "JECFA evaluated the substance and confirmed no safety concern at typical dietary levels.",
+        "source": {"organization": "JECFA", "title": "JECFA Evaluation", "url": "https://who.int/jecfa"}
+    }
+    chunk_concern = {
+        "section": "assessment",
+        "text": "A safety concern was reported with adverse cellular response in high-dose animal studies.",
+        "source": {"organization": "EFSA", "title": "EFSA Scientific Opinion", "url": "https://efsa.europa.eu/opinion"}
+    }
+    result = assess_ingredient_safety(node(evidence=[chunk_safe, chunk_concern]))
+    assert result["status"] == "insufficient_evidence"
+    assert result["diagnostic_reason"] == "conflicting_evidence"
+    assert len(result["evidence"]) == 2
+    assert {r["organization"] for r in result["evidence"]} == {"JECFA", "EFSA"}

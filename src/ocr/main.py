@@ -15,8 +15,8 @@ WHAT IT DOES:
   8. Prints the BEST result based on confidence scoring
 
 USAGE:
-  python src/main.py                          # uses first image in images/
-  python src/main.py images/label1.jpeg       # specify an image path
+  python -m src.ocr.main                          # uses first image in images/
+  python -m src.ocr.main images/label1.jpeg       # specify an image path
 
 DESIGN PHILOSOPHY:
   We do NOT assume any preprocessing is better than the original.
@@ -25,6 +25,7 @@ DESIGN PHILOSOPHY:
 """
 
 import cv2
+import numpy as np
 import os
 import sys
 import glob
@@ -102,23 +103,41 @@ def find_image(image_path=None):
         return sorted(images)[0]
 
 
-def load_image(image_path, max_dim=2400):
+def load_image(image_input, max_dim=2400):
     """
     Load an image using OpenCV with validation.
 
-    Returns the image as a numpy array (BGR format).
-    Exits with an error if the image can't be read.
+    Accepts an image file path (str or Path) or an existing numpy array.
+    Returns the image as a 3-channel numpy array (BGR format).
+    Raises ValueError if the image cannot be read or is invalid.
     """
-    image = cv2.imread(image_path)
+    if isinstance(image_input, np.ndarray):
+        image = image_input.copy()
+    elif isinstance(image_input, (str, os.PathLike)):
+        path_str = str(image_input)
+        if not os.path.isfile(path_str):
+            raise ValueError(f"Image file not found: {path_str}")
+        image = cv2.imread(path_str)
+    else:
+        raise ValueError(f"Unsupported image input type: {type(image_input).__name__}")
 
-    if image is None:
-        print(f"\n  ERROR: Could not read image: {image_path}")
-        print(f"  The file may be corrupted or in an unsupported format.")
-        print(f"  Supported formats: JPEG (.jpg/.jpeg), PNG (.png)")
-        sys.exit(1)
+    if image is None or not isinstance(image, np.ndarray) or image.size == 0:
+        raise ValueError(
+            f"Could not read image: {image_input}. The file may be corrupted or in an unsupported format. "
+            "Supported formats: JPEG (.jpg/.jpeg), PNG (.png)"
+        )
+
+    # Normalize channels to 3-channel BGR for consistent OCR preprocessing
+    if len(image.shape) == 2:
+        image = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)
+    elif len(image.shape) == 3 and image.shape[2] == 4:
+        image = cv2.cvtColor(image, cv2.COLOR_BGRA2BGR)
+    elif len(image.shape) != 3 or image.shape[2] != 3:
+        raise ValueError(f"Unsupported image dimensions/channels: {image.shape}")
 
     height, width = image.shape[:2]
-    print(f"  ✓ Image loaded: {os.path.basename(image_path)}")
+    source_name = os.path.basename(str(image_input)) if isinstance(image_input, (str, os.PathLike)) else "memory_array"
+    print(f"  ✓ Image loaded: {source_name}")
     print(f"    Size: {width} × {height} pixels")
     print(f"    Channels: {image.shape[2] if len(image.shape) == 3 else 1}")
 
@@ -237,7 +256,11 @@ def main():
     print("\nStep 2: Loading image...")
     image_arg = sys.argv[1] if len(sys.argv) > 1 else None
     image_path = find_image(image_arg)
-    image = load_image(image_path)
+    try:
+        image = load_image(image_path)
+    except ValueError as e:
+        print(f"\n  ERROR: {e}")
+        sys.exit(1)
 
     # --- Step 3: Prepare output directory ---
     os.makedirs(OUTPUT_DIR, exist_ok=True)

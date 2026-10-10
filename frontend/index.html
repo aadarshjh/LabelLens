@@ -530,6 +530,43 @@
     statusText.textContent = 'Analysis complete. Results are displayed below.';
   };
 
+  const MAX_HISTORY_ENTRIES = 20;
+  const saveCompactScanHistory = (payload) => {
+    try {
+      if (typeof window === 'undefined' || !window.localStorage) return;
+      let historyList = [];
+      try {
+        const raw = window.localStorage.getItem('labellens_recent_scans');
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) {
+            historyList = parsed.filter(item => item && typeof item === 'object');
+          }
+        }
+      } catch (_) {
+        historyList = [];
+      }
+
+      const summaryObj = payload && typeof payload.summary === 'object' ? payload.summary : {};
+      const compactEntry = {
+        product_name: asText(payload.product_name) || 'Scanned Product',
+        timestamp: new Date().toISOString(),
+        safety_status: asText(payload.safety_status) || asText(summaryObj.overall_safety_status) || 'insufficient_evidence',
+        summary: asText(summaryObj.text) || (typeof payload.summary === 'string' ? payload.summary : ''),
+        ingredient_count: Array.isArray(payload.ingredients) ? payload.ingredients.length : 0
+      };
+
+      historyList.unshift(compactEntry);
+      if (historyList.length > MAX_HISTORY_ENTRIES) {
+        historyList = historyList.slice(0, MAX_HISTORY_ENTRIES);
+      }
+
+      window.localStorage.setItem('labellens_recent_scans', JSON.stringify(historyList));
+    } catch (storageErr) {
+      console.warn('Scan history could not be saved to local storage:', storageErr);
+    }
+  };
+
   const analyze = async () => {
     if (!selectedFile || analyzing) return;
     analyzing = true;
@@ -554,6 +591,7 @@
         throw new Error(asText(payload.message) || 'The analysis service could not complete this request. Please retry.');
       }
       renderResults(payload);
+      saveCompactScanHistory(payload);
       document.getElementById('analysis-results').scrollIntoView({ behavior: 'smooth', block: 'start' });
     } catch (error) {
       const message = error instanceof TypeError

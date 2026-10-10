@@ -1,4 +1,5 @@
 import json
+import os
 from src.config import KNOWLEDGE_BASE_METADATA_PATH, DOCUMENTS_DIR
 
 METADATA_PATH = str(KNOWLEDGE_BASE_METADATA_PATH)
