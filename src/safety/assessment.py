@@ -36,21 +36,33 @@ def _references(evidence):
     for item in evidence:
         if not isinstance(item, dict):
             continue
-        source = item.get("source") or {}
-        if not isinstance(source, dict):
-            source = {}
-        title = source.get("title") or source.get("organization") or item.get("filename") or "Knowledge-base reference"
-        url = source.get("url")
         section = item.get("section")
-        ref = {
-            "title": title if isinstance(title, str) else "Knowledge-base reference",
-            "url": url if isinstance(url, str) else None,
-            "section": section if isinstance(section, str) else None,
-        }
-        key = (ref["title"], ref["url"], ref["section"])
-        if key not in seen:
-            refs.append(ref)
-            seen.add(key)
+        primary = item.get("source")
+        sources = item.get("sources")
+        candidates = ([primary] if isinstance(primary, dict) else [])
+        if isinstance(sources, list):
+            candidates.extend(source for source in sources if isinstance(source, dict))
+        if not candidates:
+            candidates = [{}]
+        for source in candidates:
+            title = source.get("title") or source.get("organization") or item.get("filename") or "Knowledge-base reference"
+            url = source.get("url")
+            ref = {
+                "title": title if isinstance(title, str) else "Knowledge-base reference",
+                "url": url if isinstance(url, str) else None,
+                "section": section if isinstance(section, str) else None,
+            }
+            for field in ("organization", "jurisdiction", "document_date", "source_type"):
+                value = source.get(field)
+                if isinstance(value, str):
+                    ref[field] = value
+            claims = source.get("claims_supported")
+            if isinstance(claims, list) and all(isinstance(value, str) for value in claims):
+                ref["claims_supported"] = claims
+            key = (ref["title"], ref["url"], ref["section"])
+            if key not in seen:
+                refs.append(ref)
+                seen.add(key)
     return refs
 
 
@@ -99,17 +111,19 @@ def assess_ingredient_safety(ingredient):
     """Return a UI-safe assessment based only on identity and retrieved evidence."""
     evidence = ingredient.get("safety_evidence") or ingredient.get("evidence", ingredient.get("authoritative_evidence", []))
     evidence = evidence if isinstance(evidence, list) else []
-    sections = {
-        item.get("section"): item.get("text", item.get("content", ""))
-        for item in evidence if isinstance(item, dict)
-    }
+    sections = {}
+    for item in evidence:
+        if not isinstance(item, dict):
+            continue
+        section = item.get("section")
+        text = item.get("text", item.get("content", ""))
+        if isinstance(section, str) and isinstance(text, str):
+            sections.setdefault(section, []).append(text)
     regulatory_assessment = " ".join(
-        text for section, text in sections.items()
-        if section in {"regulatory", "assessment"} and isinstance(text, str)
+        text for section in ("regulatory", "assessment")
+        for text in sections.get(section, [])
     )
-    function_text = sections.get("function", "")
-    if not isinstance(function_text, str):
-        function_text = ""
+    function_text = " ".join(sections.get("function", []))
 
     identity_status = ingredient.get("phase2_status", ingredient.get("status", "unknown"))
     safety_text = regulatory_assessment
@@ -119,6 +133,12 @@ def assess_ingredient_safety(ingredient):
     restriction_violations = _established_restriction_violations(evidence)
     base = {
         "status": "insufficient_evidence",
+        "identity": {
+            "status": identity_status,
+            "match_type": ingredient.get("phase2_match_type", ingredient.get("match_type")),
+            "similarity_score": ingredient.get("phase2_similarity", ingredient.get("similarity_score")),
+        },
+        "diagnostic_reason": None,
         "reason_for_use": function_text or "No food-use function was found in the retrieved evidence.",
         "health_concerns": [],
         "uncertainty": None,
@@ -126,12 +146,18 @@ def assess_ingredient_safety(ingredient):
     }
 
     if identity_status != "matched":
+        base["diagnostic_reason"] = "uncertain_identity"
         base["uncertainty"] = "Ingredient identity is not sufficiently certain for a safety assessment."
         return base
     if not evidence or not regulatory_assessment.strip():
+        # Function/identity chunks do not count as safety evidence. A relevant
+        # assessment/regulatory section with no applicable conclusion is
+        # distinguished below from a retrieval or coverage gap.
+        base["diagnostic_reason"] = "no_relevant_evidence"
         base["uncertainty"] = "Retrieved evidence does not contain a usable regulatory or assessment statement."
         return base
     if safe_sentences and adverse_sentences:
+        base["diagnostic_reason"] = "conflicting_evidence"
         base["uncertainty"] = "Retrieved evidence contains conflicting safety statements; no conclusion is assigned."
         return base
 
@@ -155,6 +181,7 @@ def assess_ingredient_safety(ingredient):
     # alone cannot establish the product-specific conclusion either way.
     limit_sentences = _sentences(safety_text, _USE_LIMIT)
     if limit_sentences:
+        base["diagnostic_reason"] = "insufficient_applicable_evidence"
         caveat = " ".join(limit_sentences)
         base["uncertainty"] = (
             f"Regulatory context: {caveat} The product category and use level were not established, "
@@ -169,6 +196,7 @@ def assess_ingredient_safety(ingredient):
         return base
 
     base["uncertainty"] = "The retrieved evidence does not support a clear safety classification."
+    base["diagnostic_reason"] = "insufficient_applicable_evidence"
     return base
 
 

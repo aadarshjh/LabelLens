@@ -16,13 +16,39 @@ Description:
 The Food Safety and Standards Authority of India identifies butylated hydroxyanisole (BHA) with International Numbering System (INS) number 320.
 
 Regulatory Information:
-The cited FSSAI compendium lists BHA (INS 320) for specified food categories. Permitted food categories and use levels are category-specific; this entry does not establish a general permission or safety conclusion.
+India — FSSAI's Food Safety and Standards (Food Products Standards and Food Additives) Regulations compendium, Version XXI dated 31 January 2022, lists BHA (INS 320) with category-specific maximum levels. Table 15.1 (snacks and savouries based on potato, cereal, flour or starch) lists 200 mg/kg and notes 15 and 130. This is the compendium's entry for that category, not a finding about the amount in any particular product or confirmation that no later amendment exists.
+
+International scientific evaluation — JECFA's 1988 evaluation (33rd meeting) records an ADI of 0–0.5 mg/kg body weight per day. Its record also notes that 1998 intake estimates exceeded that ADI in three member states that supplied data, while mean estimates from seven other states did not; the high-consumer exceedance magnitude and duration could not be estimated from the available data.
+
+European Union scientific evaluation — EFSA's 2011 re-evaluation established an ADI of 1.0 mg/kg body weight per day and reported refined intake estimates at current use levels were generally below that ADI. This is a scientific exposure assessment, not a product-specific use permission or amount measurement. EU legal conditions are maintained separately in the Commission's Union-list database.
 
 Assessment Notes:
-This entry supports the identity mapping for INS 320. Confirm the current applicable regulation and food category before making a regulatory claim.
+The evidence distinguishes India-specific permission conditions from JECFA and EFSA scientific intake evaluations. The product's BHA concentration is not available here. Neither an ADI nor a listed maximum alone proves this product complies or establishes its actual intake. Check the applicable regulation version, product category, notes, and measured level before making a compliance claim.
 
 Sources:
 - Organization: Food Safety and Standards Authority of India (FSSAI)
-  Document/page title: Compendium of Food Additives Regulations, 31 January 2022
+  Document/page title: Compendium of Food Additives Regulations, Version XXI
+  Document date/version: 31 January 2022
+  Jurisdiction: India
+  Source type: Official regulatory compendium
   URL: https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf
-  Access/reference information: Lists butylated hydroxyanisole (BHA) as INS 320; use permissions depend on food category.
+- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO
+  Document/page title: Butylated Hydroxyanisole, JECFA database chemical record 2140
+  Evaluation date: 1988 (33rd JECFA meeting); intake follow-up summarized for 1998
+  Jurisdiction: International scientific evaluation
+  Source type: Scientific evaluation database record
+  URL: https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2140
+  Claims supported: identity, synonyms, INS 320, 1988 ADI and the database's later intake summary.
+- Organization: European Food Safety Authority (EFSA)
+  Document/page title: Scientific Opinion on the re-evaluation of butylated hydroxyanisole (BHA) (E 320), EFSA Journal 2011;9(10):2392
+  Publication date: 12 October 2011; adopted 21 September 2011
+  Jurisdiction: European Union scientific risk assessment
+  Source type: Scientific opinion
+  URL: https://doi.org/10.2903/j.efsa.2011.2392
+  Claims supported: EFSA's ADI and the opinion's refined intake estimate conclusion at current use levels.
+- Organization: European Commission
+  Document/page title: Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)
+  Jurisdiction: European Union regulatory authorization
+  Source type: Official conditions-of-use database
+  URL: https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en
+  Claims supported: EU authorized additives and conditions of use are maintained in the Union-list database.

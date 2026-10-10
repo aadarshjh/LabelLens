@@ -72,11 +72,35 @@ def test_unknown_identity_does_not_get_classified_from_matching_name_or_evidence
     ]))
     assert result["status"] == "insufficient_evidence"
     assert "identity" in result["uncertainty"].lower()
+    assert result["diagnostic_reason"] == "uncertain_identity"
 
 
 def test_missing_regulatory_evidence_is_insufficient():
     result = assess_ingredient_safety(node(evidence=[chunk("function", "Used as a thickener.")]))
     assert result["status"] == "insufficient_evidence"
+    assert result["diagnostic_reason"] == "no_relevant_evidence"
+    assert result["identity"]["status"] == "matched"
+
+
+def test_no_relevant_retrieval_has_distinct_diagnostic_reason():
+    result = assess_ingredient_safety(node(evidence=[], retrieval_status="no_relevant_evidence"))
+    assert result["status"] == "insufficient_evidence"
+    assert result["diagnostic_reason"] == "no_relevant_evidence"
+
+
+def test_identity_confidence_is_reported_separately_from_evidence_diagnostic():
+    result = assess_ingredient_safety(node(
+        evidence=[chunk("regulatory", "Listed as a permitted additive in selected food categories.")],
+        phase2_match_type="exact_alias",
+        phase2_similarity=100,
+    ))
+    assert result["status"] == "insufficient_evidence"
+    assert result["diagnostic_reason"] == "insufficient_applicable_evidence"
+    assert result["identity"] == {
+        "status": "matched",
+        "match_type": "exact_alias",
+        "similarity_score": 100,
+    }
 
 
 def test_conflicting_safety_statements_are_insufficient():
@@ -85,6 +109,16 @@ def test_conflicting_safety_statements_are_insufficient():
     )]))
     assert result["status"] == "insufficient_evidence"
     assert "conflicting" in result["uncertainty"]
+    assert result["diagnostic_reason"] == "conflicting_evidence"
+
+
+def test_conflicts_across_multiple_chunks_in_same_section_are_preserved():
+    result = assess_ingredient_safety(node(evidence=[
+        chunk("regulatory", "No safety concern at typical food uses."),
+        chunk("regulatory", "A safety concern was reported at food-use exposure."),
+    ]))
+    assert result["status"] == "insufficient_evidence"
+    assert result["diagnostic_reason"] == "conflicting_evidence"
 
 
 def test_local_caramel_iv_category_caveat_is_not_a_product_violation():

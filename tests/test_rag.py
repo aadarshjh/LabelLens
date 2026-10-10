@@ -518,6 +518,43 @@ class TestRetrieverCodes:
             assert results[0]["ingredient"] == expected
             assert results[0]["source"]["organization"].startswith("Food Safety")
 
+    def test_malic_acid_ins_296_retrieves_identity_scoped_provenance(self, retriever, built_store):
+        results = retriever.retrieve("INS 296", top_k=10)
+        assert results
+        assert {item["ingredient"] for item in results} == {"DL-Malic Acid"}
+        assert {item["section"] for item in results} == {"identity", "function", "regulatory", "assessment"}
+        regulatory = next(item for item in results if item["section"] == "regulatory")
+        assert regulatory["jurisdiction"].startswith("India;")
+        assert regulatory["source"]["document_date"] == "2022-01-31"
+        assert {source["source_type"] for source in regulatory["sources"]} >= {
+            "official_regulatory_compendium", "scientific_evaluation", "call_for_data_not_final_opinion"
+        }
+
+    def test_malic_retrieval_preserves_conservative_assessment_and_source_details(self, retriever, built_store):
+        from src.normalization.normalizer import load_ingredient_dictionary, normalize_ingredient
+        from src.safety.assessment import assess_ingredient_safety
+
+        normalized = normalize_ingredient("INS 296", load_ingredient_dictionary())
+        retrieved = retriever.retrieve_for_phase2({"ingredients": [{
+            "name": "INS 296",
+            "normalized": normalized["canonical_name"],
+            "canonical_name": normalized["canonical_name"],
+            "status": normalized["status"],
+            "match_type": normalized["match_type"],
+            "similarity_score": normalized["similarity_score"],
+            "sub_ingredients": [],
+        }]})[0]
+        assessment = assess_ingredient_safety(retrieved)
+        assert len(retrieved["safety_evidence"]) == 4
+        assert assessment["status"] == "insufficient_evidence"
+        assert assessment["diagnostic_reason"] == "insufficient_applicable_evidence"
+        assert any(
+            ref.get("jurisdiction") == "India"
+            and ref.get("document_date") == "2022-01-31"
+            for ref in assessment["evidence"]
+        )
+        assert any("JECFA database chemical record 5163" in ref["title"] for ref in assessment["evidence"])
+
     def test_phase2_discards_evidence_for_a_different_ingredient(self, retriever, built_store, monkeypatch):
         """A semantic near-match cannot ground claims about another ingredient."""
         monkeypatch.setattr(
@@ -532,6 +569,21 @@ class TestRetrieverCodes:
 
         assert results[0]["evidence"] == []
         assert results[0]["retrieval_status"] == "no_relevant_evidence"
+
+    def test_conflicting_alias_metadata_is_not_assigned_to_either_ingredient(self):
+        """An alias collision cannot route evidence to whichever chunk came last."""
+        from types import SimpleNamespace
+        retriever = object.__new__(IngredientRetriever)
+        retriever.vector_store = SimpleNamespace(chunk_metadata=[
+            {"ingredient": "Additive Alpha", "aliases": ["Shared Code"]},
+            {"ingredient": "Additive Beta", "aliases": ["Shared Code"]},
+        ])
+        retriever._canonical_map = {
+            "additivealpha": "Additive Alpha",
+            "additivebeta": "Additive Beta",
+        }
+        retriever._alias_map = retriever._build_alias_map()
+        assert retriever._resolve_exact_identity("Shared Code") is None
 
     def test_unrelated_query_threshold(self, retriever):
         """Unrelated query should fall below threshold and return empty."""

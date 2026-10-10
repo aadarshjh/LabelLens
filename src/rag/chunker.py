@@ -243,7 +243,9 @@ def _build_chunk_metadata(document, section_label):
         "section": section_label,
         "aliases": doc_meta.get("aliases", []),
         "category": doc_meta.get("category", ""),
+        "jurisdiction": doc_meta.get("jurisdiction", ""),
         "source": doc_meta.get("source", {}),
+        "sources": doc_meta.get("sources", []),
     }
 
 

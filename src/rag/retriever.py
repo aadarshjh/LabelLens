@@ -29,10 +29,16 @@ PRESERVING UNCERTAINTY:
 
 import json
 import os
+import re
 import sys
 
 from src.rag.embeddings import EmbeddingModel
 from src.rag.vector_store import VectorStore
+
+
+def _identity_key(value):
+    """Match harmless punctuation/spacing variants without fuzzy identity."""
+    return re.sub(r"[^a-z0-9]+", "", str(value).casefold())
 
 
 # ---------------------------------------------------------------------------
@@ -67,6 +73,11 @@ class IngredientRetriever:
         self.model_name = model_name
         self.embedding_model = None
         self.similarity_threshold = similarity_threshold
+        self._canonical_map = {
+            _identity_key(meta["ingredient"]): meta["ingredient"]
+            for meta in self.vector_store.chunk_metadata
+            if isinstance(meta.get("ingredient"), str) and meta["ingredient"].strip()
+        }
         self._alias_map = self._build_alias_map()
 
     def _build_alias_map(self):
@@ -75,13 +86,25 @@ class IngredientRetriever:
         to canonical ingredient names using the loaded chunk metadata.
         """
         alias_map = {}
+        ambiguous_aliases = set()
         for meta in self.vector_store.chunk_metadata:
             canonical = meta.get("ingredient")
             if canonical:
-                alias_map[canonical.lower()] = canonical
                 for alias in meta.get("aliases", []):
-                    alias_map[alias.lower()] = canonical
+                    key = _identity_key(alias)
+                    if not key or key in ambiguous_aliases or key in self._canonical_map:
+                        continue
+                    previous = alias_map.get(key)
+                    if previous is not None and previous != canonical:
+                        alias_map.pop(key, None)
+                        ambiguous_aliases.add(key)
+                    else:
+                        alias_map[key] = canonical
         return alias_map
+
+    def _resolve_exact_identity(self, query):
+        key = _identity_key(query)
+        return self._canonical_map.get(key) or self._alias_map.get(key)
 
     def retrieve(self, query, top_k=3, bypass_exact=False):
         """
@@ -105,7 +128,7 @@ class IngredientRetriever:
             return []
 
         # 1. Exact canonical/alias/code lookup
-        exact_match_canonical = self._alias_map.get(query.strip().lower())
+        exact_match_canonical = self._resolve_exact_identity(query)
 
         if exact_match_canonical and not bypass_exact:
             # Retrieve exact chunks directly
@@ -119,6 +142,8 @@ class IngredientRetriever:
                         "ingredient": meta.get("ingredient"),
                         "section": meta.get("section"),
                         "source": meta.get("source", {}),
+                        "sources": meta.get("sources", []),
+                        "jurisdiction": meta.get("jurisdiction", ""),
                         "aliases": meta.get("aliases", []),
                         "category": meta.get("category", ""),
                         "filename": meta.get("filename", "")
@@ -180,7 +205,7 @@ class IngredientRetriever:
             # example, Malic Acid may retrieve Acetic Acid). Never pass such
             # evidence to the explanation model as if it supported the target.
             query_name = name.strip() if isinstance(name, str) else ""
-            expected_ingredient = self._alias_map.get(query_name.lower(), query_name)
+            expected_ingredient = self._resolve_exact_identity(query_name) or query_name
             evidence = [
                 chunk for chunk in evidence
                 if isinstance(chunk.get("ingredient"), str)
@@ -191,7 +216,7 @@ class IngredientRetriever:
             # Safety assessment needs regulatory and assessment sections, which
             # may fall beyond that top-k window for exact matches.
             safety_evidence = []
-            exact_canonical = self._alias_map.get(query_name.lower())
+            exact_canonical = self._resolve_exact_identity(query_name)
             if status == "matched" and exact_canonical:
                 safety_evidence = self.retrieve(
                     name, top_k=len(self.vector_store.chunk_metadata)

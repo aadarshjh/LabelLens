@@ -17,13 +17,46 @@ Description:
 The Food Safety and Standards Authority of India identifies Caramel IV as sulfite ammonia caramel and assigns it International Numbering System (INS) number 150d.
 
 Regulatory Information:
-The cited FSSAI compendium lists Caramel IV (INS 150d) in specified food categories. Permitted food categories and use levels are category-specific; this entry does not establish a general permission or safety conclusion.
+India — FSSAI's Food Safety and Standards (Food Products Standards and Food Additives) Regulations compendium, Version XXI dated 31 January 2022, lists Caramel IV (sulfite ammonia caramel, INS 150d) with category-specific maximum levels. Table 15.0 (ready-to-eat savouries) lists 10,000 mg/kg; the table's Table 15.1 subcategory for potato, cereal, flour or starch snacks does not list Caramel IV. The table entries are reported as published; this document does not infer whether the parent-category entry applies to a specific subcategory and does not confirm that no later amendment exists.
+
+International scientific evaluation — JECFA's 1985 evaluation (29th meeting) records an ADI of 0–200 mg/kg body weight per day, with a comment that the ADI on a solids basis is 0–150 mg/kg body weight per day. This toxicological evaluation is not a regulatory maximum for a food category.
+
+European Union scientific evaluation — EFSA's 2011 re-evaluation covered caramel colours E 150a, b, c and d. It established a group ADI of 300 mg/kg body weight per day for combined exposure to all four colours, with a lower specific ADI for E 150c within that group. EFSA noted that high consumers could exceed ADIs for E 150a, E 150c and E 150d at industry-reported maximum use levels. EFSA's 2012 refined exposure assessment used updated use and consumption data; neither evaluation measures the level in this product. EU legal conditions are maintained separately in the Commission's Union-list database.
 
 Assessment Notes:
-This entry supports the identity mapping for INS 150d. Confirm the current applicable regulation and food category before making a regulatory claim.
+The evidence distinguishes category-specific Indian permissions from international/EU scientific evaluations. The amount of Caramel IV in the product is unknown, and Table 15.0 versus 15.1 applicability is not resolved here. Neither an ADI nor an entry in a broader category proves product compliance or actual consumer exposure.
 
 Sources:
 - Organization: Food Safety and Standards Authority of India (FSSAI)
-  Document/page title: Compendium of Food Additives Regulations, 31 January 2022
+  Document/page title: Compendium of Food Additives Regulations, Version XXI
+  Document date/version: 31 January 2022
+  Jurisdiction: India
+  Source type: Official regulatory compendium
   URL: https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf
-  Access/reference information: Lists Caramel IV - sulfite ammonia caramel as INS 150d; use permissions depend on food category.
+- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO
+  Document/page title: Caramel Colour, Class IV, JECFA database chemical record 1668
+  Evaluation date: 1985 (29th JECFA meeting)
+  Jurisdiction: International scientific evaluation
+  Source type: Scientific evaluation database record
+  URL: https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1668
+  Claims supported: identity as sulfite ammonia caramel, INS 150d, evaluation year and ADI with solids-basis comment.
+- Organization: European Food Safety Authority (EFSA)
+  Document/page title: Scientific Opinion on the re-evaluation of caramel colours (E 150a, b, c, d), EFSA Journal 2011;9(3):2004
+  Publication date: 8 March 2011
+  Jurisdiction: European Union scientific risk assessment
+  Source type: Scientific opinion
+  URL: https://doi.org/10.2903/j.efsa.2011.2004
+  Claims supported: group ADI, E 150c restriction within group ADI, safety review and high-consumer exposure caveat.
+- Organization: European Food Safety Authority (EFSA)
+  Document/page title: Refined exposure assessment for caramel colours (E 150a, c, d)
+  Publication date: 19 December 2012
+  Jurisdiction: European Union scientific exposure assessment
+  Source type: Scientific opinion
+  URL: https://doi.org/10.2903/j.efsa.2012.3030
+  Claims supported: updated exposure assessment using reported use-level and consumption data.
+- Organization: European Commission
+  Document/page title: Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)
+  Jurisdiction: European Union regulatory authorization
+  Source type: Official conditions-of-use database
+  URL: https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en
+  Claims supported: EU authorized additives and conditions of use are maintained in the Union-list database.

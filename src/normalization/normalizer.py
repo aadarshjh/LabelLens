@@ -34,6 +34,7 @@ FUZZY SCORING NOTE:
 
 import json
 import os
+import re
 from rapidfuzz import fuzz, process
 from src.config import INGREDIENTS_PATH
 
@@ -85,14 +86,20 @@ def _exact_canonical_match(name, dictionary):
     Returns:
         (entry, "exact_canonical") or (None, None)
     """
-    name_lower = name.lower().strip()
+    name_lower = _identity_key(name)
     for entry in dictionary:
-        if entry["canonical_name"].lower() == name_lower:
+        if _identity_key(entry["canonical_name"]) == name_lower:
             return entry, "exact_canonical"
     return None, None
 
 
-import re
+def _identity_key(value):
+    """Normalize harmless typography differences for exact identity checks.
+
+    This deliberately does not perform spelling correction: punctuation and
+    whitespace are formatting, while a changed letter can change identity.
+    """
+    return re.sub(r"[^a-z0-9]+", "", str(value).casefold())
 
 PROTECTED_GENERIC_TERMS = {
     "vitamins", "minerals", "cereal extract", "cereal extracts",
@@ -132,11 +139,11 @@ def _exact_alias_match(name, dictionary):
     Returns:
         (entry, "exact_alias") or (None, None)
     """
-    name_lower = name.lower().strip()
+    name_lower = _identity_key(name)
     for entry in dictionary:
         all_aliases = entry.get("aliases", []) + entry.get("codes", [])
         for alias in all_aliases:
-            if alias.lower() == name_lower:
+            if _identity_key(alias) == name_lower:
                 return entry, "exact_alias"
     return None, None
 
@@ -179,6 +186,15 @@ def _fuzzy_match(name, dictionary, threshold=80):
         return None, None, 0
 
     clean_name = name.lower().strip()
+    # Correct only OCR glyphs embedded inside alphabetic words (O/0, l/1,
+    # s/5). Numeric codes are rejected above; a transformed match still goes
+    # through the same score and cross-candidate ambiguity checks.
+    substitutions = {"0": "o", "1": "l", "5": "s"}
+    clean_name = re.sub(
+        r"(?<=[a-z])[015](?=[a-z])",
+        lambda match: substitutions[match.group(0)],
+        clean_name,
+    )
     if clean_name in PROTECTED_GENERIC_TERMS:
         return None, None, 0
 
@@ -197,18 +213,26 @@ def _fuzzy_match(name, dictionary, threshold=80):
 
     candidate_strings = [c[0] for c in candidates]
 
-    result = process.extractOne(
+    results = process.extract(
         clean_name,
         candidate_strings,
         scorer=fuzz.token_sort_ratio,
         score_cutoff=threshold,
+        limit=2,
     )
 
-    if result is None:
+    if not results:
         return None, None, 0
 
-    matched_string, score, matched_index = result
+    matched_string, score, matched_index = results[0]
     entry_index = candidates[matched_index][1]
+    # Do not let dictionary ordering decide between similarly plausible
+    # candidates. Closely tied candidates with different canonical identities
+    # remain unresolved for review instead of silently choosing one.
+    if len(results) > 1 and score - results[1][1] <= 2:
+        second_index = candidates[results[1][2]][1]
+        if dictionary[second_index]["canonical_name"] != dictionary[entry_index]["canonical_name"]:
+            return None, None, 0
     return dictionary[entry_index], "fuzzy", score
 
 

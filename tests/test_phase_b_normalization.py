@@ -111,6 +111,36 @@ def test_case_d_ins_320_strict_resolution():
     assert result["canonical_name"] not in ("Lactic Acid", "Ascorbic Acid")
 
 
+def test_punctuation_and_spacing_variants_match_exactly():
+    dictionary = load_ingredient_dictionary("data/ingredients.json")
+    result = normalize_ingredient("CITRIC-ACID", dictionary)
+    assert result["canonical_name"] == "Citric Acid"
+    assert result["match_type"] == "exact_canonical"
+    assert normalize_ingredient("E 260", dictionary)["canonical_name"] == "Acetic Acid"
+
+
+def test_ocr_typo_can_fuzzy_match_when_candidate_is_unambiguous():
+    dictionary = load_ingredient_dictionary("data/ingredients.json")
+    result = normalize_ingredient("Citric Acic", dictionary)
+    assert result["canonical_name"] == "Citric Acid"
+    assert result["match_type"] == "fuzzy"
+
+
+def test_common_ocr_digit_substitution_inside_name_is_corrected_conservatively():
+    dictionary = load_ingredient_dictionary("data/ingredients.json")
+    result = normalize_ingredient("Citric Ac1d", dictionary)
+    assert result["canonical_name"] == "Citric Acid"
+    assert result["match_type"] == "fuzzy"
+
+
+def test_ins_codes_remain_strict_for_existing_cases():
+    dictionary = load_ingredient_dictionary("data/ingredients.json")
+    for code, expected in [("INS 150d", "Caramel IV"), ("INS 320", "Butylated Hydroxyanisole")]:
+        result = normalize_ingredient(code, dictionary)
+        assert result["canonical_name"] == expected
+        assert result["match_type"] == "exact_alias"
+
+
 def test_multi_code_parent_does_not_duplicate_first_additive():
     dictionary = load_ingredient_dictionary("data/ingredients.json")
     parsed = parse_ingredients("(INS 150d, INS 102)")
@@ -338,7 +368,6 @@ def test_case_j_label1_regression_safety():
     assert any("sugar" in n for n in all_names)
     assert any("oil" in n for n in all_names)
     assert any("maltodextrin" in n for n in all_names)
-
 
 
 def test_label1_ocr_artifact_normalization():

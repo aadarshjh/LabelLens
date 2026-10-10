@@ -3,21 +3,63 @@
     "ingredient": "Caramel IV",
     "aliases": ["Caramel 150d", "Sulfite Ammonia Caramel", "INS 150d", "E150d"],
     "category": "Color Additive",
+    "jurisdiction": "India; scientific evaluations from JECFA and EFSA have separate international and EU scopes",
     "source": {
       "organization": "Food Safety and Standards Authority of India (FSSAI)",
-      "title": "Compendium of Food Additives Regulations, 31 January 2022",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
       "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
-    }
+    },
+    "sources": [
+      {"organization": "Food Safety and Standards Authority of India (FSSAI)", "title": "Compendium of Food Additives Regulations, Version XXI", "document_date": "2022-01-31", "jurisdiction": "India", "source_type": "official_regulatory_compendium", "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"},
+      {"organization": "JECFA / WHO", "title": "Caramel Colour, Class IV, JECFA database record 1668", "document_date": "1985 evaluation", "jurisdiction": "International scientific evaluation", "source_type": "scientific_evaluation", "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1668"},
+      {"organization": "European Food Safety Authority (EFSA)", "title": "Scientific Opinion on the re-evaluation of caramel colours (E 150a, b, c, d), EFSA Journal 2011;9(3):2004", "document_date": "2011-03-08", "jurisdiction": "European Union scientific risk assessment", "source_type": "scientific_opinion", "url": "https://doi.org/10.2903/j.efsa.2011.2004"},
+      {"organization": "European Food Safety Authority (EFSA)", "title": "Refined exposure assessment for caramel colours (E 150a, c, d)", "document_date": "2012-12-19", "jurisdiction": "European Union scientific exposure assessment", "source_type": "scientific_opinion", "url": "https://doi.org/10.2903/j.efsa.2012.3030"},
+      {"organization": "European Commission", "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)", "jurisdiction": "European Union regulatory authorization", "source_type": "official_conditions_of_use_database", "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"}
+    ]
   },
   "butylated_hydroxyanisole.txt": {
     "ingredient": "Butylated Hydroxyanisole",
     "aliases": ["BHA", "INS 320", "E320"],
     "category": "Antioxidant",
+    "jurisdiction": "India; scientific evaluations from JECFA and EFSA have separate international and EU scopes",
     "source": {
       "organization": "Food Safety and Standards Authority of India (FSSAI)",
-      "title": "Compendium of Food Additives Regulations, 31 January 2022",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
       "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
-    }
+    },
+    "sources": [
+      {"organization": "Food Safety and Standards Authority of India (FSSAI)", "title": "Compendium of Food Additives Regulations, Version XXI", "document_date": "2022-01-31", "jurisdiction": "India", "source_type": "official_regulatory_compendium", "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"},
+      {"organization": "JECFA / WHO", "title": "Butylated Hydroxyanisole, JECFA database record 2140", "document_date": "1988 evaluation; 1998 intake summary", "jurisdiction": "International scientific evaluation", "source_type": "scientific_evaluation", "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2140"},
+      {"organization": "European Food Safety Authority (EFSA)", "title": "Scientific Opinion on the re-evaluation of BHA (E 320), EFSA Journal 2011;9(10):2392", "document_date": "2011-10-12", "jurisdiction": "European Union scientific risk assessment", "source_type": "scientific_opinion", "url": "https://doi.org/10.2903/j.efsa.2011.2392"},
+      {"organization": "European Commission", "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)", "jurisdiction": "European Union regulatory authorization", "source_type": "official_conditions_of_use_database", "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"}
+    ]
+  },
+  "dl_malic_acid.txt": {
+    "ingredient": "DL-Malic Acid",
+    "aliases": ["Malic Acid", "2-Hydroxybutanedioic acid", "Hydroxysuccinic acid", "INS 296", "E296"],
+    "codes": ["INS 296", "E296"],
+    "category": "Acidity Regulator",
+    "jurisdiction": "India; JECFA international scientific evaluation; EU scientific reassessment and separate authorization sources",
+    "source": {
+      "organization": "Food Safety and Standards Authority of India (FSSAI)",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
+      "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+    },
+    "sources": [
+      {"organization": "Food Safety and Standards Authority of India (FSSAI)", "title": "Compendium of Food Additives Regulations, Version XXI", "document_date": "2022-01-31", "jurisdiction": "India", "source_type": "official_regulatory_compendium", "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"},
+      {"organization": "JECFA / WHO", "title": "DL-Malic Acid, JECFA database chemical record 5163", "document_date": "1969 evaluation", "jurisdiction": "International scientific evaluation", "source_type": "scientific_evaluation", "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5163"},
+      {"organization": "European Food Safety Authority (EFSA)", "title": "Call for data for the re-evaluation of malic acid and malates (E 296; E 350-352)", "document_date": "2024-07-01", "jurisdiction": "European Union scientific reassessment", "source_type": "call_for_data_not_final_opinion", "url": "https://www.efsa.europa.eu/en/call/call-data-re-evaluation-malic-acid-and-malates-e-296-e-350-352-food-additives"},
+      {"organization": "European Commission", "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)", "jurisdiction": "European Union regulatory authorization", "source_type": "official_conditions_of_use_database", "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"}
+    ]
   },
   "monosodium_glutamate.txt": {
     "ingredient": "Monosodium Glutamate",

@@ -12,11 +12,13 @@
       "Glacial Acetic Acid"
     ],
     "category": "Acidity Regulator / Preservative",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / EFSA",
       "title": "21 CFR 184.1005 - Acetic acid; JECFA evaluations; EFSA opinion",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1005"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nControls pH, adjusts tartness and acidity, provides antimicrobial preservation by lowering water pH, and acts as a flavoring agent.\n\nDescription:\nAcetic acid is a two-carbon organic acid (CH3COOH). In commercial food applications, it is produced either by microbiological fermentation of ethanol by acetobacter bacteria (as found in vinegar) or via industrial synthetic carbonylation of methanol followed by purification to food grade standards.",
@@ -31,11 +33,13 @@
       "Glacial Acetic Acid"
     ],
     "category": "Acidity Regulator / Preservative",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / EFSA",
       "title": "21 CFR 184.1005 - Acetic acid; JECFA evaluations; EFSA opinion",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1005"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nAffirmed as Generally Recognized as Safe (GRAS) by the US FDA under 21 CFR 184.1005 for use as an antimicrobial, flavoring, and pH control agent. Evaluated by JECFA (JECFA No. 81) with an Acceptable Daily Intake (ADI) of \"not limited\" / \"not specified\". Authorized as an approved food additive in the European Union as E 260 under Regulation (EC) No 1333/2008 at quantum satis.",
@@ -50,11 +54,13 @@
       "Glacial Acetic Acid"
     ],
     "category": "Acidity Regulator / Preservative",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / EFSA",
       "title": "21 CFR 184.1005 - Acetic acid; JECFA evaluations; EFSA opinion",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1005"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nAcetic acid is an intermediate in normal human metabolism (Krebs cycle). Non-toxic at dietary consumption levels; pure undiluted glacial acetic acid is corrosive, but food-grade dilutions are considered safe and biologically well-tolerated.\n\nSources:\n- Organization: US Food and Drug Administration\n  Document/page title: 21 CFR 184.1005 Acetic acid\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1005\n  Access/reference information: Title 21 Code of Federal Regulations, Direct food substances affirmed as GRAS.\n- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA)\n  Document/page title: JECFA Evaluation: Acetic acid (JECFA No. 81)\n  URL: https://www.who.int/groups/joint-fao-who-expert-committee-on-food-additives-(jecfa)\n  Access/reference information: Evaluation records establishing ADI \"not limited\" (17th Report, TRS 539-JECFA 17/36).\n- Organization: European Food Safety Authority (EFSA)\n  Document/page title: Scientific Opinion on the re-evaluation of acetic acid (E 260) as a food additive\n  URL: https://www.efsa.europa.eu\n  Access/reference information: Authorized under Regulation (EC) No 1333/2008; EFSA evaluation confirming no numerical ADI needed.",
@@ -69,11 +75,13 @@
       "Glacial Acetic Acid"
     ],
     "category": "Acidity Regulator / Preservative",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / EFSA",
       "title": "21 CFR 184.1005 - Acetic acid; JECFA evaluations; EFSA opinion",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1005"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nButylated Hydroxyanisole\n\nAliases:\nBHA\nINS 320\nE320\n\nCategory:\nAntioxidant",
@@ -86,11 +94,48 @@
       "E320"
     ],
     "category": "Antioxidant",
+    "jurisdiction": "India; scientific evaluations from JECFA and EFSA have separate international and EU scopes",
     "source": {
       "organization": "Food Safety and Standards Authority of India (FSSAI)",
-      "title": "Compendium of Food Additives Regulations, 31 January 2022",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
       "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
-    }
+    },
+    "sources": [
+      {
+        "organization": "Food Safety and Standards Authority of India (FSSAI)",
+        "title": "Compendium of Food Additives Regulations, Version XXI",
+        "document_date": "2022-01-31",
+        "jurisdiction": "India",
+        "source_type": "official_regulatory_compendium",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+      },
+      {
+        "organization": "JECFA / WHO",
+        "title": "Butylated Hydroxyanisole, JECFA database record 2140",
+        "document_date": "1988 evaluation; 1998 intake summary",
+        "jurisdiction": "International scientific evaluation",
+        "source_type": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2140"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Scientific Opinion on the re-evaluation of BHA (E 320), EFSA Journal 2011;9(10):2392",
+        "document_date": "2011-10-12",
+        "jurisdiction": "European Union scientific risk assessment",
+        "source_type": "scientific_opinion",
+        "url": "https://doi.org/10.2903/j.efsa.2011.2392"
+      },
+      {
+        "organization": "European Commission",
+        "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)",
+        "jurisdiction": "European Union regulatory authorization",
+        "source_type": "official_conditions_of_use_database",
+        "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"
+      }
+    ]
   },
   {
     "text": "Function:\nUsed as an antioxidant food additive.\n\nDescription:\nThe Food Safety and Standards Authority of India identifies butylated hydroxyanisole (BHA) with International Numbering System (INS) number 320.",
@@ -103,14 +148,51 @@
       "E320"
     ],
     "category": "Antioxidant",
+    "jurisdiction": "India; scientific evaluations from JECFA and EFSA have separate international and EU scopes",
     "source": {
       "organization": "Food Safety and Standards Authority of India (FSSAI)",
-      "title": "Compendium of Food Additives Regulations, 31 January 2022",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
       "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
-    }
+    },
+    "sources": [
+      {
+        "organization": "Food Safety and Standards Authority of India (FSSAI)",
+        "title": "Compendium of Food Additives Regulations, Version XXI",
+        "document_date": "2022-01-31",
+        "jurisdiction": "India",
+        "source_type": "official_regulatory_compendium",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+      },
+      {
+        "organization": "JECFA / WHO",
+        "title": "Butylated Hydroxyanisole, JECFA database record 2140",
+        "document_date": "1988 evaluation; 1998 intake summary",
+        "jurisdiction": "International scientific evaluation",
+        "source_type": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2140"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Scientific Opinion on the re-evaluation of BHA (E 320), EFSA Journal 2011;9(10):2392",
+        "document_date": "2011-10-12",
+        "jurisdiction": "European Union scientific risk assessment",
+        "source_type": "scientific_opinion",
+        "url": "https://doi.org/10.2903/j.efsa.2011.2392"
+      },
+      {
+        "organization": "European Commission",
+        "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)",
+        "jurisdiction": "European Union regulatory authorization",
+        "source_type": "official_conditions_of_use_database",
+        "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"
+      }
+    ]
   },
   {
-    "text": "Regulatory Information:\nThe cited FSSAI compendium lists BHA (INS 320) for specified food categories. Permitted food categories and use levels are category-specific; this entry does not establish a general permission or safety conclusion.",
+    "text": "Regulatory Information:\nIndia — FSSAI's Food Safety and Standards (Food Products Standards and Food Additives) Regulations compendium, Version XXI dated 31 January 2022, lists BHA (INS 320) with category-specific maximum levels. Table 15.1 (snacks and savouries based on potato, cereal, flour or starch) lists 200 mg/kg and notes 15 and 130. This is the compendium's entry for that category, not a finding about the amount in any particular product or confirmation that no later amendment exists.\n\nInternational scientific evaluation — JECFA's 1988 evaluation (33rd meeting) records an ADI of 0–0.5 mg/kg body weight per day. Its record also notes that 1998 intake estimates exceeded that ADI in three member states that supplied data, while mean estimates from seven other states did not; the high-consumer exceedance magnitude and duration could not be estimated from the available data.\n\nEuropean Union scientific evaluation — EFSA's 2011 re-evaluation established an ADI of 1.0 mg/kg body weight per day and reported refined intake estimates at current use levels were generally below that ADI. This is a scientific exposure assessment, not a product-specific use permission or amount measurement. EU legal conditions are maintained separately in the Commission's Union-list database.",
     "ingredient": "Butylated Hydroxyanisole",
     "filename": "butylated_hydroxyanisole.txt",
     "section": "regulatory",
@@ -120,14 +202,51 @@
       "E320"
     ],
     "category": "Antioxidant",
+    "jurisdiction": "India; scientific evaluations from JECFA and EFSA have separate international and EU scopes",
     "source": {
       "organization": "Food Safety and Standards Authority of India (FSSAI)",
-      "title": "Compendium of Food Additives Regulations, 31 January 2022",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
       "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
-    }
+    },
+    "sources": [
+      {
+        "organization": "Food Safety and Standards Authority of India (FSSAI)",
+        "title": "Compendium of Food Additives Regulations, Version XXI",
+        "document_date": "2022-01-31",
+        "jurisdiction": "India",
+        "source_type": "official_regulatory_compendium",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+      },
+      {
+        "organization": "JECFA / WHO",
+        "title": "Butylated Hydroxyanisole, JECFA database record 2140",
+        "document_date": "1988 evaluation; 1998 intake summary",
+        "jurisdiction": "International scientific evaluation",
+        "source_type": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2140"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Scientific Opinion on the re-evaluation of BHA (E 320), EFSA Journal 2011;9(10):2392",
+        "document_date": "2011-10-12",
+        "jurisdiction": "European Union scientific risk assessment",
+        "source_type": "scientific_opinion",
+        "url": "https://doi.org/10.2903/j.efsa.2011.2392"
+      },
+      {
+        "organization": "European Commission",
+        "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)",
+        "jurisdiction": "European Union regulatory authorization",
+        "source_type": "official_conditions_of_use_database",
+        "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"
+      }
+    ]
   },
   {
-    "text": "Assessment Notes:\nThis entry supports the identity mapping for INS 320. Confirm the current applicable regulation and food category before making a regulatory claim.\n\nSources:\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Compendium of Food Additives Regulations, 31 January 2022\n  URL: https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf\n  Access/reference information: Lists butylated hydroxyanisole (BHA) as INS 320; use permissions depend on food category.",
+    "text": "Assessment Notes:\nThe evidence distinguishes India-specific permission conditions from JECFA and EFSA scientific intake evaluations. The product's BHA concentration is not available here. Neither an ADI nor a listed maximum alone proves this product complies or establishes its actual intake. Check the applicable regulation version, product category, notes, and measured level before making a compliance claim.\n\nSources:\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Compendium of Food Additives Regulations, Version XXI\n  Document date/version: 31 January 2022\n  Jurisdiction: India\n  Source type: Official regulatory compendium\n  URL: https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf\n- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO\n  Document/page title: Butylated Hydroxyanisole, JECFA database chemical record 2140\n  Evaluation date: 1988 (33rd JECFA meeting); intake follow-up summarized for 1998\n  Jurisdiction: International scientific evaluation\n  Source type: Scientific evaluation database record\n  URL: https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2140\n  Claims supported: identity, synonyms, INS 320, 1988 ADI and the database's later intake summary.\n- Organization: European Food Safety Authority (EFSA)\n  Document/page title: Scientific Opinion on the re-evaluation of butylated hydroxyanisole (BHA) (E 320), EFSA Journal 2011;9(10):2392\n  Publication date: 12 October 2011; adopted 21 September 2011\n  Jurisdiction: European Union scientific risk assessment\n  Source type: Scientific opinion\n  URL: https://doi.org/10.2903/j.efsa.2011.2392\n  Claims supported: EFSA's ADI and the opinion's refined intake estimate conclusion at current use levels.\n- Organization: European Commission\n  Document/page title: Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)\n  Jurisdiction: European Union regulatory authorization\n  Source type: Official conditions-of-use database\n  URL: https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en\n  Claims supported: EU authorized additives and conditions of use are maintained in the Union-list database.",
     "ingredient": "Butylated Hydroxyanisole",
     "filename": "butylated_hydroxyanisole.txt",
     "section": "assessment",
@@ -137,11 +256,48 @@
       "E320"
     ],
     "category": "Antioxidant",
+    "jurisdiction": "India; scientific evaluations from JECFA and EFSA have separate international and EU scopes",
     "source": {
       "organization": "Food Safety and Standards Authority of India (FSSAI)",
-      "title": "Compendium of Food Additives Regulations, 31 January 2022",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
       "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
-    }
+    },
+    "sources": [
+      {
+        "organization": "Food Safety and Standards Authority of India (FSSAI)",
+        "title": "Compendium of Food Additives Regulations, Version XXI",
+        "document_date": "2022-01-31",
+        "jurisdiction": "India",
+        "source_type": "official_regulatory_compendium",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+      },
+      {
+        "organization": "JECFA / WHO",
+        "title": "Butylated Hydroxyanisole, JECFA database record 2140",
+        "document_date": "1988 evaluation; 1998 intake summary",
+        "jurisdiction": "International scientific evaluation",
+        "source_type": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2140"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Scientific Opinion on the re-evaluation of BHA (E 320), EFSA Journal 2011;9(10):2392",
+        "document_date": "2011-10-12",
+        "jurisdiction": "European Union scientific risk assessment",
+        "source_type": "scientific_opinion",
+        "url": "https://doi.org/10.2903/j.efsa.2011.2392"
+      },
+      {
+        "organization": "European Commission",
+        "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)",
+        "jurisdiction": "European Union regulatory authorization",
+        "source_type": "official_conditions_of_use_database",
+        "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"
+      }
+    ]
   },
   {
     "text": "Ingredient:\nCaramel IV\n\nAliases:\nCaramel 150d\nSulfite Ammonia Caramel\nINS 150d\nE150d\n\nCategory:\nColor Additive",
@@ -155,11 +311,56 @@
       "E150d"
     ],
     "category": "Color Additive",
+    "jurisdiction": "India; scientific evaluations from JECFA and EFSA have separate international and EU scopes",
     "source": {
       "organization": "Food Safety and Standards Authority of India (FSSAI)",
-      "title": "Compendium of Food Additives Regulations, 31 January 2022",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
       "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
-    }
+    },
+    "sources": [
+      {
+        "organization": "Food Safety and Standards Authority of India (FSSAI)",
+        "title": "Compendium of Food Additives Regulations, Version XXI",
+        "document_date": "2022-01-31",
+        "jurisdiction": "India",
+        "source_type": "official_regulatory_compendium",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+      },
+      {
+        "organization": "JECFA / WHO",
+        "title": "Caramel Colour, Class IV, JECFA database record 1668",
+        "document_date": "1985 evaluation",
+        "jurisdiction": "International scientific evaluation",
+        "source_type": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1668"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Scientific Opinion on the re-evaluation of caramel colours (E 150a, b, c, d), EFSA Journal 2011;9(3):2004",
+        "document_date": "2011-03-08",
+        "jurisdiction": "European Union scientific risk assessment",
+        "source_type": "scientific_opinion",
+        "url": "https://doi.org/10.2903/j.efsa.2011.2004"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Refined exposure assessment for caramel colours (E 150a, c, d)",
+        "document_date": "2012-12-19",
+        "jurisdiction": "European Union scientific exposure assessment",
+        "source_type": "scientific_opinion",
+        "url": "https://doi.org/10.2903/j.efsa.2012.3030"
+      },
+      {
+        "organization": "European Commission",
+        "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)",
+        "jurisdiction": "European Union regulatory authorization",
+        "source_type": "official_conditions_of_use_database",
+        "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"
+      }
+    ]
   },
   {
     "text": "Function:\nProvides brown color to foods.\n\nDescription:\nThe Food Safety and Standards Authority of India identifies Caramel IV as sulfite ammonia caramel and assigns it International Numbering System (INS) number 150d.",
@@ -173,14 +374,59 @@
       "E150d"
     ],
     "category": "Color Additive",
+    "jurisdiction": "India; scientific evaluations from JECFA and EFSA have separate international and EU scopes",
     "source": {
       "organization": "Food Safety and Standards Authority of India (FSSAI)",
-      "title": "Compendium of Food Additives Regulations, 31 January 2022",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
       "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
-    }
+    },
+    "sources": [
+      {
+        "organization": "Food Safety and Standards Authority of India (FSSAI)",
+        "title": "Compendium of Food Additives Regulations, Version XXI",
+        "document_date": "2022-01-31",
+        "jurisdiction": "India",
+        "source_type": "official_regulatory_compendium",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+      },
+      {
+        "organization": "JECFA / WHO",
+        "title": "Caramel Colour, Class IV, JECFA database record 1668",
+        "document_date": "1985 evaluation",
+        "jurisdiction": "International scientific evaluation",
+        "source_type": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1668"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Scientific Opinion on the re-evaluation of caramel colours (E 150a, b, c, d), EFSA Journal 2011;9(3):2004",
+        "document_date": "2011-03-08",
+        "jurisdiction": "European Union scientific risk assessment",
+        "source_type": "scientific_opinion",
+        "url": "https://doi.org/10.2903/j.efsa.2011.2004"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Refined exposure assessment for caramel colours (E 150a, c, d)",
+        "document_date": "2012-12-19",
+        "jurisdiction": "European Union scientific exposure assessment",
+        "source_type": "scientific_opinion",
+        "url": "https://doi.org/10.2903/j.efsa.2012.3030"
+      },
+      {
+        "organization": "European Commission",
+        "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)",
+        "jurisdiction": "European Union regulatory authorization",
+        "source_type": "official_conditions_of_use_database",
+        "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"
+      }
+    ]
   },
   {
-    "text": "Regulatory Information:\nThe cited FSSAI compendium lists Caramel IV (INS 150d) in specified food categories. Permitted food categories and use levels are category-specific; this entry does not establish a general permission or safety conclusion.",
+    "text": "Regulatory Information:\nIndia — FSSAI's Food Safety and Standards (Food Products Standards and Food Additives) Regulations compendium, Version XXI dated 31 January 2022, lists Caramel IV (sulfite ammonia caramel, INS 150d) with category-specific maximum levels. Table 15.0 (ready-to-eat savouries) lists 10,000 mg/kg; the table's Table 15.1 subcategory for potato, cereal, flour or starch snacks does not list Caramel IV. The table entries are reported as published; this document does not infer whether the parent-category entry applies to a specific subcategory and does not confirm that no later amendment exists.\n\nInternational scientific evaluation — JECFA's 1985 evaluation (29th meeting) records an ADI of 0–200 mg/kg body weight per day, with a comment that the ADI on a solids basis is 0–150 mg/kg body weight per day. This toxicological evaluation is not a regulatory maximum for a food category.\n\nEuropean Union scientific evaluation — EFSA's 2011 re-evaluation covered caramel colours E 150a, b, c and d. It established a group ADI of 300 mg/kg body weight per day for combined exposure to all four colours, with a lower specific ADI for E 150c within that group. EFSA noted that high consumers could exceed ADIs for E 150a, E 150c and E 150d at industry-reported maximum use levels. EFSA's 2012 refined exposure assessment used updated use and consumption data; neither evaluation measures the level in this product. EU legal conditions are maintained separately in the Commission's Union-list database.",
     "ingredient": "Caramel IV",
     "filename": "caramel_iv.txt",
     "section": "regulatory",
@@ -191,14 +437,59 @@
       "E150d"
     ],
     "category": "Color Additive",
+    "jurisdiction": "India; scientific evaluations from JECFA and EFSA have separate international and EU scopes",
     "source": {
       "organization": "Food Safety and Standards Authority of India (FSSAI)",
-      "title": "Compendium of Food Additives Regulations, 31 January 2022",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
       "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
-    }
+    },
+    "sources": [
+      {
+        "organization": "Food Safety and Standards Authority of India (FSSAI)",
+        "title": "Compendium of Food Additives Regulations, Version XXI",
+        "document_date": "2022-01-31",
+        "jurisdiction": "India",
+        "source_type": "official_regulatory_compendium",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+      },
+      {
+        "organization": "JECFA / WHO",
+        "title": "Caramel Colour, Class IV, JECFA database record 1668",
+        "document_date": "1985 evaluation",
+        "jurisdiction": "International scientific evaluation",
+        "source_type": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1668"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Scientific Opinion on the re-evaluation of caramel colours (E 150a, b, c, d), EFSA Journal 2011;9(3):2004",
+        "document_date": "2011-03-08",
+        "jurisdiction": "European Union scientific risk assessment",
+        "source_type": "scientific_opinion",
+        "url": "https://doi.org/10.2903/j.efsa.2011.2004"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Refined exposure assessment for caramel colours (E 150a, c, d)",
+        "document_date": "2012-12-19",
+        "jurisdiction": "European Union scientific exposure assessment",
+        "source_type": "scientific_opinion",
+        "url": "https://doi.org/10.2903/j.efsa.2012.3030"
+      },
+      {
+        "organization": "European Commission",
+        "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)",
+        "jurisdiction": "European Union regulatory authorization",
+        "source_type": "official_conditions_of_use_database",
+        "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"
+      }
+    ]
   },
   {
-    "text": "Assessment Notes:\nThis entry supports the identity mapping for INS 150d. Confirm the current applicable regulation and food category before making a regulatory claim.\n\nSources:\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Compendium of Food Additives Regulations, 31 January 2022\n  URL: https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf\n  Access/reference information: Lists Caramel IV - sulfite ammonia caramel as INS 150d; use permissions depend on food category.",
+    "text": "Assessment Notes:\nThe evidence distinguishes category-specific Indian permissions from international/EU scientific evaluations. The amount of Caramel IV in the product is unknown, and Table 15.0 versus 15.1 applicability is not resolved here. Neither an ADI nor an entry in a broader category proves product compliance or actual consumer exposure.\n\nSources:\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Compendium of Food Additives Regulations, Version XXI\n  Document date/version: 31 January 2022\n  Jurisdiction: India\n  Source type: Official regulatory compendium\n  URL: https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf\n- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO\n  Document/page title: Caramel Colour, Class IV, JECFA database chemical record 1668\n  Evaluation date: 1985 (29th JECFA meeting)\n  Jurisdiction: International scientific evaluation\n  Source type: Scientific evaluation database record\n  URL: https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1668\n  Claims supported: identity as sulfite ammonia caramel, INS 150d, evaluation year and ADI with solids-basis comment.\n- Organization: European Food Safety Authority (EFSA)\n  Document/page title: Scientific Opinion on the re-evaluation of caramel colours (E 150a, b, c, d), EFSA Journal 2011;9(3):2004\n  Publication date: 8 March 2011\n  Jurisdiction: European Union scientific risk assessment\n  Source type: Scientific opinion\n  URL: https://doi.org/10.2903/j.efsa.2011.2004\n  Claims supported: group ADI, E 150c restriction within group ADI, safety review and high-consumer exposure caveat.\n- Organization: European Food Safety Authority (EFSA)\n  Document/page title: Refined exposure assessment for caramel colours (E 150a, c, d)\n  Publication date: 19 December 2012\n  Jurisdiction: European Union scientific exposure assessment\n  Source type: Scientific opinion\n  URL: https://doi.org/10.2903/j.efsa.2012.3030\n  Claims supported: updated exposure assessment using reported use-level and consumption data.\n- Organization: European Commission\n  Document/page title: Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)\n  Jurisdiction: European Union regulatory authorization\n  Source type: Official conditions-of-use database\n  URL: https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en\n  Claims supported: EU authorized additives and conditions of use are maintained in the Union-list database.",
     "ingredient": "Caramel IV",
     "filename": "caramel_iv.txt",
     "section": "assessment",
@@ -209,11 +500,56 @@
       "E150d"
     ],
     "category": "Color Additive",
+    "jurisdiction": "India; scientific evaluations from JECFA and EFSA have separate international and EU scopes",
     "source": {
       "organization": "Food Safety and Standards Authority of India (FSSAI)",
-      "title": "Compendium of Food Additives Regulations, 31 January 2022",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
       "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
-    }
+    },
+    "sources": [
+      {
+        "organization": "Food Safety and Standards Authority of India (FSSAI)",
+        "title": "Compendium of Food Additives Regulations, Version XXI",
+        "document_date": "2022-01-31",
+        "jurisdiction": "India",
+        "source_type": "official_regulatory_compendium",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+      },
+      {
+        "organization": "JECFA / WHO",
+        "title": "Caramel Colour, Class IV, JECFA database record 1668",
+        "document_date": "1985 evaluation",
+        "jurisdiction": "International scientific evaluation",
+        "source_type": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1668"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Scientific Opinion on the re-evaluation of caramel colours (E 150a, b, c, d), EFSA Journal 2011;9(3):2004",
+        "document_date": "2011-03-08",
+        "jurisdiction": "European Union scientific risk assessment",
+        "source_type": "scientific_opinion",
+        "url": "https://doi.org/10.2903/j.efsa.2011.2004"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Refined exposure assessment for caramel colours (E 150a, c, d)",
+        "document_date": "2012-12-19",
+        "jurisdiction": "European Union scientific exposure assessment",
+        "source_type": "scientific_opinion",
+        "url": "https://doi.org/10.2903/j.efsa.2012.3030"
+      },
+      {
+        "organization": "European Commission",
+        "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)",
+        "jurisdiction": "European Union regulatory authorization",
+        "source_type": "official_conditions_of_use_database",
+        "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"
+      }
+    ]
   },
   {
     "text": "Ingredient:\nCheese Powder\n\nAliases:\nPowdered Cheese\nDried Cheese\nDehydrated Cheese\nCheese Seasoning Base\n\nCategory:\nDairy Ingredient",
@@ -227,11 +563,13 @@
       "Cheese Seasoning Base"
     ],
     "category": "Dairy Ingredient",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI",
       "title": "21 CFR Part 133 - Cheeses; FSSAI Standards for Cheese Products",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?CFRPart=133"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nImparts savory cheese flavor, aroma, and color to snack coatings, seasonings, sauces, prepared mixes, and baked goods.\n\nDescription:\nCheese powder is produced by melting natural or processed cheese into a liquid slurry, often with the addition of water, emulsifying salts, and sometimes milk solids, and subsequently spray drying the mixture into a fine, free-flowing dry powder.",
@@ -245,11 +583,13 @@
       "Cheese Seasoning Base"
     ],
     "category": "Dairy Ingredient",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI",
       "title": "21 CFR Part 133 - Cheeses; FSSAI Standards for Cheese Products",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?CFRPart=133"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nIn the US, regulated under FDA food standards in 21 CFR Part 133 (Cheeses and Related Cheese Products) and general food labeling provisions under 21 CFR Part 101. In India, regulated by FSSAI under the Food Safety and Standards (Food Products Standards and Food Additives) Regulations, with specific compositional criteria covering moisture (max 5.0%) and milk fat (min 40.0% on dry matter basis).",
@@ -263,11 +603,13 @@
       "Cheese Seasoning Base"
     ],
     "category": "Dairy Ingredient",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI",
       "title": "21 CFR Part 133 - Cheeses; FSSAI Standards for Cheese Products",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?CFRPart=133"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nManufactured from dairy cheese and dairy solids; classified as a milk allergen requiring allergen declaration. It is consumed as a food ingredient/seasoning component rather than an additive, with no numerical ADI limit established.\n\nSources:\n- Organization: US Food and Drug Administration\n  Document/page title: 21 CFR Part 133 - Cheeses and Related Cheese Products\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?cfrpart=133\n  Access/reference information: US Code of Federal Regulations Title 21, standards for cheese and related cheese products.\n- Organization: Food Safety and Standards Authority of India\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations - Standards for Cheese and Cheese Products\n  URL: https://www.fssai.gov.in\n  Access/reference information: FSSAI dairy product standards establishing identity and compositional parameters for cheese powders.",
@@ -281,11 +623,13 @@
       "Cheese Seasoning Base"
     ],
     "category": "Dairy Ingredient",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI",
       "title": "21 CFR Part 133 - Cheeses; FSSAI Standards for Cheese Products",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?CFRPart=133"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nCitric Acid\n\nAliases:\nINS 330\nE330\n2-Hydroxypropane-1,2,3-tricarboxylic acid\n\nCategory:\nAcidity Regulator",
@@ -298,11 +642,13 @@
       "2-Hydroxypropane-1,2,3-tricarboxylic acid"
     ],
     "category": "Acidity Regulator",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / EFSA / FSSAI",
       "title": "21 CFR 184.1033 - Citric acid; EFSA Scientific Opinion; FSSAI Food Additives Regulations 2011",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1033"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nControls pH, provides a tart acidic taste, enhances antioxidant activity, and acts as a preservative and chelating agent in foods and beverages.\n\nDescription:\nWeak organic tricarboxylic acid found naturally in citrus fruits, commercially produced by microbial fermentation of carbohydrate substrates such as molasses using Aspergillus niger.",
@@ -315,11 +661,13 @@
       "2-Hydroxypropane-1,2,3-tricarboxylic acid"
     ],
     "category": "Acidity Regulator",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / EFSA / FSSAI",
       "title": "21 CFR 184.1033 - Citric acid; EFSA Scientific Opinion; FSSAI Food Additives Regulations 2011",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1033"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nUS FDA affirms citric acid as Generally Recognized as Safe (GRAS) under 21 CFR 184.1033. EFSA re-evaluated citric acid in 2010 and concluded it presents no safety concern at typical uses, assigning an ADI \"not specified\". FSSAI permits its use under Good Manufacturing Practice (GMP) as an acidity regulator and antioxidant synergist.",
@@ -332,11 +680,13 @@
       "2-Hydroxypropane-1,2,3-tricarboxylic acid"
     ],
     "category": "Acidity Regulator",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / EFSA / FSSAI",
       "title": "21 CFR 184.1033 - Citric acid; EFSA Scientific Opinion; FSSAI Food Additives Regulations 2011",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1033"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nCitric acid is an essential physiological intermediate in the cellular citric acid (Krebs) cycle and is fully metabolized by the human body.\n\nSources:\n- Organization: US Food and Drug Administration (FDA)\n  Document/page title: 21 CFR 184.1033 - Citric acid\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1033\n  Access/reference information: Direct food substance affirmed as GRAS\n- Organization: European Food Safety Authority (EFSA)\n  Document/page title: Scientific Opinion on the safety and efficacy of citric acid\n  URL: https://www.efsa.europa.eu/en/efsajournal/pub/3944\n  Access/reference information: Evaluated as safe food additive, ADI not specified\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011\n  URL: https://www.fssai.gov.in\n  Access/reference information: Permitted acidity regulator INS 330 under GMP",
@@ -349,11 +699,13 @@
       "2-Hydroxypropane-1,2,3-tricarboxylic acid"
     ],
     "category": "Acidity Regulator",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / EFSA / FSSAI",
       "title": "21 CFR 184.1033 - Citric acid; EFSA Scientific Opinion; FSSAI Food Additives Regulations 2011",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1033"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nCorn Meal\n\nAliases:\nCornmeal\nCorn Flour\nMaize Flour\nDegerminated Corn Meal\nMaize Meal\nCorn Grits\n\nCategory:\nCereal Grain Product",
@@ -369,11 +721,13 @@
       "Corn Grits"
     ],
     "category": "Cereal Grain Product",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI",
       "title": "21 CFR Part 137 - Cereal Flours; FSSAI Grain Regulations",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?CFRPart=137"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nServes as a primary grain base, structural starch component, texture former, and bulking ingredient in extruded snacks, baked goods, cereals, and batters.\n\nDescription:\nCorn meal is a coarse flour ground from clean, sound dried maize kernels (Zea mays). It can be whole grain or degerminated, where the germ and outer bran are removed during dry milling to enhance shelf stability and starch content.",
@@ -389,11 +743,13 @@
       "Corn Grits"
     ],
     "category": "Cereal Grain Product",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI",
       "title": "21 CFR Part 137 - Cereal Flours; FSSAI Grain Regulations",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?CFRPart=137"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nStandardized in the United States by the FDA under 21 CFR Part 137 (Cereal Flours and Related Products), including 21 CFR 137.250 (White corn meal), 21 CFR 137.275 (Yellow corn meal), and 21 CFR 137.285 (Degerminated yellow corn meal). In India, regulated by FSSAI under Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011, Regulation 2.4.24 covering Degermed Maize (Corn) Meal and Maize Grits.",
@@ -409,11 +765,13 @@
       "Corn Grits"
     ],
     "category": "Cereal Grain Product",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI",
       "title": "21 CFR Part 137 - Cereal Flours; FSSAI Grain Regulations",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?CFRPart=137"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nInherently gluten-free cereal grain, though cross-contact with gluten-containing grains (such as wheat) may occur during shared agricultural or milling processes unless certified gluten-free. Consumed as a staple food ingredient with no established ADI.\n\nSources:\n- Organization: US Food and Drug Administration\n  Document/page title: 21 CFR Part 137 - Cereal Flours and Related Products, Subpart B - Requirements for Specific Standardized Cereal Flours and Related Products\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?cfrpart=137\n  Access/reference information: 21 CFR 137.250 through 21 CFR 137.285, standards of identity for corn meals.\n- Organization: Food Safety and Standards Authority of India\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011\n  URL: https://www.fssai.gov.in\n  Access/reference information: Regulation 2.4.24 Standards for Degermed Maize Meal and Maize Grits.",
@@ -429,11 +787,13 @@
       "Corn Grits"
     ],
     "category": "Cereal Grain Product",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI",
       "title": "21 CFR Part 137 - Cereal Flours; FSSAI Grain Regulations",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?CFRPart=137"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nDisodium 5'-Ribonucleotides\n\nAliases:\nDisodium ribonucleotides\nDisodium 5'-ribonucleotide\nINS 635\nE635\nSodium 5'-ribonucleotide\n\nCategory:\nFlavour Enhancer",
@@ -447,11 +807,13 @@
       "Sodium 5'-ribonucleotide"
     ],
     "category": "Flavour Enhancer",
+    "jurisdiction": "",
     "source": {
       "organization": "JECFA / EFSA / FSSAI",
       "title": "JECFA evaluations; EFSA Scientific Opinion; FSSAI Food Additives Regulations 2011",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nEnhances and intensifies umami and savory flavors synergistically when combined with monosodium glutamate, used in savory snacks, seasonings, and packaged noodles.\n\nDescription:\nEquimolar mixture of disodium 5'-inosinate (IMP, INS 631) and disodium 5'-guanylate (GMP, INS 627), manufactured by enzymatic degradation of yeast ribonucleic acid (RNA) or microbial carbohydrate fermentation.",
@@ -465,11 +827,13 @@
       "Sodium 5'-ribonucleotide"
     ],
     "category": "Flavour Enhancer",
+    "jurisdiction": "",
     "source": {
       "organization": "JECFA / EFSA / FSSAI",
       "title": "JECFA evaluations; EFSA Scientific Opinion; FSSAI Food Additives Regulations 2011",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nJECFA evaluated disodium 5'-ribonucleotides in 1974 and re-evaluated them in 1993, assigning an ADI of \"not specified\". EFSA re-evaluated ribonucleotides in 2020 and confirmed that they present no safety concern at permitted uses. FSSAI authorizes INS 635 as a flavour enhancer under Good Manufacturing Practice (GMP) in specified foods.",
@@ -483,11 +847,13 @@
       "Sodium 5'-ribonucleotide"
     ],
     "category": "Flavour Enhancer",
+    "jurisdiction": "",
     "source": {
       "organization": "JECFA / EFSA / FSSAI",
       "title": "JECFA evaluations; EFSA Scientific Opinion; FSSAI Food Additives Regulations 2011",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nRibonucleotides are naturally occurring purine derivatives metabolized into uric acid in the human body. Individuals with clinical metabolic purine disorders such as hyperuricemia or gout typically manage dietary purine intake.\n\nSources:\n- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA)\n  Document/page title: Disodium 5'-ribonucleotides Evaluation (TRS 557-JECFA 18/27)\n  URL: https://apps.who.int/food-additives-contaminants-jecfa-database/\n  Access/reference information: ADI not specified allocated at 18th meeting\n- Organization: European Food Safety Authority (EFSA)\n  Document/page title: Re-evaluation of inosinic acid, guanylic acid and their salts (EFSA Journal 2020;18(12):6332)\n  URL: https://www.efsa.europa.eu/en/efsajournal/pub/6332\n  Access/reference information: Safety confirmed without need for a numerical ADI\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011\n  URL: https://www.fssai.gov.in\n  Access/reference information: Permitted flavour enhancer INS 635 under GMP",
@@ -501,11 +867,237 @@
       "Sodium 5'-ribonucleotide"
     ],
     "category": "Flavour Enhancer",
+    "jurisdiction": "",
     "source": {
       "organization": "JECFA / EFSA / FSSAI",
       "title": "JECFA evaluations; EFSA Scientific Opinion; FSSAI Food Additives Regulations 2011",
       "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/"
-    }
+    },
+    "sources": []
+  },
+  {
+    "text": "Ingredient:\nDL-Malic Acid\n\nAliases:\nMalic Acid\nINS 296\nE296\n2-Hydroxybutanedioic acid\nHydroxysuccinic acid\n\nCategory:\nAcidity Regulator",
+    "ingredient": "DL-Malic Acid",
+    "filename": "dl_malic_acid.txt",
+    "section": "identity",
+    "aliases": [
+      "Malic Acid",
+      "2-Hydroxybutanedioic acid",
+      "Hydroxysuccinic acid",
+      "INS 296",
+      "E296"
+    ],
+    "category": "Acidity Regulator",
+    "jurisdiction": "India; JECFA international scientific evaluation; EU scientific reassessment and separate authorization sources",
+    "source": {
+      "organization": "Food Safety and Standards Authority of India (FSSAI)",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
+      "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+    },
+    "sources": [
+      {
+        "organization": "Food Safety and Standards Authority of India (FSSAI)",
+        "title": "Compendium of Food Additives Regulations, Version XXI",
+        "document_date": "2022-01-31",
+        "jurisdiction": "India",
+        "source_type": "official_regulatory_compendium",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+      },
+      {
+        "organization": "JECFA / WHO",
+        "title": "DL-Malic Acid, JECFA database chemical record 5163",
+        "document_date": "1969 evaluation",
+        "jurisdiction": "International scientific evaluation",
+        "source_type": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5163"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Call for data for the re-evaluation of malic acid and malates (E 296; E 350-352)",
+        "document_date": "2024-07-01",
+        "jurisdiction": "European Union scientific reassessment",
+        "source_type": "call_for_data_not_final_opinion",
+        "url": "https://www.efsa.europa.eu/en/call/call-data-re-evaluation-malic-acid-and-malates-e-296-e-350-352-food-additives"
+      },
+      {
+        "organization": "European Commission",
+        "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)",
+        "jurisdiction": "European Union regulatory authorization",
+        "source_type": "official_conditions_of_use_database",
+        "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"
+      }
+    ]
+  },
+  {
+    "text": "Function:\nMalic acid is an acidity regulator. The JECFA record also assigns it the functional class acidity regulator and lists flavouring agent as a separate functional class.\n\nDescription:\nJECFA identifies DL-malic acid as 2-hydroxybutanedioic acid (hydroxysuccinic acid), CAS 6915-15-7, INS 296. This identity applies to the DL form and should not be used to resolve a different malate salt without its own code or label evidence.",
+    "ingredient": "DL-Malic Acid",
+    "filename": "dl_malic_acid.txt",
+    "section": "function",
+    "aliases": [
+      "Malic Acid",
+      "2-Hydroxybutanedioic acid",
+      "Hydroxysuccinic acid",
+      "INS 296",
+      "E296"
+    ],
+    "category": "Acidity Regulator",
+    "jurisdiction": "India; JECFA international scientific evaluation; EU scientific reassessment and separate authorization sources",
+    "source": {
+      "organization": "Food Safety and Standards Authority of India (FSSAI)",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
+      "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+    },
+    "sources": [
+      {
+        "organization": "Food Safety and Standards Authority of India (FSSAI)",
+        "title": "Compendium of Food Additives Regulations, Version XXI",
+        "document_date": "2022-01-31",
+        "jurisdiction": "India",
+        "source_type": "official_regulatory_compendium",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+      },
+      {
+        "organization": "JECFA / WHO",
+        "title": "DL-Malic Acid, JECFA database chemical record 5163",
+        "document_date": "1969 evaluation",
+        "jurisdiction": "International scientific evaluation",
+        "source_type": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5163"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Call for data for the re-evaluation of malic acid and malates (E 296; E 350-352)",
+        "document_date": "2024-07-01",
+        "jurisdiction": "European Union scientific reassessment",
+        "source_type": "call_for_data_not_final_opinion",
+        "url": "https://www.efsa.europa.eu/en/call/call-data-re-evaluation-malic-acid-and-malates-e-296-e-350-352-food-additives"
+      },
+      {
+        "organization": "European Commission",
+        "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)",
+        "jurisdiction": "European Union regulatory authorization",
+        "source_type": "official_conditions_of_use_database",
+        "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"
+      }
+    ]
+  },
+  {
+    "text": "Regulatory Information:\nIndia — FSSAI's Food Safety and Standards (Food Products Standards and Food Additives) Regulations compendium, Version XXI dated 31 January 2022, lists DL-malic acid (INS 296) at GMP in several specified categories, including fruit juice and vegetable juice entries and fruit or vegetable nectars. The entry is category-scoped; it does not establish permission for every food. The inspected Table 15.1 entry for snacks and savouries based on potato, cereal, flour or starch does not list DL-malic acid. This historical compendium snapshot is not represented here as confirmation that no later amendment exists.\n\nInternational scientific evaluation — JECFA evaluated DL-malic acid at its 13th meeting in 1969 and records an ADI of \"not specified\" within the group ADI for malic acid and its sodium, potassium and calcium salts. JECFA notes that the ADI does not apply to D(-)-malic acid and its salts for very young infants. An ADI is a toxicological intake value, not proof that a particular product complies with food-category permissions or is safe at an unknown level.\n\nEuropean Union — EFSA's 1 July 2024 call for data identifies malic acid as E 296 and states that its re-evaluation was ongoing; the call is not a final scientific opinion or an authorization amendment. The European Commission's Union-list database is the source for EU authorized uses and conditions. No final EFSA re-evaluation conclusion is asserted in this entry.",
+    "ingredient": "DL-Malic Acid",
+    "filename": "dl_malic_acid.txt",
+    "section": "regulatory",
+    "aliases": [
+      "Malic Acid",
+      "2-Hydroxybutanedioic acid",
+      "Hydroxysuccinic acid",
+      "INS 296",
+      "E296"
+    ],
+    "category": "Acidity Regulator",
+    "jurisdiction": "India; JECFA international scientific evaluation; EU scientific reassessment and separate authorization sources",
+    "source": {
+      "organization": "Food Safety and Standards Authority of India (FSSAI)",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
+      "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+    },
+    "sources": [
+      {
+        "organization": "Food Safety and Standards Authority of India (FSSAI)",
+        "title": "Compendium of Food Additives Regulations, Version XXI",
+        "document_date": "2022-01-31",
+        "jurisdiction": "India",
+        "source_type": "official_regulatory_compendium",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+      },
+      {
+        "organization": "JECFA / WHO",
+        "title": "DL-Malic Acid, JECFA database chemical record 5163",
+        "document_date": "1969 evaluation",
+        "jurisdiction": "International scientific evaluation",
+        "source_type": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5163"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Call for data for the re-evaluation of malic acid and malates (E 296; E 350-352)",
+        "document_date": "2024-07-01",
+        "jurisdiction": "European Union scientific reassessment",
+        "source_type": "call_for_data_not_final_opinion",
+        "url": "https://www.efsa.europa.eu/en/call/call-data-re-evaluation-malic-acid-and-malates-e-296-e-350-352-food-additives"
+      },
+      {
+        "organization": "European Commission",
+        "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)",
+        "jurisdiction": "European Union regulatory authorization",
+        "source_type": "official_conditions_of_use_database",
+        "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"
+      }
+    ]
+  },
+  {
+    "text": "Assessment Notes:\nThe cited evidence verifies ingredient identity and additive code, provides historical FSSAI category and GMP conditions, and records JECFA's scientific evaluation. It does not establish use permission for an unverified product category or establish the amount used. Keep an assessment insufficient when the category, applicable regulation version, or use level needed for the conclusion is unknown.\n\nSources:\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Compendium of Food Additives Regulations, Version XXI\n  Document date/version: 31 January 2022\n  Jurisdiction: India\n  Source type: Official regulatory compendium\n  URL: https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf\n  Claims supported: DL-malic acid / INS 296 category permissions and GMP entries in the cited fruit juice, vegetable juice and nectar tables; Table 15.1 category listing reviewed.\n- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA), hosted by WHO\n  Document/page title: DL-Malic Acid, JECFA database chemical record 5163\n  Evaluation date: 1969 (13th JECFA meeting)\n  Jurisdiction: International scientific evaluation\n  Source type: Scientific evaluation database record\n  URL: https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5163\n  Claims supported: identity, synonyms, CAS number, INS 296, functional classes, group ADI and the stated very-young-infant limitation.\n- Organization: European Food Safety Authority (EFSA)\n  Document/page title: Call for data for the re-evaluation of malic acid and malates (E 296; E 350-352)\n  Publication date: 1 July 2024\n  Jurisdiction: European Union scientific reassessment\n  Source type: Call for data; not a final opinion\n  URL: https://www.efsa.europa.eu/en/call/call-data-re-evaluation-malic-acid-and-malates-e-296-e-350-352-food-additives\n  Claims supported: E 296 identity, reassessment scope and the fact that the call sought data ahead of a final opinion.\n- Organization: European Commission\n  Document/page title: Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)\n  Jurisdiction: European Union regulatory authorization\n  Source type: Official conditions-of-use database\n  URL: https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en\n  Claims supported: EU authorized additives and conditions of use are maintained in the Union-list database.",
+    "ingredient": "DL-Malic Acid",
+    "filename": "dl_malic_acid.txt",
+    "section": "assessment",
+    "aliases": [
+      "Malic Acid",
+      "2-Hydroxybutanedioic acid",
+      "Hydroxysuccinic acid",
+      "INS 296",
+      "E296"
+    ],
+    "category": "Acidity Regulator",
+    "jurisdiction": "India; JECFA international scientific evaluation; EU scientific reassessment and separate authorization sources",
+    "source": {
+      "organization": "Food Safety and Standards Authority of India (FSSAI)",
+      "title": "Compendium of Food Additives Regulations, Version XXI",
+      "document_date": "2022-01-31",
+      "jurisdiction": "India",
+      "source_type": "official_regulatory_compendium",
+      "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+    },
+    "sources": [
+      {
+        "organization": "Food Safety and Standards Authority of India (FSSAI)",
+        "title": "Compendium of Food Additives Regulations, Version XXI",
+        "document_date": "2022-01-31",
+        "jurisdiction": "India",
+        "source_type": "official_regulatory_compendium",
+        "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Food_Additives_Regulations_31_01_2022.pdf"
+      },
+      {
+        "organization": "JECFA / WHO",
+        "title": "DL-Malic Acid, JECFA database chemical record 5163",
+        "document_date": "1969 evaluation",
+        "jurisdiction": "International scientific evaluation",
+        "source_type": "scientific_evaluation",
+        "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/5163"
+      },
+      {
+        "organization": "European Food Safety Authority (EFSA)",
+        "title": "Call for data for the re-evaluation of malic acid and malates (E 296; E 350-352)",
+        "document_date": "2024-07-01",
+        "jurisdiction": "European Union scientific reassessment",
+        "source_type": "call_for_data_not_final_opinion",
+        "url": "https://www.efsa.europa.eu/en/call/call-data-re-evaluation-malic-acid-and-malates-e-296-e-350-352-food-additives"
+      },
+      {
+        "organization": "European Commission",
+        "title": "Food additives database (Union list, Annex II to Regulation (EC) No 1333/2008)",
+        "jurisdiction": "European Union regulatory authorization",
+        "source_type": "official_conditions_of_use_database",
+        "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/database_en"
+      }
+    ]
   },
   {
     "text": "Ingredient:\nEdible Vegetable Oil\n\nAliases:\nVegetable Oil\nEdible Veg Oil\nVeg Oil\nCooking Oil\nRefined Vegetable Oil\n\nCategory:\nEdible Vegetable Oil",
@@ -520,11 +1112,13 @@
       "Refined Vegetable Oil"
     ],
     "category": "Edible Vegetable Oil",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / Codex / US FDA",
       "title": "FSSAI Regulations 2.2; Codex CXS 210-1999; 21 CFR 101.4",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nServes as a frying medium, cooking medium, lipid base, and textural component in processed foods and snacks, providing mouthfeel, crispness, and dietary energy.\n\nDescription:\nEdible vegetable oil is a broad regulatory classification for food-grade refined, cold-pressed, or blended oils extracted from plant sources (such as oilseeds, legumes, grains, or fruit mesocarp). In food manufacturing and packaged snacks, the term denotes plant-derived lipids suitable for human consumption without designating a singular botanical species.",
@@ -539,11 +1133,13 @@
       "Refined Vegetable Oil"
     ],
     "category": "Edible Vegetable Oil",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / Codex / US FDA",
       "title": "FSSAI Regulations 2.2; Codex CXS 210-1999; 21 CFR 101.4",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nIn India, FSSAI regulates edible vegetable oils under Regulation 2.2 of the Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011, establishing quality, purity, acid value, and labeling parameters for single and blended edible vegetable oils. Codex Alimentarius Commission establishes international quality parameters under CXS 210-1999 (Standard for Named Vegetable Oils) and CXS 19-1981 (Standard for Edible Fats and Oils). In the United States, FDA regulations under 21 CFR 101.4(b)(14) govern vegetable oil ingredient declarations.",
@@ -558,11 +1154,13 @@
       "Refined Vegetable Oil"
     ],
     "category": "Edible Vegetable Oil",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / Codex / US FDA",
       "title": "FSSAI Regulations 2.2; Codex CXS 210-1999; 21 CFR 101.4",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nGeneric edible vegetable oil declarations are nonspecific as to the exact plant origin unless qualified by specific parenthetical oil declarations on the product packaging. Edible vegetable oils are standard food macro-ingredients composed of fatty acid triglycerides with no established Acceptable Daily Intake (ADI) limit.\n\nSources:\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 - Regulation 2.2: Fats, Oils and Fat Emulsions\n  URL: https://www.fssai.gov.in\n  Access/reference information: Section 2.2 standards for edible vegetable oils and fats\n- Organization: Codex Alimentarius Commission (FAO/WHO)\n  Document/page title: Codex General Standard for Fats and Oils (CXS 19-1981) and Named Vegetable Oils (CXS 210-1999)\n  URL: https://www.fao.org/fao-who-codexalimentarius/\n  Access/reference information: International standards for edible plant oils and fats\n- Organization: US Food and Drug Administration (FDA)\n  Document/page title: 21 CFR 101.4 - Food; designation of ingredients\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=101.4\n  Access/reference information: 21 CFR 101.4(b)(14) governing vegetable oil declarations",
@@ -577,11 +1175,13 @@
       "Refined Vegetable Oil"
     ],
     "category": "Edible Vegetable Oil",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / Codex / US FDA",
       "title": "FSSAI Regulations 2.2; Codex CXS 210-1999; 21 CFR 101.4",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nIodised Salt\n\nAliases:\nIodized Salt\nIodized Table Salt\nlodized Salt\nSalt\nTable Salt\nCommon Salt\nEdible Common Salt\nSodium Chloride\n\nCategory:\nSeasoning / Fortified Salt",
@@ -599,11 +1199,13 @@
       "Sodium Chloride"
     ],
     "category": "Seasoning / Fortified Salt",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / Codex Alimentarius / WHO",
       "title": "FSSAI Regulation 2.4.1 (Edible Common Salt / Iodised Salt); Codex CXS 150-1985; WHO Fortification Guideline",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nServes as an essential mineral seasoning, dietary sodium and chloride nutrient, flavour enhancer, and food preservation agent by controlling microbial growth and water activity; acts as a public health delivery vehicle for dietary iodine.\n\nDescription:\nIodised salt is food-grade crystalline sodium chloride (NaCl) fortified with trace quantities of iodine, typically in the form of potassium iodate (KIO3) or potassium iodide (KI). It is produced by solar evaporation of seawater or mining of rock salt deposits, followed by refining and spray-fortification with food-grade iodizing agents to ensure uniform distribution.",
@@ -621,11 +1223,13 @@
       "Sodium Chloride"
     ],
     "category": "Seasoning / Fortified Salt",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / Codex Alimentarius / WHO",
       "title": "FSSAI Regulation 2.4.1 (Edible Common Salt / Iodised Salt); Codex CXS 150-1985; WHO Fortification Guideline",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nIn India, regulated under FSSAI Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011, Regulation 2.4.1 (Standards for Edible Common Salt / Iodised Salt), mandating that salt for direct human consumption must contain not less than 30 ppm of iodine on dry basis at the manufacturing level and not less than 15 ppm at retail. Internationally governed by Codex Alimentarius Standard for Food Grade Salt (CXS 150-1985) and affirmed as GRAS by US FDA under 21 CFR 182.1.",
@@ -643,11 +1247,13 @@
       "Sodium Chloride"
     ],
     "category": "Seasoning / Fortified Salt",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / Codex Alimentarius / WHO",
       "title": "FSSAI Regulation 2.4.1 (Edible Common Salt / Iodised Salt); Codex CXS 150-1985; WHO Fortification Guideline",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nSafe and essential mineral staple. Universal salt iodisation is recognized by the World Health Organization (WHO) and UNICEF as the primary, most cost-effective public health strategy to eliminate iodine deficiency disorders (IDD), goiter, and preventable cognitive deficits. WHO guidelines recommend moderate overall sodium intake (less than 2g sodium / 5g salt per day) while maintaining universal salt iodisation.\n\nSources:\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011\n  URL: https://www.fssai.gov.in\n  Access/reference information: Regulation 2.4.1 Standards for Edible Common Salt and Iodised Salt.\n- Organization: Codex Alimentarius Commission (FAO/WHO)\n  Document/page title: Codex Standard for Food Grade Salt (CXS 150-1985)\n  URL: https://www.fao.org/fao-who-codexalimentarius\n  Access/reference information: International standard for food grade salt and iodisation requirements.\n- Organization: World Health Organization (WHO)\n  Document/page title: Guideline: Fortification of Food-Grade Salt with Iodine\n  URL: https://www.who.int/publications/i/item/9789241507929\n  Access/reference information: WHO guidance on universal salt iodisation for prevention of iodine deficiency disorders.",
@@ -665,11 +1271,13 @@
       "Sodium Chloride"
     ],
     "category": "Seasoning / Fortified Salt",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / Codex Alimentarius / WHO",
       "title": "FSSAI Regulation 2.4.1 (Edible Common Salt / Iodised Salt); Codex CXS 150-1985; WHO Fortification Guideline",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nLactic Acid\n\nAliases:\nINS 270\nE270\n2-Hydroxypropanoic acid\nDL-lactic acid\nL-lactic acid\n\nCategory:\nAcidity Regulator",
@@ -684,11 +1292,13 @@
       "L-lactic acid"
     ],
     "category": "Acidity Regulator",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / FSSAI",
       "title": "21 CFR 184.1061 - Lactic acid; JECFA evaluations; FSSAI Food Additives Regulations 2011",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1061"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nAdjusts and buffers food acidity, inhibits bacterial spoilage, functions as a mild flavoring agent, and preserves dairy, fermented, and processed foods.\n\nDescription:\nOrganic alpha-hydroxy acid naturally present in sour milk products and fermented foods, commercially produced via bacterial fermentation of carbohydrates (glucose or sucrose) by Lactobacillus species or through chemical synthesis.",
@@ -703,11 +1313,13 @@
       "L-lactic acid"
     ],
     "category": "Acidity Regulator",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / FSSAI",
       "title": "21 CFR 184.1061 - Lactic acid; JECFA evaluations; FSSAI Food Additives Regulations 2011",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1061"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nUS FDA affirms lactic acid as Generally Recognized as Safe (GRAS) under 21 CFR 184.1061. JECFA evaluated lactic acid and its salts and established an ADI of \"not limited\" / \"not specified\". FSSAI permits lactic acid under Good Manufacturing Practice (GMP) in diverse food categories.",
@@ -722,11 +1334,13 @@
       "L-lactic acid"
     ],
     "category": "Acidity Regulator",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / FSSAI",
       "title": "21 CFR 184.1061 - Lactic acid; JECFA evaluations; FSSAI Food Additives Regulations 2011",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1061"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nL-lactic acid is an endogenous intermediate in human cellular carbohydrate metabolism. In infant foods, JECFA and EFSA note that D-lactic acid should be limited because infant metabolism processes the D-isomer more slowly.\n\nSources:\n- Organization: US Food and Drug Administration (FDA)\n  Document/page title: 21 CFR 184.1061 - Lactic acid\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1061\n  Access/reference information: Direct food substance affirmed as GRAS\n- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA)\n  Document/page title: Lactic acid Evaluation Summary (JECFA Evaluation 1973)\n  URL: https://apps.who.int/food-additives-contaminants-jecfa-database/\n  Access/reference information: 17th meeting (1973), ADI not limited\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011\n  URL: https://www.fssai.gov.in\n  Access/reference information: Permitted acidity regulator INS 270 under GMP",
@@ -741,11 +1355,13 @@
       "L-lactic acid"
     ],
     "category": "Acidity Regulator",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / FSSAI",
       "title": "21 CFR 184.1061 - Lactic acid; JECFA evaluations; FSSAI Food Additives Regulations 2011",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1061"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nMaltodextrin\n\nAliases:\nCorn maltodextrin\nWheat maltodextrin\nTapioca maltodextrin\nDextrin maltose\n\nCategory:\nThickener/Bulking Agent",
@@ -758,11 +1374,13 @@
       "Tapioca maltodextrin"
     ],
     "category": "Thickener/Bulking Agent",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / EFSA / FSSAI",
       "title": "FDA GRAS; EFSA evaluation; FSSAI Food Additives Regulations 2011",
       "url": "https://www.fda.gov"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nProvides viscosity, bulk, mouthfeel, and texture without high sweetness; serves as a spray-drying carrier, dispersing agent, and stabilizer in powdered and processed foods.\n\nDescription:\nNonsweet, nutritive saccharide polymer consisting of D-glucose units linked primarily by alpha-1,4 bonds, obtained by partial enzymatic or acid hydrolysis of edible plant starches with a Dextrose Equivalent (DE) of less than 20.",
@@ -775,11 +1393,13 @@
       "Tapioca maltodextrin"
     ],
     "category": "Thickener/Bulking Agent",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / EFSA / FSSAI",
       "title": "FDA GRAS; EFSA evaluation; FSSAI Food Additives Regulations 2011",
       "url": "https://www.fda.gov"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nUS FDA affirms maltodextrin as Generally Recognized as Safe (GRAS) under 21 CFR 184.1444. EFSA recognizes maltodextrin as a standard food ingredient and evaluated its digestibility and energy contribution without safety concerns. FSSAI authorizes maltodextrin as a food additive and bulking agent under Good Manufacturing Practice (GMP).",
@@ -792,11 +1412,13 @@
       "Tapioca maltodextrin"
     ],
     "category": "Thickener/Bulking Agent",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / EFSA / FSSAI",
       "title": "FDA GRAS; EFSA evaluation; FSSAI Food Additives Regulations 2011",
       "url": "https://www.fda.gov"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nRapidly broken down into glucose by alpha-amylase and mucosal enzymes in the human small intestine, exhibiting a high glycemic index comparable to pure glucose.\n\nSources:\n- Organization: US Food and Drug Administration (FDA)\n  Document/page title: 21 CFR 184.1444 - Maltodextrin\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1444\n  Access/reference information: Direct food substance affirmed as GRAS\n- Organization: European Food Safety Authority (EFSA)\n  Document/page title: Scientific Opinion on dietary reference values for carbohydrates and dietary fibre (EFSA Journal 2010; 8(3):1462)\n  URL: https://www.efsa.europa.eu/en/efsajournal/pub/1462\n  Access/reference information: Digestibility and nutritional assessment of starch hydrolysates\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011\n  URL: https://www.fssai.gov.in\n  Access/reference information: Permitted bulking agent and food additive under GMP",
@@ -809,11 +1431,13 @@
       "Tapioca maltodextrin"
     ],
     "category": "Thickener/Bulking Agent",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / EFSA / FSSAI",
       "title": "FDA GRAS; EFSA evaluation; FSSAI Food Additives Regulations 2011",
       "url": "https://www.fda.gov"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nMilk Powder\n\nAliases:\nDried Milk\nPowdered Milk\nWhole Milk Powder\nDry Whole Milk\nNonfat Dry Milk\nSkimmed Milk Powder\n\nCategory:\nDairy Ingredient",
@@ -828,11 +1452,13 @@
       "Skimmed Milk Powder"
     ],
     "category": "Dairy Ingredient",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI / Codex Alimentarius",
       "title": "21 CFR 131.125; FSSAI Dairy Regulations; Codex CXS 207-1999",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=131.125"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nProvides dairy solids, contributes milk flavor and creaminess, enhances nutritional content, binds moisture, and acts as an emulsifier and structure builder in bakery and confectionery products.\n\nDescription:\nMilk powder is a manufactured dairy product made by evaporating liquid pasteurized whole or skim milk to dryness, typically through spray drying or roller drying. The process removes nearly all water while retaining milk fats, proteins, lactose, and minerals.",
@@ -847,11 +1473,13 @@
       "Skimmed Milk Powder"
     ],
     "category": "Dairy Ingredient",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI / Codex Alimentarius",
       "title": "21 CFR 131.125; FSSAI Dairy Regulations; Codex CXS 207-1999",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=131.125"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nRegulated by the US FDA under Standards of Identity 21 CFR 131.125 (Nonfat dry milk) and 21 CFR 131.147 (Dry whole milk). Regulated in India by FSSAI under Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011, Regulation 2.1.11. Standardized internationally under Codex Standard CXS 207-1999 (Standard for Milk Powders and Cream Powder).",
@@ -866,11 +1494,13 @@
       "Skimmed Milk Powder"
     ],
     "category": "Dairy Ingredient",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI / Codex Alimentarius",
       "title": "21 CFR 131.125; FSSAI Dairy Regulations; Codex CXS 207-1999",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=131.125"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nContains dairy proteins (casein, whey) and lactose; classified as a major food allergen (milk) requiring mandatory labeling. Serves as a standard dietary ingredient with no numerical Acceptable Daily Intake (ADI) applicable.\n\nSources:\n- Organization: US Food and Drug Administration\n  Document/page title: 21 CFR Part 131 - Milk and Cream, Subpart B - Requirements for Specific Standardized Milk and Cream\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?cfrpart=131\n  Access/reference information: 21 CFR 131.125 (Nonfat dry milk) and 21 CFR 131.147 (Dry whole milk).\n- Organization: Food Safety and Standards Authority of India\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011\n  URL: https://www.fssai.gov.in\n  Access/reference information: Regulation 2.1.11 Standards for Milk Powders.\n- Organization: Codex Alimentarius Commission\n  Document/page title: Standard for Milk Powders and Cream Powder (CXS 207-1999)\n  URL: https://www.fao.org/fao-who-codexalimentarius/codex-texts/standards/en/\n  Access/reference information: Codex Standard 207-1999, Revised 2018.",
@@ -885,11 +1515,13 @@
       "Skimmed Milk Powder"
     ],
     "category": "Dairy Ingredient",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI / Codex Alimentarius",
       "title": "21 CFR 131.125; FSSAI Dairy Regulations; Codex CXS 207-1999",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=131.125"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nMonosodium Glutamate\n\nAliases:\nMSG\nINS 621\nE621\nSodium glutamate\nMonosodium L-glutamate\n\nCategory:\nFlavour Enhancer",
@@ -904,11 +1536,13 @@
       "Monosodium L-glutamate"
     ],
     "category": "Flavour Enhancer",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / FSSAI",
       "title": "Questions and Answers on Monosodium glutamate (MSG); JECFA 31st Report; FSSAI Food Additives Regulations 2011",
       "url": "https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nEnhances savory and umami taste in foods and balances overall savory flavor profiles.\n\nDescription:\nSodium salt of the common amino acid L-glutamic acid, commercially manufactured by bacterial fermentation of carbohydrate sources such as sugar beet, sugar cane, or molasses using Corynebacterium glutamicum.",
@@ -923,11 +1557,13 @@
       "Monosodium L-glutamate"
     ],
     "category": "Flavour Enhancer",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / FSSAI",
       "title": "Questions and Answers on Monosodium glutamate (MSG); JECFA 31st Report; FSSAI Food Additives Regulations 2011",
       "url": "https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nUS FDA classifies MSG as Generally Recognized as Safe (GRAS) under 21 CFR 182.1. JECFA allocated an Acceptable Daily Intake (ADI) of \"not specified\" in 1987. FSSAI approves its use under Good Manufacturing Practice (GMP) in specified food categories per Food Safety and Standards Regulations.",
@@ -942,11 +1578,13 @@
       "Monosodium L-glutamate"
     ],
     "category": "Flavour Enhancer",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / FSSAI",
       "title": "Questions and Answers on Monosodium glutamate (MSG); JECFA 31st Report; FSSAI Food Additives Regulations 2011",
       "url": "https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nExtensive scientific evaluations by JECFA, FDA, and EFSA have found no causal relationship between MSG consumption at typical dietary levels and reported adverse symptoms in the general population.\n\nSources:\n- Organization: US Food and Drug Administration (FDA)\n  Document/page title: Questions and Answers on Monosodium glutamate (MSG)\n  URL: https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg\n  Access/reference information: GRAS affirmation under 21 CFR 182.1\n- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA)\n  Document/page title: Monosodium L-glutamate - Evaluation Report (TRS 759-JECFA 31/18)\n  URL: https://apps.who.int/food-additives-contaminants-jecfa-database/\n  Access/reference information: 31st Report, allocated ADI not specified in 1987\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011\n  URL: https://www.fssai.gov.in\n  Access/reference information: Permitted flavour enhancer INS 621 under GMP",
@@ -961,11 +1599,13 @@
       "Monosodium L-glutamate"
     ],
     "category": "Flavour Enhancer",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / FSSAI",
       "title": "Questions and Answers on Monosodium glutamate (MSG); JECFA 31st Report; FSSAI Food Additives Regulations 2011",
       "url": "https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nPalm Olein Oil\n\nAliases:\nPalmolein Oil\nPalm Olein\nRBD Palm Olein\nRefined Bleached Deodorized Palm Olein\n\nCategory:\nEdible Vegetable Oil",
@@ -978,11 +1618,13 @@
       "RBD Palm Olein"
     ],
     "category": "Edible Vegetable Oil",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / FAO/WHO Codex / US FDA",
       "title": "FSSAI Oil Regulations; Codex Alimentarius CODEX STAN 210; FDA",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nUsed as a frying oil, cooking oil, shortening ingredient, and confectionery fat, providing thermal stability, texture, and oxidative resistance.\n\nDescription:\nLiquid fraction separated by thermal crystallization and fractionation of refined palm oil extracted from the fleshy mesocarp of the oil palm fruit (Elaeis guineensis).",
@@ -995,11 +1637,13 @@
       "RBD Palm Olein"
     ],
     "category": "Edible Vegetable Oil",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / FAO/WHO Codex / US FDA",
       "title": "FSSAI Oil Regulations; Codex Alimentarius CODEX STAN 210; FDA",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nFSSAI establishes compositional and purity standards for Palmolein under Regulation 2.2.1(18) of the Food Safety and Standards Regulations, 2011. The Codex Alimentarius Commission (FAO/WHO) establishes international quality and identity standards under CXS 210-1999 (Standard for Named Vegetable Oils). US FDA regulates edible vegetable oils including palm olein as safe food substances under Title 21 CFR.",
@@ -1012,11 +1656,13 @@
       "RBD Palm Olein"
     ],
     "category": "Edible Vegetable Oil",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / FAO/WHO Codex / US FDA",
       "title": "FSSAI Oil Regulations; Codex Alimentarius CODEX STAN 210; FDA",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nComposed primarily of oleic acid (approx. 40-43%), palmitic acid (approx. 40-45%), and linoleic acid (approx. 10-12%). Liquid at ambient room temperature, it can cloud or form reversible crystals at cooler storage temperatures.\n\nSources:\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 - Regulation 2.2.1: Oils\n  URL: https://www.fssai.gov.in\n  Access/reference information: Standards and specifications for Palmolein\n- Organization: Codex Alimentarius Commission (FAO/WHO)\n  Document/page title: Standard for Named Vegetable Oils (CXS 210-1999, amended 2019)\n  URL: https://www.fao.org/fao-who-codexalimentarius/\n  Access/reference information: International standard covering palm olein specifications\n- Organization: US Food and Drug Administration (FDA)\n  Document/page title: Title 21 Code of Federal Regulations - Food for Human Consumption\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm\n  Access/reference information: Authorized edible vegetable oil classification",
@@ -1029,11 +1675,13 @@
       "RBD Palm Olein"
     ],
     "category": "Edible Vegetable Oil",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / FAO/WHO Codex / US FDA",
       "title": "FSSAI Oil Regulations; Codex Alimentarius CODEX STAN 210; FDA",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nPotassium Chloride\n\nAliases:\nKCl\nINS 508\nE508\nPotassium salt\nMuriate of potash\n\nCategory:\nSalt Substitute",
@@ -1048,11 +1696,13 @@
       "Muriate of potash"
     ],
     "category": "Salt Substitute",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / EFSA",
       "title": "21 CFR 184.1622 - Potassium chloride; JECFA evaluations; EFSA opinion",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1622"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nReplaces sodium chloride to reduce sodium content while contributing salty flavor, and functions as a mineral nutrient, flavor enhancer, and firming agent.\n\nDescription:\nNaturally occurring inorganic metal halide salt composed of potassium and chlorine, extracted from mineral deposits such as sylvite or carnallite and purified through crystallization.",
@@ -1067,11 +1717,13 @@
       "Muriate of potash"
     ],
     "category": "Salt Substitute",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / EFSA",
       "title": "21 CFR 184.1622 - Potassium chloride; JECFA evaluations; EFSA opinion",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1622"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nUS FDA affirms potassium chloride as Generally Recognized as Safe (GRAS) under 21 CFR 184.1622 and permits the alternate name \"potassium salt\" on ingredient statements. JECFA evaluated potassium chloride in 1979 and assigned an ADI of \"not limited\". EFSA re-evaluated potassium chloride (E 508) in 2019 and concluded that it raises no safety concern at reported food additive uses.",
@@ -1086,11 +1738,13 @@
       "Muriate of potash"
     ],
     "category": "Salt Substitute",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / EFSA",
       "title": "21 CFR 184.1622 - Potassium chloride; JECFA evaluations; EFSA opinion",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1622"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nProvides bioavailable potassium, an essential dietary electrolyte. It imparts a salty taste profile that can carry bitter or metallic notes at higher sodium-substitution ratios.\n\nSources:\n- Organization: US Food and Drug Administration (FDA)\n  Document/page title: 21 CFR 184.1622 - Potassium chloride; and Guidance for Industry: The Declaration of Potassium Chloride on Food Labels\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1622\n  Access/reference information: GRAS direct food substance; guidance on potassium salt declaration\n- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA)\n  Document/page title: Potassium chloride Evaluation Summary (TRS 648-JECFA 23/27)\n  URL: https://apps.who.int/food-additives-contaminants-jecfa-database/\n  Access/reference information: 23rd meeting (1979), ADI not limited\n- Organization: European Food Safety Authority (EFSA)\n  Document/page title: Re-evaluation of hydrochloric acid (E 507), potassium chloride (E 508), calcium chloride (E 509) and magnesium chloride (E 511)\n  URL: https://www.efsa.europa.eu/en/efsajournal/pub/5751\n  Access/reference information: EFSA Journal 2019;17(7):5751, no safety concern at reported uses",
@@ -1105,11 +1759,13 @@
       "Muriate of potash"
     ],
     "category": "Salt Substitute",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / JECFA / EFSA",
       "title": "21 CFR 184.1622 - Potassium chloride; JECFA evaluations; EFSA opinion",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1622"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nSeasoning\n\nAliases:\nSeasonings\nSeasoning Mix\nSeasoning Blend\nSavory Seasoning\n\nCategory:\nSeasoning / Flavouring Blend",
@@ -1123,11 +1779,13 @@
       "Savory Seasoning"
     ],
     "category": "Seasoning / Flavouring Blend",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / US FDA",
       "title": "FSSAI Regulations 2.9 (Spices and Condiments); US FDA 21 CFR 101.22",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nProvides characteristic savory flavor profile, aroma, taste enhancement, and seasoning surface coating to snack foods, extruded products, and prepared dishes.\n\nDescription:\nA formulated composite blend of spices, condiments, salts, hydrolyzed proteins, yeast extracts, sugars, and permitted flavoring agents applied to food products to impart specific flavor profiles (such as cheese, spicy, or tangy notes).",
@@ -1141,11 +1799,13 @@
       "Savory Seasoning"
     ],
     "category": "Seasoning / Flavouring Blend",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / US FDA",
       "title": "FSSAI Regulations 2.9 (Spices and Condiments); US FDA 21 CFR 101.22",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nIn India, FSSAI regulates spices, condiments, and composite seasonings under Regulation 2.9 (Spices and Condiments) and the Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011. In the United States, FDA regulates seasonings and flavor blends under 21 CFR 101.22 (Spices, flavorings, colorings and chemical preservatives) and 21 CFR Part 182.",
@@ -1159,11 +1819,13 @@
       "Savory Seasoning"
     ],
     "category": "Seasoning / Flavouring Blend",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / US FDA",
       "title": "FSSAI Regulations 2.9 (Spices and Condiments); US FDA 21 CFR 101.22",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nSeasonings are composite ingredient preparations rather than single chemical substances. Individual sub-ingredients (such as salt, spices, flavor enhancers, or dairy solids) are typically declared in parenthetical sub-ingredient lists on product labels according to statutory labeling requirements.\n\nSources:\n- Organization: Food Safety and Standards Authority of India (FSSAI)\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011 - Regulation 2.9: Spices and Condiments\n  URL: https://www.fssai.gov.in\n  Access/reference information: Section 2.9 standards for spices, condiments and seasoning preparations\n- Organization: US Food and Drug Administration (FDA)\n  Document/page title: 21 CFR 101.22 - Foods; labeling of spices, flavorings, colorings and chemical preservatives\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=101.22\n  Access/reference information: Regulatory requirements for seasoning and flavoring labeling",
@@ -1177,11 +1839,13 @@
       "Savory Seasoning"
     ],
     "category": "Seasoning / Flavouring Blend",
+    "jurisdiction": "",
     "source": {
       "organization": "FSSAI / US FDA",
       "title": "FSSAI Regulations 2.9 (Spices and Condiments); US FDA 21 CFR 101.22",
       "url": "https://www.fssai.gov.in"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nSilicon Dioxide\n\nAliases:\nINS 551\nE551\nSilica\nAmorphous Silica\nSynthetic Amorphous Silica\n\nCategory:\nAnticaking Agent",
@@ -1196,11 +1860,13 @@
       "Synthetic Amorphous Silica"
     ],
     "category": "Anticaking Agent",
+    "jurisdiction": "",
     "source": {
       "organization": "EFSA / US FDA / JECFA",
       "title": "EFSA E 551 evaluation; 21 CFR 172.480; JECFA INS 551",
       "url": "https://www.efsa.europa.eu"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nPrevents clumping and caking, promotes powder flowability, adsorbs excess moisture, and serves as a carrier for flavors and active components in dry food mixtures.\n\nDescription:\nSilicon dioxide is a chemical compound of silicon and oxygen (SiO2). For food use, it exists exclusively in synthetic amorphous (non-crystalline) form, produced via wet processes (precipitated silica or silica gel) or vapor thermal processes (pyrogenic/fumed silica).",
@@ -1215,11 +1881,13 @@
       "Synthetic Amorphous Silica"
     ],
     "category": "Anticaking Agent",
+    "jurisdiction": "",
     "source": {
       "organization": "EFSA / US FDA / JECFA",
       "title": "EFSA E 551 evaluation; 21 CFR 172.480; JECFA INS 551",
       "url": "https://www.efsa.europa.eu"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nApproved by the US FDA under 21 CFR 172.480 as a direct food additive for anticaking use at levels not exceeding 2 percent by weight of the food. Evaluated by JECFA (INS 551) with a group ADI of \"not specified\". Authorized in the European Union as food additive E 551 under Regulation (EC) No 1333/2008, with EFSA re-evaluations confirming no safety concern across authorized uses.",
@@ -1234,11 +1902,13 @@
       "Synthetic Amorphous Silica"
     ],
     "category": "Anticaking Agent",
+    "jurisdiction": "",
     "source": {
       "organization": "EFSA / US FDA / JECFA",
       "title": "EFSA E 551 evaluation; 21 CFR 172.480; JECFA INS 551",
       "url": "https://www.efsa.europa.eu"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nSynthetic amorphous silica does not possess crystalline quartz toxicity; it is biologically inert, insoluble in gastrointestinal fluids, and largely excreted unabsorbed. No safety concern identified at permitted regulatory levels.\n\nSources:\n- Organization: European Food Safety Authority (EFSA)\n  Document/page title: Scientific Opinion on the re-evaluation of silicon dioxide (E 551) as a food additive\n  URL: https://www.efsa.europa.eu/en/efsajournal/pub/5088\n  Access/reference information: EFSA Journal evaluations of E 551 safety in food.\n- Organization: US Food and Drug Administration\n  Document/page title: 21 CFR 172.480 Silicon dioxide\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=172.480\n  Access/reference information: Title 21 Code of Federal Regulations, Direct food additives permitted in food for human consumption.\n- Organization: Joint FAO/WHO Expert Committee on Food Additives (JECFA)\n  Document/page title: JECFA Evaluation: Silicon dioxide, amorphous (INS 551)\n  URL: https://www.who.int/groups/joint-fao-who-expert-committee-on-food-additives-(jecfa)\n  Access/reference information: 17th and 29th JECFA meetings establishing group ADI \"not specified\".",
@@ -1253,11 +1923,13 @@
       "Synthetic Amorphous Silica"
     ],
     "category": "Anticaking Agent",
+    "jurisdiction": "",
     "source": {
       "organization": "EFSA / US FDA / JECFA",
       "title": "EFSA E 551 evaluation; 21 CFR 172.480; JECFA INS 551",
       "url": "https://www.efsa.europa.eu"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nSugar\n\nAliases:\nSucrose\nCane Sugar\nBeet Sugar\nGranulated Sugar\nRefined Sugar\n\nCategory:\nSweetener",
@@ -1272,11 +1944,13 @@
       "Refined Sugar"
     ],
     "category": "Sweetener",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI / WHO",
       "title": "21 CFR 184.1854; FSSAI Sugar Standards; WHO Guideline on Free Sugars Intake",
       "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nProvides sweet taste, enhances flavor profiles, contributes bulk and mouthfeel, acts as a humectant to retain moisture, depresses freezing point, and assists in preservation by lowering water activity.\n\nDescription:\nSugar is a disaccharide carbohydrate composed of glucose and fructose subunits (C12H22O11). It is commercially extracted and refined by pressing juice from sugarcane (Saccharum officinarum) or sugar beets (Beta vulgaris), followed by clarification, evaporation, and crystallization.",
@@ -1291,11 +1965,13 @@
       "Refined Sugar"
     ],
     "category": "Sweetener",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI / WHO",
       "title": "21 CFR 184.1854; FSSAI Sugar Standards; WHO Guideline on Free Sugars Intake",
       "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nAffirmed as Generally Recognized as Safe (GRAS) by the US FDA under 21 CFR 184.1854. In India, regulated by FSSAI under Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011, Regulation 2.8.1 covering Refined Sugar and Plantation White Sugar.",
@@ -1310,11 +1986,13 @@
       "Refined Sugar"
     ],
     "category": "Sweetener",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI / WHO",
       "title": "21 CFR 184.1854; FSSAI Sugar Standards; WHO Guideline on Free Sugars Intake",
       "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nClassified nutritionally as a macronutrient and a free/added sugar. World Health Organization guidelines recommend limiting free sugar intake to less than 10 percent of total dietary energy intake (with a conditional target below 5 percent) to reduce risk of dental caries and unhealthy weight gain.\n\nSources:\n- Organization: US Food and Drug Administration\n  Document/page title: 21 CFR 184.1854 Sucrose\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1854\n  Access/reference information: Title 21 Code of Federal Regulations, Direct food substances affirmed as GRAS.\n- Organization: Food Safety and Standards Authority of India\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011\n  URL: https://www.fssai.gov.in\n  Access/reference information: Regulation 2.8.1 Standards for Sugar and Sugar Products.\n- Organization: World Health Organization\n  Document/page title: Guideline: Sugars Intake for Adults and Children\n  URL: https://www.who.int/publications/i/item/9789241549028\n  Access/reference information: WHO nutritional guideline on free sugars intake, ISBN 978 92 4 154902 8.",
@@ -1329,11 +2007,13 @@
       "Refined Sugar"
     ],
     "category": "Sweetener",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI / WHO",
       "title": "21 CFR 184.1854; FSSAI Sugar Standards; WHO Guideline on Free Sugars Intake",
       "url": "https://www.who.int/publications/i/item/9789241549028"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Ingredient:\nWhey Powder\n\nAliases:\nWhey\nDried Whey\nSweet Whey Powder\nAcid Whey Powder\nDemineralized Whey Powder\n\nCategory:\nDairy Ingredient",
@@ -1347,11 +2027,13 @@
       "Acid Whey Powder"
     ],
     "category": "Dairy Ingredient",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI / Codex Alimentarius",
       "title": "21 CFR 184.1979; FSSAI Dairy Regulations; Codex CXS 289-1995",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1979"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Function:\nProvides dairy solids, enhances texture, binds water, improves browning, and serves as a carrier for flavorings and seasonings.\n\nDescription:\nWhey powder is obtained by spray drying liquid whey, the fluid co-product resulting from the coagulation of milk by rennet or acid during cheese or casein manufacturing. It consists primarily of lactose, whey proteins (beta-lactoglobulin and alpha-lactalbumin), and mineral salts.",
@@ -1365,11 +2047,13 @@
       "Acid Whey Powder"
     ],
     "category": "Dairy Ingredient",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI / Codex Alimentarius",
       "title": "21 CFR 184.1979; FSSAI Dairy Regulations; Codex CXS 289-1995",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1979"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Regulatory Information:\nAffirmed as Generally Recognized as Safe (GRAS) by the US FDA under 21 CFR 184.1979. Regulated in India by FSSAI under Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011, Regulation 2.1.18. Governed internationally under Codex Alimentarius Standard CXS 289-1995.",
@@ -1383,11 +2067,13 @@
       "Acid Whey Powder"
     ],
     "category": "Dairy Ingredient",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI / Codex Alimentarius",
       "title": "21 CFR 184.1979; FSSAI Dairy Regulations; Codex CXS 289-1995",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1979"
-    }
+    },
+    "sources": []
   },
   {
     "text": "Assessment Notes:\nContains milk protein and lactose; subject to mandatory declaration as a milk allergen in major regulatory jurisdictions. Consumed as a macronutrient food ingredient rather than an additive, with no numerical Acceptable Daily Intake (ADI) limit established under Good Manufacturing Practice.\n\nSources:\n- Organization: US Food and Drug Administration\n  Document/page title: 21 CFR 184.1979 Whey\n  URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1979\n  Access/reference information: Title 21 Code of Federal Regulations, Direct food substances affirmed as GRAS.\n- Organization: Food Safety and Standards Authority of India\n  Document/page title: Food Safety and Standards (Food Products Standards and Food Additives) Regulations, 2011\n  URL: https://www.fssai.gov.in\n  Access/reference information: Regulation 2.1.18 Standards for Whey Powder.\n- Organization: Codex Alimentarius Commission\n  Document/page title: Standard for Whey Powders (CXS 289-1995)\n  URL: https://www.fao.org/fao-who-codexalimentarius/codex-texts/standards/en/\n  Access/reference information: Adopted 1995, Revised 2003, Amended 2010.",
@@ -1401,10 +2087,12 @@
       "Acid Whey Powder"
     ],
     "category": "Dairy Ingredient",
+    "jurisdiction": "",
     "source": {
       "organization": "US FDA / FSSAI / Codex Alimentarius",
       "title": "21 CFR 184.1979; FSSAI Dairy Regulations; Codex CXS 289-1995",
       "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/cfrsearch.cfm?fr=184.1979"
-    }
+    },
+    "sources": []
   }
 ]

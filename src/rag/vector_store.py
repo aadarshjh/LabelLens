@@ -170,6 +170,8 @@ class VectorStore:
                 "ingredient": meta.get("ingredient", "Unknown"),
                 "section": meta.get("section", ""),
                 "source": meta.get("source", {}),
+                "sources": meta.get("sources", []),
+                "jurisdiction": meta.get("jurisdiction", ""),
                 "aliases": meta.get("aliases", []),
                 "category": meta.get("category", ""),
                 "filename": meta.get("filename", ""),
