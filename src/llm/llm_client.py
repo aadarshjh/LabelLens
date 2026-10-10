@@ -176,9 +176,15 @@ class LLMClient:
                 max_tokens=2048,
             )
             raw = completion.choices[0].message.content
+            finish_reason = completion.choices[0].finish_reason
             usage = getattr(completion, "usage", None)
             u_info = f"tokens=({usage.total_tokens})" if usage else ""
-            audit_log(STAGE_PROVIDER_RESPONSE_RECEIVED, f"Status=200 finish_reason={completion.choices[0].finish_reason} {u_info}")
+            audit_log(STAGE_PROVIDER_RESPONSE_RECEIVED, f"Status=200 finish_reason={finish_reason} {u_info}")
+            if finish_reason == "length":
+                audit_log("TOKEN_LIMIT_TRUNCATION", "Single analysis truncated due to token limit")
+                raise LLMUnavailableError("Groq output truncated by token limit.")
+        except LLMUnavailableError:
+            raise
         except Exception as exc:
             audit_log(STAGE_PROVIDER_RESPONSE_RECEIVED, f"Provider error: {type(exc).__name__}: {exc}")
             raise LLMUnavailableError(f"Groq request failed: {exc}") from exc
@@ -193,7 +199,12 @@ class LLMClient:
             audit_log(STAGE_JSON_PARSING_COMPLETED, f"Failed: non-JSON output ({exc})")
             raise LLMUnavailableError("Groq returned non-JSON structured output.") from exc
 
-    def generate_batch_analysis(self, prompt: str, max_output_tokens: int | None = None) -> dict[str, Any]:
+    def generate_batch_analysis(
+        self,
+        prompt: str,
+        max_output_tokens: int | None = None,
+        items: list[dict[str, Any]] | None = None,
+    ) -> dict[str, Any]:
         """Generates batch analysis for all ingredients in ONE Groq request within token budget."""
         from src.audit_logger import (
             STAGE_LLM_CLIENT_INVOKED,
@@ -218,7 +229,11 @@ class LLMClient:
                 "groq is not installed. Install requirements.txt before enabling Groq."
             ) from exc
 
-        from src.llm.token_budget import calculate_output_token_budget, check_request_budget
+        from src.llm.token_budget import (
+            DEFAULT_MAX_OUTPUT_TOKENS,
+            calculate_output_token_budget,
+            check_request_budget,
+        )
 
         system_content = (
             "You are an analytical assistant for LabelLens. "
@@ -231,7 +246,7 @@ class LLMClient:
         )
 
         if max_output_tokens is None:
-            max_output_tokens = calculate_output_token_budget(ingredient_count)
+            max_output_tokens = calculate_output_token_budget(ingredient_count, items=items)
 
         is_safe, est_tokens, reason = check_request_budget(prompt, system_content, max_output_tokens)
         if not is_safe:
@@ -268,6 +283,59 @@ class LLMClient:
                 STAGE_PROVIDER_RESPONSE_RECEIVED,
                 f"HTTP response 200 OK received: finish_reason={finish_reason}, tokens=({usage_str})"
             )
+
+            if finish_reason == "length":
+                audit_log(
+                    "TOKEN_LIMIT_TRUNCATION",
+                    f"Output truncated due to token limit (finish_reason=length, max_tokens={max_output_tokens})"
+                )
+                expanded_tokens = min(DEFAULT_MAX_OUTPUT_TOKENS, max_output_tokens + 800)
+                is_safe_retry, est_retry_tokens, retry_reason = check_request_budget(
+                    prompt, system_content, expanded_tokens
+                )
+                if is_safe_retry and expanded_tokens > max_output_tokens:
+                    audit_log(
+                        "TOKEN_BUDGET_RETRY",
+                        f"Retrying with expanded output budget {max_output_tokens} -> {expanded_tokens}"
+                    )
+                    audit_log(
+                        STAGE_HTTP_REQUEST_SENT,
+                        f"Target=Groq batch completion retry, model={self.model_name}, max_tokens={expanded_tokens}, est_input={est_retry_tokens}"
+                    )
+                    completion = client.chat.completions.create(
+                        model=self.model_name,
+                        messages=[
+                            {"role": "system", "content": system_content},
+                            {"role": "user", "content": prompt},
+                        ],
+                        response_format=BATCH_ANALYSIS_SCHEMA,
+                        temperature=0.0,
+                        max_tokens=expanded_tokens,
+                        **extra_kwargs,
+                    )
+                    raw = completion.choices[0].message.content
+                    finish_reason = completion.choices[0].finish_reason
+                    retry_usage = getattr(completion, "usage", None)
+                    retry_usage_str = f"prompt={retry_usage.prompt_tokens}, completion={retry_usage.completion_tokens}, total={retry_usage.total_tokens}" if retry_usage else "unknown"
+                    audit_log(
+                        STAGE_PROVIDER_RESPONSE_RECEIVED,
+                        f"HTTP retry response 200 OK received: finish_reason={finish_reason}, tokens=({retry_usage_str})"
+                    )
+                    if finish_reason == "length":
+                        audit_log(
+                            "TOKEN_LIMIT_TRUNCATION",
+                            "Retry truncated; falling back to evidence-backed analysis"
+                        )
+                        raise LLMUnavailableError("Groq output truncated by token limit.")
+                else:
+                    audit_log(
+                        "TOKEN_LIMIT_TRUNCATION",
+                        f"Cannot retry safely ({retry_reason}); falling back to evidence-backed analysis"
+                    )
+                    raise LLMUnavailableError("Groq output truncated by token limit.")
+
+        except LLMUnavailableError:
+            raise
         except Exception as exc:
             audit_log(STAGE_PROVIDER_RESPONSE_RECEIVED, f"Provider request failed: {type(exc).__name__}: {exc}")
             raise LLMUnavailableError(f"Groq request failed: {exc}") from exc

@@ -73,10 +73,7 @@ def _render_batch_prompt_variant(
     """
     from src.llm.token_budget import compact_evidence_text
 
-    prompt = f"""You are an analytical assistant for a Food Ingredient Recognition system called LabelLens.
-Your task is to interpret retrieved factual evidence about food ingredients and explain each clearly to a consumer.
-
-Product: {product_name}
+    prompt = f"""Product: {product_name}
 
 STRICT GROUNDING & SAFETY RULES:
 1. USE ONLY THE SUPPLIED EVIDENCE. Do not invent, hallucinate, or assume regulatory, scientific, or nutritional facts.
@@ -105,21 +102,26 @@ INGREDIENTS TO ANALYZE
             raw_display = raw_name
 
         status = item.get("phase2_status", "unknown")
-        similarity = item.get("phase2_similarity", "N/A")
         evidence_list = item.get("evidence", [])
 
         prompt += f"\n=== INGREDIENT #{idx} ===\n"
         prompt += f"Ingredient ID: {item_id}\n"
         prompt += f"Normalized Name: {ingredient}\n"
-        prompt += f"Raw OCR Name: {raw_display}\n"
+        if raw_display.strip().lower() != ingredient.strip().lower():
+            prompt += f"Raw OCR Name: {raw_display}\n"
         code = item.get("code")
         aliases = item.get("aliases_detected", [])
         if code:
             prompt += f"Additive Code: {code}\n"
         if aliases:
-            prompt += f"Detected Aliases/Common Names: {', '.join(aliases)}\n"
+            # Filter aliases that duplicate the normalized ingredient or code
+            filtered_aliases = [
+                a for a in aliases
+                if a.strip().lower() not in (ingredient.strip().lower(), (code or "").strip().lower())
+            ]
+            if filtered_aliases:
+                prompt += f"Detected Aliases/Common Names: {', '.join(filtered_aliases)}\n"
         prompt += f"Identification Status: {status}\n"
-        prompt += f"Confidence/Similarity: {similarity}\n"
 
         if not evidence_list or (omit_unknown_evidence and status == "unknown"):
             prompt += "Evidence: No retrieved evidence available.\n"
@@ -135,13 +137,12 @@ INGREDIENTS TO ANALYZE
                 count += 1
                 if count > max_chunks_per_item:
                     break
-                score = ev.get("score", 0.0)
                 source = ev.get("source", {})
                 org = source.get("organization", "Unknown")
                 title = source.get("title", "")
                 src_str = f"{org}" + (f" - {title}" if title else "")
                 compact_text = compact_evidence_text(raw_text, max_chars=max_evidence_chars)
-                prompt += f"  [{count}] (Score: {score:.4f}) {compact_text} [Source: {src_str}]\n"
+                prompt += f"  [{count}] {compact_text} [Source: {src_str}]\n"
 
     prompt += f"""
 -----------------------------

@@ -167,7 +167,7 @@ def run_batch_end_to_end_pipeline(
 
     provider_failed = False
     try:
-        raw_batch_output = client.generate_batch_analysis(batch_prompt)
+        raw_batch_output = client.generate_batch_analysis(batch_prompt, items=flat_items)
     except Exception as exc:
         provider_failed = True
         audit_log("LLM_BATCH_CALL_FAILED", f"client.generate_batch_analysis failed with {type(exc).__name__}: {exc}")
