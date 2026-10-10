@@ -187,42 +187,37 @@ def test_serializer_adds_safety_assessments_to_nested_ingredient_results():
 def test_frontend_renders_safety_and_dynamic_values_without_html_interpolation():
     from pathlib import Path
 
-    html = Path("frontend/results.html").read_text()
-    renderer = html.split("function renderIngredientItem(ing, numStr, isSub = false) {", 1)[1].split("\n        if (ingredients.length > 0) {", 1)[0]
-    assert "cardEl.innerHTML" not in renderer
-    assert "title.textContent = ing.name" in renderer
-    assert "safety_assessment" in renderer
-    assert "const safetyBadge = createSafetyStatusBadge(safety)" in renderer
-    assert "titleRow.append(title, safetyBadge, inlineMeta)" in renderer
-    assert "appendIngredientTree(sub, `${numStr}.${subIdx + 1}`, nestedBox, true)" in html
-    assert "appendIngredientTree(ing, num, listContainer)" in html
-    assert "detail-safety-evidence" in html
-    assert "link.textContent = label" in html
-    assert "safetyAssessment" in html
-    allergen_renderer = html.split("const allergenContainer = document.getElementById('allergen-container');", 1)[1].split("const listContainer = document.getElementById('ingredient-list');", 1)[0]
-    assert "allergenContainer.innerHTML" not in allergen_renderer
-    assert "valuesEl.textContent = values.join(', ')" in allergen_renderer
+    html = Path("frontend/index.html").read_text()
+    assert "const renderIngredient = (item, index" in html
+    assert "data.name) || 'Unknown ingredient'" in html
+    assert "data.safety_assessment" in html
+    assert "data.sub_ingredients.forEach" in html
+    assert "makeExternalLink" in html
+    assert "containsList" in html and "mayContainList" in html
+    assert "Status counts include nested sub-ingredients" in html
+    assert "Top-level label entries" in html
+    assert "insertAdjacentHTML" not in html
+    assert "innerHTML" not in html
 
 
 def test_frontend_safety_badge_maps_all_statuses_and_falls_back_conservatively():
     from pathlib import Path
 
-    html = Path("frontend/results.html").read_text()
+    html = Path("frontend/index.html").read_text()
     assert "generally_safe: 'Generally safe'" in html
     assert "potential_concern: 'Potential concern'" in html
     assert "insufficient_evidence: 'Insufficient evidence'" in html
-    assert "? value.status\n        : 'insufficient_evidence'" in html
-    assert "badge.textContent = SAFETY_STATUS_LABELS[safety.status]" in html
-    assert "titleRow.append(title, createSafetyStatusBadge(null))" in html
-    assert "badge.setAttribute('data-safety-status', safety.status)" in html
+    assert "assessment.status : 'insufficient_evidence'" in html
+    assert "safety-${safety.status}" in html
+    assert "Insufficient evidence” means the available evidence does not support a conclusion" in html
 
 
 def test_static_allergen_and_identification_labels_remain_present():
     from pathlib import Path
 
-    html = Path("frontend/results.html").read_text()
+    html = Path("frontend/index.html").read_text()
     assert "Contains" in html
-    assert "May Contain" in html
+    assert "May contain" in html
     assert "Identified" in html
     assert "Needs a closer look" in html
     assert "Not identified" in html

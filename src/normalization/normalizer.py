@@ -122,23 +122,6 @@ def _extract_ins_or_e_code(text):
     return None
 
 
-def _exact_canonical_match(name, dictionary):
-    """
-    Try EXACT match against canonical names (case-insensitive).
-
-    This is the highest-priority match. If the raw ingredient name
-    exactly matches a canonical name, we use it immediately.
-
-    Returns:
-        (entry, "exact_canonical") or (None, None)
-    """
-    name_lower = name.lower().strip()
-    for entry in dictionary:
-        if entry["canonical_name"].lower() == name_lower:
-            return entry, "exact_canonical"
-    return None, None
-
-
 def _exact_alias_match(name, dictionary):
     """
     Try EXACT match against all aliases and codes (case-insensitive).

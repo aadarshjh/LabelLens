@@ -1,175 +1,582 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-tint": "#2a6b2c", "tertiary-fixed-dim": "#9dd3aa", "inverse-primary": "#91d78a", "primary-fixed": "#acf4a4", "secondary-fixed-dim": "#ffb77d", "on-surface": "#111c2d", "on-error": "#ffffff", "on-tertiary-fixed": "#00210e", "tertiary-fixed": "#b9efc5", "surface-dim": "#cfdaf2", "outline": "#717a6d", "primary-container": "#1b5e20", "surface-container-lowest": "#ffffff", "primary": "#00450d", "surface-container-high": "#dee8ff", "on-primary-container": "#90d689", "on-tertiary-fixed-variant": "#1e5031", "surface-variant": "#d8e3fb", "surface": "#f9f9ff", "error": "#ba1a1a", "inverse-on-surface": "#ecf1ff", "surface-container-low": "#f0f3ff", "on-background": "#111c2d", "on-tertiary-container": "#9cd1a8", "surface-container": "#e7eeff", "surface-bright": "#f9f9ff", "tertiary-container": "#295b3b", "on-secondary-container": "#663500", "on-primary": "#ffffff", "outline-variant": "#c0c9bb", "primary-fixed-dim": "#91d78a", "on-secondary-fixed-variant": "#6e3900", "tertiary": "#0f4325", "error-container": "#ffdad6", "secondary": "#904d00", "on-primary-fixed-variant": "#0c5216", "surface-container-highest": "#d8e3fb", "on-secondary": "#ffffff", "on-secondary-fixed": "#2f1500", "on-tertiary": "#ffffff", "on-primary-fixed": "#002203", "secondary-fixed": "#ffdcc3", "inverse-surface": "#263143", "background": "#f9f9ff", "on-surface-variant": "#41493e", "on-error-container": "#93000a", "secondary-container": "#fe932c" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "margin-tablet": "2rem", "margin-desktop": "3rem", "gutter": "1rem", "space-sm": "0.5rem", "margin": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-md": "1rem" }, "fontFamily": { "display-lg-mobile": [ "Manrope" ], "headline-lg-mobile": [ "Manrope" ], "headline-md": [ "Manrope" ], "label-sm": [ "Inter" ], "body-sm": [ "Inter" ], "display-lg": [ "Manrope" ], "body-lg": [ "Inter" ], "body-md": [ "Inter" ], "label-md": [ "Inter" ], "headline-lg": [ "Manrope" ], "headline-sm": [ "Manrope" ] }, "fontSize": { "display-lg-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.005em", "fontWeight": "400" } ], "display-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-md": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" href="index.html"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">LabelLens</span></a></div><nav class="hidden md:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-full px-space-md py-space-xs"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary font-semibold rounded-full px-space-md py-space-xs" href="index.html">Home</a><a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-space-md py-space-xs transition-colors" href="scan.html">Scan</a><a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-space-md py-space-xs transition-colors" href="history.html">History</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-lg py-space-sm rounded-full font-label-md text-label-md shadow-sm transition-all" href="scan.html"><span class="material-symbols-outlined text-[18px]">photo_camera</span><span class="">Scan a Label</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
-<section class="relative overflow-hidden pt-8 pb-16 lg:py-20">
-<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
-<div class="absolute top-1/2 -right-32 w-[30rem] h-[30rem] rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
-<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
-<div class="lg:col-span-7 flex flex-col items-start gap-space-md">
-<div class="inline-flex items-center gap-space-xs bg-surface-container-high px-space-md py-space-xs rounded-full shadow-sm"><span class="font-label-md text-label-md text-on-surface-variant font-semibold tracking-wide">Simple food labels</span></div>
-<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-on-surface tracking-tight font-bold">
-            Know what's in <br class="hidden sm:inline">
-<span class="text-primary font-extrabold underline decoration-secondary-container decoration-wavy decoration-2 underline-offset-8">your food.</span>
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>LabelLens — Your food, explained.</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#3f4944","secondary":"#32694f","background":"#effdf2","primary-container":"#176b45","surface-container-lowest":"#ffffff","surface":"#effdf2","tertiary-fixed-dim":"#bec9c3","tertiary-fixed":"#dae5de","surface-container-highest":"#d8e6db","on-surface":"#121e17","on-secondary-fixed":"#002114","inverse-surface":"#27332c","surface-variant":"#d8e6db","primary-fixed":"#a4f4c3","tertiary-container":"#56605b","secondary-container":"#b2edcd","inverse-primary":"#88d7a8","surface-tint":"#186c45","on-secondary":"#ffffff","error":"#ba1a1a","outline-variant":"#bfc9c0","on-tertiary-container":"#cfdad3","on-primary-fixed":"#002111","on-background":"#121e17","secondary-fixed-dim":"#9ad3b4","primary":"#005131","on-error-container":"#93000a","on-primary-fixed-variant":"#005232","surface-dim":"#cfded3","on-primary":"#ffffff","surface-bright":"#effdf2","surface-container-high":"#deece1","on-surface-variant":"#3f4942","inverse-on-surface":"#e6f4e9","on-tertiary-fixed":"#141e1a","tertiary":"#3e4844","surface-container":"#e3f1e6","outline":"#6f7a71","secondary-fixed":"#b5efcf","error-container":"#ffdad6","surface-container-low":"#e9f7ec","on-secondary-fixed-variant":"#175039","on-tertiary":"#ffffff","primary-fixed-dim":"#88d7a8","on-error":"#ffffff","on-secondary-container":"#366d53","on-primary-container":"#99e9b9"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","gutter-mobile":"1rem","space-xs":"0.25rem","space-xl":"2.5rem","gutter":"1.5rem","space-md":"1rem","space-lg":"1.5rem","margin":"2rem","margin-mobile":"1rem"},"fontFamily":{"label-sm":["Inter"],"code-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"label-md":["Inter"],"display-hero":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"]},"fontSize":{"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"code-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"21px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"600"}],"display-hero":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"display-hero-mobile":["30px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script><style>
+#dropzone.drag-active { border: 2px dashed #176b45; background: #e9f7ec; }
+#dropzone:focus-visible, button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid #176b45; outline-offset: 3px; }
+.safety-badge { display:inline-flex; align-items:center; border-radius:9999px; padding:.25rem .6rem; font-size:.75rem; font-weight:600; }
+.safety-generally_safe { background:#e9f7ec; color:#104b34; }
+.safety-potential_concern { background:#fef3c7; color:#854d0e; }
+.safety-insufficient_evidence { background:#e5e7eb; color:#374151; }
+.ingredient-card[data-status="review"] { border-left:4px solid #b7791f; }
+.ingredient-card[data-status="unclear"] { border-left:4px solid #6f7a71; }
+.ingredient-card[data-status="identified"] { border-left:4px solid #176b45; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } }
+</style></head><body id="top" class="bg-surface text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-[1120px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="LabelLens Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UDcHEoLRuqVcXIUAFHOP0jPtdHzY5z-AEB1kqxY9994Uj1_v4wRmAT6e0Lm5U8iEh_kVhRxgXyQxdx3qEHSbYefOaZbU9mfR739ijD-MVAWPw8aNAYdPeX1fCAwJdBLEEBN9kViorXVCbDgkEwMauDC1j6z6wBNvEhtGWdiY00lVNnOzNzMV1NjU-JMrXmqaWuQRNmMh3asqwIQoJe9ioRquSLD5996njQhnE-OE0gUbycFRwQHhRy3xQ"/><a class="flex items-center gap-space-xs" data-path="label-lens-home" href="#top"><span class="font-headline-md text-headline-md text-primary tracking-tight">LabelLens</span><span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Beta</span></a></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold rounded-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="how-it-works" href="#how-it-works">How it works</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="ingredient-guide" href="#guide">Ingredient guide</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="about" href="#about">About</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary font-label-md text-label-md px-space-lg py-space-sm rounded-lg hover:bg-primary transition-all shadow-[0_2px_8px_-2px_rgba(29,41,34,0.04)] active:scale-95" href="#scan-workspace">Analyze a label</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="w-full py-space-xl lg:py-24 relative overflow-hidden">
+<div class="max-w-[1120px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Hero Left Column -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md z-10">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-secondary-container text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase">Smarter Food Choices</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight text-balance leading-tight">
+            Know what’s inside <span class="text-primary font-bold">your food.</span>
 </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Scan an ingredient label and get a simple explanation of what's inside.</p>
-<div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
-<a class="flex-1 sm:flex-none inline-flex items-center justify-center gap-space-sm bg-primary hover:bg-primary-container text-on-primary px-space-xl py-space-md rounded-xl font-label-md text-label-md shadow-md transition-all hover:scale-[1.02] active:scale-[0.98]" href="scan.html">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
-<span class="text-[15px] tracking-wide font-semibold">Scan a Label</span>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+            Scan a packaged-food ingredient label and discover what each ingredient means, what deserves a closer look, and which allergens may be present.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-primary-container text-on-primary font-label-md text-label-md px-space-lg py-3 rounded-lg hover:bg-primary transition-all shadow-md active:scale-95 text-center" href="#scan-workspace">
+<span class="material-symbols-outlined text-[20px]">document_scanner</span>
+<span>Scan an ingredient label</span>
 </a>
-<label class="flex-1 sm:flex-none inline-flex items-center justify-center gap-space-sm bg-surface-container-lowest hover:bg-surface-container text-primary px-space-lg py-space-md rounded-xl font-label-md text-label-md shadow-sm transition-all cursor-pointer">
-<span class="material-symbols-outlined text-[20px]">upload_file</span>
-<span class="text-[15px] font-semibold">Upload a Photo</span>
-<input accept="image/*" class="hidden" id="label-upload-input" type="file">
-</label>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-surface-container text-secondary font-label-md text-label-md px-space-lg py-3 rounded-lg hover:bg-surface-container-high transition-all active:scale-95 text-center" href="#how-it-works">
+<span>Explore how it works</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
 </div>
-<div class="flex items-center gap-space-lg pt-space-sm"><span class="font-body-sm text-body-sm text-on-surface-variant">Takes just a few seconds · No sign-up required</span></div>
-</div>
-<div class="lg:col-span-5 relative">
-<div class="relative rounded-xl overflow-hidden bg-surface-container-lowest shadow-xl">
-<div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container-high">
-<img class="w-full h-full object-cover" data-alt="A shopper in a bright modern grocery store aisle holding up a snack bag and scanning the nutrition label with their smartphone camera, high quality natural lighting, depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6a2frIomBAldAeSCzMQ9AWXfajJJ4gX1osnPwzUgo_iQp_i5Xno7vls4wKoCH2oa83tV8qwWKPauHX7ts6nrr-U7lm8IwMZhC6-8hK9H-kBiKvhXFJ7xmD5HD3n8bXpaOsWO1a7OG5TOe12_s_jiuNIeWDl4LavC8zbnce1jqbM68hp8rDCtNg0UnsdBaMnq8WhTL2nnp85vxueAQES7-ldtqQ8Uty4FS6rqgesk1ir3c0G7gL305Dw">
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-
-
+<div class="flex items-center gap-space-xs text-on-surface-variant pt-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Evidence-based explanations. Clear uncertainty. No guesswork.</span>
 </div>
 </div>
-<div class="hidden sm:flex -mt-6 -ml-6 relative z-10 bg-primary text-on-primary p-space-md rounded-xl shadow-lg max-w-xs items-center gap-space-md">
-<div class="w-10 h-10 rounded-full bg-on-primary/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-[24px]">sentiment_very_satisfied</span>
+<!-- Hero Right Column: Mockup & Floating Overlay -->
+<div class="lg:col-span-5 relative flex justify-center lg:justify-end">
+<div class="relative w-full max-w-[420px]">
+<!-- Visual product frame -->
+<div class="relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-xl">
+<img class="w-full h-[400px] object-cover" alt="Illustrative food package photo; not an analysis result" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcLio5yj1Sg_6QDNCF_kmIm2mtQu51fXkIdtZS6w-t8MlqWXA_dvXd17zv19CdVj2BsmR4wy2DZ37aHjlS5lpE--elU07wk6Sv59P-XnvFhcKFSrmeGUSRJJn6ZmFVyUJtDguu8-ro7DzRdU7gMiF55MdrekeNmNogfF3QiD2OMJDanSadBPmdeWTrHHUEeHA4t6gBnzd2v0gaDg_Jre9fT334n2mwjOQSsDTRAL8fZSufaEId1euR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-primary">
+<span class="px-2 py-1 rounded bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm backdrop-blur-md">Illustrative product photo · not analyzed</span>
+<span class="px-2 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Example image</span>
 </div>
-<div><p class="font-label-md text-label-md font-bold">Instant plain-English breakdown</p></div>
+</div>
+<!-- Floating Analysis Card Preview -->
+<div class="absolute -bottom-8 -left-4 sm:-left-8 right-4 sm:right-2 bg-surface-container-lowest rounded-xl p-space-md shadow-xl flex flex-col gap-space-sm" aria-label="What a LabelLens scan provides">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">A clearer view of your label</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]" aria-hidden="true">menu_book</span><span class="font-body-sm text-body-sm text-on-surface font-semibold">Ingredient explanations</span></div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]" aria-hidden="true">science</span><span class="font-body-sm text-body-sm text-on-surface font-semibold">Evidence and limitations</span></div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-center gap-2"><span class="material-symbols-outlined text-error text-[18px]" aria-hidden="true">warning</span><span class="font-body-sm text-body-sm text-on-surface font-semibold">Separate allergen declarations</span></div>
+</div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="py-space-xl bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<!-- MAIN SCANNING WORKSPACE -->
+<section class="w-full py-space-xl lg:pt-20 lg:pb-16 bg-surface-container-low" id="scan-workspace" aria-labelledby="scanner-title">
+<div class="max-w-[1120px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col items-center text-center gap-space-xs mb-space-lg">
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-secondary font-semibold">Interactive Scanner Workspace</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface" id="scanner-title">Let's look at your ingredients</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">Upload a clear photo of the ingredient list on your food packaging.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl shadow-md p-space-md sm:p-space-xl max-w-3xl mx-auto">
+<input id="label-upload" class="sr-only" type="file" accept="image/jpeg,image/png,image/webp" aria-label="Choose an ingredient label image">
+<div id="dropzone" class="w-full bg-surface-container-low rounded-2xl p-space-xl flex flex-col items-center justify-center text-center cursor-pointer transition-all" role="button" tabindex="0" aria-label="Choose or drop an ingredient label image">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-primary flex items-center justify-center mb-space-md"><span class="material-symbols-outlined text-[32px]" aria-hidden="true">photo_camera</span></div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Drop your label image here</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md max-w-sm">Choose a photo of the ingredient list to begin the analysis.</p>
+<button id="choose-image" class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary font-label-md text-label-md px-space-lg py-2.5 rounded-lg shadow-sm hover:bg-primary transition-all" type="button"><span class="material-symbols-outlined text-[18px]" aria-hidden="true">add_photo_alternate</span>Choose image</button>
+<p class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-space-md py-1 mt-space-md rounded-full">JPG, PNG, or WebP · Up to 12 MiB</p>
+</div>
+<div class="w-full mt-space-md p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm"><span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5" aria-hidden="true">lightbulb</span><div><span class="font-label-sm text-label-sm text-on-surface font-semibold">For a clearer scan</span><p class="font-body-sm text-body-sm text-on-surface-variant">Capture the complete ingredient list in even lighting, without glare, creasing, or blur.</p></div></div>
+<div id="selected-panel" class="hidden mt-space-md p-space-md rounded-xl bg-surface-container flex flex-col sm:flex-row items-center gap-space-md">
+<div class="relative w-28 h-28 rounded-lg overflow-hidden shrink-0 shadow-sm bg-surface-container-high"><img id="image-preview" class="w-full h-full object-contain" alt="Preview of selected ingredient label"></div>
+<div class="flex flex-col flex-1 min-w-0 text-center sm:text-left"><span class="font-label-sm text-label-sm text-secondary font-semibold">Image ready for analysis</span><p id="file-name" class="font-headline-sm text-headline-sm text-on-surface truncate"></p><p id="file-size" class="font-body-sm text-body-sm text-on-surface-variant mt-1"></p>
+<div class="flex items-center justify-center sm:justify-start gap-space-sm mt-space-xs"><button id="remove-image" class="font-label-sm text-label-sm text-error hover:underline" type="button">Remove</button><span class="text-outline-variant" aria-hidden="true">·</span><button id="replace-image" class="font-label-sm text-label-sm text-secondary hover:underline" type="button">Replace photo</button></div></div>
+</div>
+<div id="analyzing-panel" class="hidden flex-col items-center py-space-xl text-center" role="status" aria-live="polite"><div class="relative w-16 h-16 mb-space-md flex items-center justify-center"><svg class="animate-spin w-16 h-16 text-secondary-container" viewBox="0 0 24 24" aria-hidden="true"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="text-primary" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path></svg></div><h3 class="font-headline-md text-headline-md text-on-surface">Analyzing your label…</h3><p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-space-xs">This can take a little while. Keep this page open while the analysis runs.</p></div>
+<div id="error-panel" class="hidden mt-space-md rounded-xl border border-error/30 bg-error-container p-space-md" role="alert" aria-live="assertive"><h3 id="error-title" class="font-headline-sm text-headline-sm text-on-error-container font-semibold">We couldn't analyze this image</h3><p id="error-message" class="font-body-md text-body-md text-on-error-container mt-space-xs"></p><button id="retry-upload" type="button" class="mt-space-md inline-flex items-center gap-space-xs rounded-lg bg-primary-container px-space-lg py-2.5 font-label-md text-label-md text-on-primary hover:bg-primary">Try again</button></div>
+<button id="analyze-button" class="hidden w-full mt-space-md py-3.5 rounded-xl bg-primary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-space-sm shadow-md hover:bg-primary transition-all" type="button"><span class="material-symbols-outlined text-[22px]" aria-hidden="true">troubleshoot</span>Analyze ingredients</button>
+<p id="upload-status" class="sr-only" aria-live="polite"></p>
+</div>
+</div>
+</section>
+<!-- INGREDIENT ANALYSIS RESULTS SECTION -->
+<section class="hidden w-full py-space-xl lg:py-24" id="analysis-results" aria-labelledby="results-title">
+<div class="max-w-[1120px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md mb-space-lg"><div><span class="font-label-sm text-label-sm uppercase tracking-wider font-bold text-primary">Assessment summary</span><h2 class="font-headline-lg text-headline-lg text-on-surface" id="results-title">Your ingredient breakdown</h2><p class="font-body-md text-body-md text-on-surface-variant">Information returned by the label analysis.</p><p id="result-product-name" class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-space-sm"></p></div><button id="new-scan" type="button" class="inline-flex items-center gap-1 px-space-md py-2 rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-surface-container-high">New scan</button></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg border border-outline-variant/40 shadow-sm"><div class="flex items-center gap-space-sm mb-space-md"><span class="material-symbols-outlined text-primary" aria-hidden="true">analytics</span><h3 class="font-headline-sm text-headline-sm text-on-surface">Ingredient summary</h3></div><div class="grid grid-cols-3 gap-space-sm text-center"><div class="rounded-lg bg-surface-container-low p-space-sm"><strong id="summary-identified" class="block font-headline-md text-headline-md text-primary">0</strong><span class="font-label-sm text-label-sm text-on-surface-variant">Identified</span></div><div class="rounded-lg bg-secondary-container/50 p-space-sm"><strong id="summary-review" class="block font-headline-md text-headline-md text-on-secondary-container">0</strong><span class="font-label-sm text-label-sm text-on-surface-variant">Closer look</span></div><div class="rounded-lg bg-surface-container p-space-sm"><strong id="summary-unclear" class="block font-headline-md text-headline-md text-on-surface-variant">0</strong><span class="font-label-sm text-label-sm text-on-surface-variant">Unclear</span></div></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm">Status counts include nested sub-ingredients. Identification does not by itself determine safety.</p></div>
+<div id="allergen-container" class="hidden bg-error-container/60 rounded-xl p-space-md border border-error/30" aria-labelledby="allergen-title"><div class="flex items-center gap-space-xs text-on-error-container mb-space-sm"><span class="material-symbols-outlined" aria-hidden="true">warning</span><h3 id="allergen-title" class="font-headline-sm text-headline-sm font-semibold">Allergen information</h3></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm"><div class="rounded-lg bg-surface-container-lowest/80 p-space-sm"><h4 class="font-label-md text-label-md text-on-error-container">Contains</h4><ul id="allergen-contains" class="mt-1 font-body-sm text-body-sm text-on-surface list-disc pl-5"></ul></div><div class="rounded-lg bg-surface-container-lowest/80 p-space-sm"><h4 class="font-label-md text-label-md text-on-error-container">May contain</h4><ul id="allergen-may-contain" class="mt-1 font-body-sm text-body-sm text-on-surface list-disc pl-5"></ul></div></div><p class="font-body-sm text-body-sm text-on-error-container mt-space-sm">These lists reflect declarations returned from the image analysis. Missing declarations do not establish absence.</p></div>
+<details class="bg-surface-container rounded-xl p-space-md"><summary class="cursor-pointer font-label-md text-label-md text-on-surface flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary" aria-hidden="true">science</span>How to interpret this assessment</summary><div class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm space-y-2"><p>Safety status is shown separately from ingredient identification. “Generally safe” is limited to the documented food-use context. “Potential concern” reflects the retrieved evidence. “Insufficient evidence” means the available evidence does not support a conclusion; it is not proof of danger or safety.</p><p>OCR may miss or misread label text. Check the package directly, especially for allergies. This information is educational and is not medical advice.</p></div></details>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-space-sm"><div class="flex items-center justify-between"><h3 class="font-headline-md text-headline-md text-on-surface">Ingredients</h3><span id="ingredient-count" class="font-label-sm text-label-sm text-on-surface-variant"></span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Top-level label entries; expand an entry to see any nested sub-ingredients.</p><div id="ingredient-list" class="flex flex-col gap-space-sm"></div></div>
+</div>
+</div>
+</section>
+<!-- HOW IT WORKS SECTION -->
+<section class="w-full py-space-xl lg:py-24 bg-surface-container-low" id="how-it-works">
+<div class="max-w-[1120px] mx-auto px-margin-mobile lg:px-margin">
 <div class="flex flex-col items-center text-center gap-space-xs mb-space-xl">
-<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold text-primary">How LabelLens Helps</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Understand your food in seconds</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Designed for shoppers who want mindful decisions without spending ten minutes decoding complex chemical names.</p>
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-secondary font-semibold">Effortless Transparency</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">How LabelLens works</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+          Three uncomplicated steps between you and full ingredient clarity.
+        </p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
-<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-<div>
-<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-space-md">
-<span class="material-symbols-outlined text-[28px]">search</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Read the label</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Turn tiny ingredient text into something easier to understand.</p>
-</div>
-<div class="mt-space-lg pt-space-md bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-sm">
-<span class="material-symbols-outlined text-primary text-[18px]">format_size</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Large readable typography</span>
-</div>
-</div>
-<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-<div>
-<div class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center mb-space-md">
-<span class="material-symbols-outlined text-[28px]">psychology</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Understand ingredients</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Get simple explanations of unfamiliar ingredients.</p>
-</div>
-<div class="mt-space-lg pt-space-md bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-sm">
-<span class="material-symbols-outlined text-secondary text-[18px]">translate</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Plain-language translations</span>
-</div>
-</div>
-<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
-<div><div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center mb-space-md"><span class="material-symbols-outlined text-[28px]">task_alt</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Know when to look closer</h3><p class="font-body-md text-body-md text-on-surface-variant">See which ingredients couldn't be identified confidently.</p></div>
-<div class="mt-space-lg pt-space-md bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-sm">
-<span class="material-symbols-outlined text-primary text-[18px]">shield</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Balanced allergen &amp; sweetener callouts</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-space-xl">
-<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
-<div>
-<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold text-primary">Interactive Preview</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">See how LabelLens decodes a snack</h2>
-</div>
-<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
-<span class="">Sample item from recent supermarket scan</span>
-</div>
-</div>
-<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-md lg:p-space-xl">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
-<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden group hover:shadow-md transition-all">
 <div class="flex items-center justify-between">
-<span class="px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
-                Snack Category
-              </span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Scanned 4 mins ago</span>
+<span class="font-headline-md text-headline-md text-secondary-container font-black">01</span>
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">camera</span>
 </div>
-<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-low">
-<img class="w-full h-full object-cover" data-alt="A bag of crispy cheese corn puff snacks sitting on a wooden kitchen table next to natural light, inviting food photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANMH3TJc84nwomlI8MNGgHx5W4aj3rYPgSWzFPZ7JMm0pxIF4YPZV8-2PVzS9ihBmiK5bkfaq2h6VKP7Ec6nlCkqrXN-vw1TNfLzCJ7uG7YPjo-vSJ9zV3UYRqF6NXrQimL43p74hgQrkJz43YRaHi8iHXwIzAf3_ojCOnQj2kjhxrTUkv1QgE564effs3BMgQmNPR1TEgWcyLewecMqNoSE1qFAM9GBSqNU-43d92v1-Q8vyCWz2_-w">
-<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-on-surface">
-                Packaging Verified
-              </div>
 </div>
-<div>
-<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Kurkure Chatpata Cheese</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">15 total ingredients identified across corn base, seasoning blend, and stabilizing oils.</p>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Scan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Upload a clear image of a packaged-food ingredient list from any smartphone or digital camera.
+            </p>
 </div>
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-space-xs"><div class="bg-surface-container-low p-space-sm rounded-lg text-center"><span class="font-headline-lg text-headline-lg font-bold text-primary">15</span><p class="font-body-sm text-body-sm text-on-surface-variant">Ingredients</p></div><div class="bg-surface-container-low p-space-sm rounded-lg text-center"><span class="font-headline-lg text-headline-lg font-bold text-primary">12</span><p class="font-body-sm text-body-sm text-on-surface-variant">Identified</p></div><div class="bg-surface-container-low p-space-sm rounded-lg text-center"><span class="font-headline-lg text-headline-lg font-bold text-secondary">2</span><p class="font-body-sm text-body-sm text-on-surface-variant">Needs closer look</p></div><div class="bg-surface-container-low p-space-sm rounded-lg text-center"><span class="font-headline-lg text-headline-lg font-bold text-outline">1</span><p class="font-body-sm text-body-sm text-on-surface-variant">Not identified</p></div></div>
 </div>
-<div class="lg:col-span-7 flex flex-col justify-between">
-<div><span class="font-label-md text-label-md text-on-surface-variant font-semibold tracking-wide">Simple food labels</span></div>
-<div class="mt-space-lg pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-high/60 p-space-md rounded-xl">
-<div class="flex items-center gap-space-sm">
-<span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
-<span class="font-body-md text-body-md text-on-surface font-medium">Ready to see what is in your pantry?</span>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-secondary-container font-black">02</span>
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
 </div>
-<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-primary text-on-primary px-space-lg py-space-sm rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors" href="scan.html">
-<span class="">Try scanning this</span>
-<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
 </div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Understand</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              See plain-language ingredient explanations, functional food purposes, and evidence-informed nutritional context.
+            </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-secondary-container font-black">03</span>
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">check_box</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Decide</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Review potential dietary concerns and allergen flags to make confident, informed choices for your household.
+            </p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="py-space-xl bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
-<div class="bg-primary text-on-primary rounded-xl p-space-lg lg:p-space-xl relative overflow-hidden shadow-xl">
-<div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-on-primary/5 blur-2xl pointer-events-none"></div>
-<div class="relative z-10 max-w-2xl flex flex-col items-start gap-space-md">
-<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-primary-container font-bold">Start Shopping Smarter</span>
-<h2 class="font-headline-lg text-headline-lg font-bold">No accounts, no fee walls, no scare tactics.</h2>
-<p class="font-body-lg text-body-lg text-on-primary-container">
-            Simply point your camera at any food product label. Get an objective, calm evaluation of its contents right in your hand.
+<!-- INGREDIENT GUIDE / EDUCATIONAL SECTION -->
+<section class="w-full py-space-xl lg:py-24" id="guide">
+<div class="max-w-[1120px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col items-center text-center gap-space-xs mb-space-xl">
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-secondary font-semibold">Educational Knowledge Base</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Ingredient labels, made easier</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+          Practical advice for navigating complex food manufacturing terminology.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Educational Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">science</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">What is this ingredient?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Demystifying functional food additives, emulsifiers, binders, and chemical sounding names (like <em>tocopherols</em> which are simply Vitamin E).
+            </p>
+</div>
+<div class="pt-space-sm border-t border-surface-container-high">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+              Additives Demystified <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Educational Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">format_list_numbered</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">What should I look for?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Interpreting order of predominance (items listed by weight descending), disguised added sugars under multiple aliases, and qualifying sodium levels.
+            </p>
+</div>
+<div class="pt-space-sm border-t border-surface-container-high">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+              Label Sequencing Guide <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Educational Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">emergency</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">What about allergens?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Understanding the crucial difference between legally mandated declared presence ("Contains") and voluntary advisory warning statements ("May contain").
+            </p>
+</div>
+<div class="pt-space-sm border-t border-surface-container-high">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+              Allergen Clarity Standards <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT & ETHOS BANNER -->
+<section class="w-full py-space-xl bg-surface-container" id="about">
+<div class="max-w-[1120px] mx-auto px-margin-mobile lg:px-margin">
+<div class="bg-primary text-on-primary rounded-3xl p-space-lg lg:p-space-xl relative overflow-hidden shadow-xl">
+<div class="relative z-10 max-w-2xl flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Our Core Philosophy</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary">Food understanding without alarmism.</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim leading-relaxed">
+            We believe eating mindfully starts with straightforward knowledge. LabelLens bridges the gap between intricate scientific naming and consumer health decisions without sensationalizing clean eating.
           </p>
-<div class="pt-space-xs flex flex-wrap items-center gap-space-md">
-<a class="inline-flex items-center gap-space-xs bg-surface-container-lowest text-primary hover:bg-surface px-space-xl py-space-md rounded-xl font-label-md text-label-md shadow-md transition-all font-bold" href="scan.html">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
-<span class="">Open Scanner Now</span>
-</a>
-<a class="inline-flex items-center gap-space-xs text-on-primary hover:text-on-primary-container px-space-md py-space-md font-label-md text-label-md transition-colors" href="history.html">
-<span class="material-symbols-outlined text-[18px]">history</span>
-<span class="">View Example Scans</span>
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-space-xs bg-surface-container-lowest text-primary font-label-md text-label-md px-space-lg py-3 rounded-lg hover:bg-surface transition-all shadow-md active:scale-95" href="#scan-workspace">
+<span>Scan your first package</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 </div>
 </div>
 </div>
 </div>
 </section>
+<!-- Interactive JavaScript logic for states and accordions -->
 <script>
-    function toggleIng(index) {
-      const detail = document.getElementById('ing-detail-' + index);
-      if (detail) {
-        detail.classList.toggle('hidden');
+(() => {
+  'use strict';
+  const MAX_UPLOAD_BYTES = 12 * 1024 * 1024;
+  const input = document.getElementById('label-upload');
+  const dropzone = document.getElementById('dropzone');
+  const selectedPanel = document.getElementById('selected-panel');
+  const preview = document.getElementById('image-preview');
+  const fileName = document.getElementById('file-name');
+  const fileSize = document.getElementById('file-size');
+  const analyzeButton = document.getElementById('analyze-button');
+  const analyzingPanel = document.getElementById('analyzing-panel');
+  const errorPanel = document.getElementById('error-panel');
+  const statusText = document.getElementById('upload-status');
+  let selectedFile = null;
+  let previewUrl = null;
+  let analyzing = false;
+
+  const make = (tag, className, text) => {
+    const el = document.createElement(tag);
+    if (className) el.className = className;
+    if (text !== undefined && text !== null) el.textContent = String(text);
+    return el;
+  };
+  const asText = value => typeof value === 'string' ? value : '';
+  const showError = (title, message) => {
+    document.getElementById('error-title').textContent = title;
+    document.getElementById('error-message').textContent = message;
+    dropzone.classList.add('hidden');
+    selectedPanel.classList.add('hidden');
+    analyzeButton.classList.add('hidden');
+    analyzingPanel.classList.add('hidden');
+    analyzingPanel.classList.remove('flex');
+    errorPanel.classList.remove('hidden');
+    statusText.textContent = `${title}. ${message}`;
+  };
+  const setSelectedState = () => {
+    errorPanel.classList.add('hidden');
+    analyzingPanel.classList.add('hidden');
+    analyzingPanel.classList.remove('flex');
+    dropzone.classList.toggle('hidden', Boolean(selectedFile));
+    selectedPanel.classList.toggle('hidden', !selectedFile);
+    analyzeButton.classList.toggle('hidden', !selectedFile);
+    analyzeButton.disabled = analyzing;
+  };
+  const clearPreview = () => {
+    if (previewUrl) URL.revokeObjectURL(previewUrl);
+    previewUrl = null;
+    preview.removeAttribute('src');
+  };
+  const chooseFile = file => {
+    if (!file) return;
+    if (!['image/jpeg', 'image/png', 'image/webp'].includes(file.type)) {
+      selectedFile = null;
+      clearPreview();
+      showError('Unsupported image format', 'Choose a JPG, PNG, or WebP image.');
+      return;
+    }
+    if (file.size > MAX_UPLOAD_BYTES) {
+      selectedFile = null;
+      clearPreview();
+      showError('Image is too large', 'Choose an image no larger than 12 MiB.');
+      return;
+    }
+    selectedFile = file;
+    clearPreview();
+    previewUrl = URL.createObjectURL(file);
+    preview.src = previewUrl;
+    fileName.textContent = file.name;
+    fileSize.textContent = `${(file.size / (1024 * 1024)).toFixed(2)} MiB`;
+    setSelectedState();
+    statusText.textContent = `${file.name} selected`;
+  };
+  const resetUpload = () => {
+    selectedFile = null;
+    input.value = '';
+    clearPreview();
+    errorPanel.classList.add('hidden');
+    setSelectedState();
+    statusText.textContent = 'Image removed';
+  };
+
+  document.getElementById('choose-image').addEventListener('click', () => input.click());
+  document.getElementById('replace-image').addEventListener('click', () => input.click());
+  document.getElementById('remove-image').addEventListener('click', resetUpload);
+  document.getElementById('retry-upload').addEventListener('click', () => {
+    errorPanel.classList.add('hidden');
+    if (selectedFile) setSelectedState(); else input.click();
+  });
+  input.addEventListener('change', () => chooseFile(input.files && input.files[0]));
+  dropzone.addEventListener('click', event => {
+    if (event.target.closest('button')) return;
+    input.click();
+  });
+  dropzone.addEventListener('keydown', event => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      input.click();
+    }
+  });
+  ['dragenter', 'dragover'].forEach(type => dropzone.addEventListener(type, event => {
+    event.preventDefault();
+    dropzone.classList.add('drag-active');
+  }));
+  ['dragleave', 'drop'].forEach(type => dropzone.addEventListener(type, event => {
+    event.preventDefault();
+    dropzone.classList.remove('drag-active');
+  }));
+  dropzone.addEventListener('drop', event => chooseFile(event.dataTransfer && event.dataTransfer.files[0]));
+
+  const identityLabels = { identified: 'Identified', review: 'Needs a closer look', unclear: 'Not identified' };
+  const safetyLabels = {
+    generally_safe: 'Generally safe',
+    potential_concern: 'Potential concern',
+    insufficient_evidence: 'Insufficient evidence'
+  };
+  const identityClasses = {
+    identified: 'bg-secondary-container text-on-secondary-container',
+    review: 'bg-amber-100 text-amber-900',
+    unclear: 'bg-surface-container text-on-surface-variant'
+  };
+  const safeUrl = value => {
+    if (typeof value !== 'string' || !value.trim()) return null;
+    try {
+      const parsed = new URL(value, window.location.href);
+      return ['http:', 'https:'].includes(parsed.protocol) ? parsed.href : null;
+    } catch (_) { return null; }
+  };
+  const makeExternalLink = (url, label) => {
+    const safe = safeUrl(url);
+    if (!safe) return make('span', 'text-on-surface-variant', label);
+    const link = make('a', 'text-primary underline underline-offset-2 break-all', label);
+    link.href = safe;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    return link;
+  };
+  const appendList = (parent, values, emptyText) => {
+    if (!Array.isArray(values) || values.length === 0) {
+      parent.appendChild(make('li', '', emptyText));
+      return;
+    }
+    values.forEach(value => parent.appendChild(make('li', '', asText(value))));
+  };
+  const normalizedSafety = value => {
+    const assessment = value && typeof value === 'object' && !Array.isArray(value) ? value : {};
+    const status = Object.prototype.hasOwnProperty.call(safetyLabels, assessment.status)
+      ? assessment.status : 'insufficient_evidence';
+    return {
+      status,
+      reason_for_use: asText(assessment.reason_for_use),
+      health_concerns: Array.isArray(assessment.health_concerns) ? assessment.health_concerns : [],
+      uncertainty: asText(assessment.uncertainty),
+      evidence: Array.isArray(assessment.evidence) ? assessment.evidence : []
+    };
+  };
+  const renderEvidence = (parent, item, safety) => {
+    const evidence = safety.evidence;
+    if (evidence.length) {
+      const heading = make('h5', 'font-label-md text-label-md text-on-surface mt-space-sm', 'Retrieved evidence');
+      const list = make('ul', 'list-disc pl-5 mt-1 space-y-1 font-body-sm text-body-sm text-on-surface-variant');
+      evidence.forEach(ref => {
+        const li = make('li');
+        const label = asText(ref && ref.title) || 'Knowledge-base reference';
+        li.appendChild(makeExternalLink(ref && ref.url, label));
+        if (ref && typeof ref.section === 'string') li.appendChild(make('span', '', ` · ${ref.section}`));
+        list.appendChild(li);
+      });
+      parent.append(heading, list);
+    }
+    if (item && item.source && typeof item.source === 'object') {
+      const sourceName = asText(item.source.organization);
+      if (sourceName) {
+        const row = make('p', 'font-body-sm text-body-sm text-on-surface-variant mt-space-sm');
+        row.append(make('span', 'font-semibold', 'Source: '), makeExternalLink(item.source.url, sourceName));
+        parent.appendChild(row);
       }
     }
-  </script>
-</div></main><footer class="w-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop py-space-xl flex flex-col gap-space-lg"><div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary font-bold">LabelLens</span></div><p class="font-body-md text-body-md text-on-surface-variant">Know what's in your food.</p></div><div class="flex flex-wrap items-center gap-space-lg"><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="scan.html">Scan</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="history.html">History</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#">About</a></div></div><div class="p-space-md rounded-xl bg-surface-container-lowest flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-on-surface-variant">Information is provided for general consumer understanding. It is not medical advice.</p><p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 LabelLens Transparency Systems. All rights reserved.</p></div></div></footer>
+  };
+  const renderIngredient = (item, index, depth = 0) => {
+    const data = item && typeof item === 'object' && !Array.isArray(item) ? item : {};
+    const identity = Object.prototype.hasOwnProperty.call(identityLabels, data.status) ? data.status : 'unclear';
+    const safety = normalizedSafety(data.safety_assessment);
+    const details = make('details', `ingredient-card bg-surface-container-lowest rounded-xl border border-outline-variant/40 shadow-sm ${identity === 'identified' ? 'border-l-4 border-l-primary' : identity === 'review' ? 'border-l-4 border-l-amber-600' : 'border-l-4 border-l-outline'}`);
+    details.dataset.status = identity;
+    const summary = make('summary', 'list-none cursor-pointer p-space-md flex items-start justify-between gap-space-sm');
+    const left = make('span', 'flex items-start gap-space-sm min-w-0');
+    left.appendChild(make('span', 'font-label-sm text-label-sm text-on-surface-variant mt-1', String(index + 1).padStart(2, '0')));
+    const names = make('span', 'min-w-0 flex flex-col gap-1');
+    names.appendChild(make('span', 'font-headline-sm text-headline-sm text-on-surface font-semibold break-words', asText(data.name) || 'Unknown ingredient'));
+    if (data.original_text && data.original_text !== data.name) names.appendChild(make('span', 'font-body-sm text-body-sm text-on-surface-variant break-words', `Label text: ${asText(data.original_text)}`));
+    left.appendChild(names);
+    const badges = make('span', 'flex flex-col items-end gap-1 shrink-0');
+    badges.appendChild(make('span', `safety-badge ${identityClasses[identity]}`, identityLabels[identity]));
+    badges.appendChild(make('span', `safety-badge safety-${safety.status}`, safetyLabels[safety.status]));
+    summary.append(left, badges);
+    details.appendChild(summary);
 
-</body></html>
+    const body = make('div', 'px-space-md pb-space-md pt-1 border-t border-outline-variant/30');
+    const infoGrid = make('div', 'grid grid-cols-1 sm:grid-cols-2 gap-space-md mt-space-sm');
+    const addInfo = (title, text) => {
+      if (!text) return;
+      const block = make('div');
+      block.append(make('h4', 'font-label-md text-label-md text-primary mb-1', title), make('p', 'font-body-sm text-body-sm text-on-surface-variant whitespace-pre-line', text));
+      infoGrid.appendChild(block);
+    };
+    addInfo('What it is', asText(data.what));
+    addInfo('Why it is used', asText(data.why));
+    addInfo('What to know', asText(data.know));
+    addInfo('Reason in the safety assessment', safety.reason_for_use);
+    if (infoGrid.childNodes.length) body.appendChild(infoGrid);
+
+    if (safety.health_concerns.length) {
+      const concerns = make('ul', 'mt-space-sm list-disc pl-5 font-body-sm text-body-sm text-on-surface');
+      safety.health_concerns.forEach(value => concerns.appendChild(make('li', '', asText(value))));
+      const group = make('div', 'mt-space-sm');
+      group.append(make('h4', 'font-label-md text-label-md text-on-surface', 'Assessment concerns'), concerns);
+      body.appendChild(group);
+    }
+    if (safety.uncertainty) {
+      const note = make('p', 'mt-space-sm rounded-lg bg-surface-container-low p-space-sm font-body-sm text-body-sm text-on-surface-variant', safety.uncertainty);
+      body.appendChild(note);
+    }
+    renderEvidence(body, data, safety);
+    if (Array.isArray(data.aliases) && data.aliases.length) {
+      const aliases = make('p', 'mt-space-sm font-body-sm text-body-sm text-on-surface-variant', `Recognized aliases: ${data.aliases.map(asText).filter(Boolean).join(', ')}`);
+      body.appendChild(aliases);
+    }
+    if (Array.isArray(data.sub_ingredients) && data.sub_ingredients.length) {
+      const nested = make('div', 'mt-space-md pl-space-sm border-l-2 border-outline-variant');
+      nested.appendChild(make('h4', 'font-label-md text-label-md text-on-surface mb-space-sm', 'Sub-ingredients'));
+      const nestedList = make('div', 'flex flex-col gap-space-sm');
+      data.sub_ingredients.forEach((child, childIndex) => nestedList.appendChild(renderIngredient(child, childIndex, depth + 1)));
+      nested.appendChild(nestedList);
+      body.appendChild(nested);
+    }
+    details.appendChild(body);
+    return details;
+  };
+
+  const renderResults = response => {
+    if (!response || typeof response !== 'object' || !Array.isArray(response.ingredients)
+        || !response.summary || typeof response.summary !== 'object'
+        || !response.allergens || typeof response.allergens !== 'object') {
+      throw new Error('The server returned an unexpected analysis response. Please try again.');
+    }
+    const summary = response.summary;
+    const productName = asText(response.product_name);
+    document.getElementById('result-product-name').textContent = productName && productName !== 'Scanned Product'
+      ? productName : 'Product name not identified';
+    document.getElementById('summary-identified').textContent = String(Number(summary.identified) || 0);
+    document.getElementById('summary-review').textContent = String(Number(summary.review) || 0);
+    document.getElementById('summary-unclear').textContent = String(Number(summary.unclear) || 0);
+    document.getElementById('ingredient-count').textContent = `${response.ingredients.length} top-level ${response.ingredients.length === 1 ? 'entry' : 'entries'}`;
+    const ingredientList = document.getElementById('ingredient-list');
+    ingredientList.replaceChildren();
+    response.ingredients.forEach((item, index) => ingredientList.appendChild(renderIngredient(item, index)));
+    if (!response.ingredients.length) ingredientList.appendChild(make('p', 'rounded-xl bg-surface-container-low p-space-md font-body-md text-body-md text-on-surface-variant', 'No ingredients were returned from this image. Try a clearer, closer photo of the ingredient panel.'));
+
+    const allergenContainer = document.getElementById('allergen-container');
+    const contains = Array.isArray(response.allergens.contains) ? response.allergens.contains : [];
+    const mayContain = Array.isArray(response.allergens.may_contain) ? response.allergens.may_contain : [];
+    const containsList = document.getElementById('allergen-contains');
+    const mayContainList = document.getElementById('allergen-may-contain');
+    containsList.replaceChildren();
+    mayContainList.replaceChildren();
+    appendList(containsList, contains, 'No items returned.');
+    appendList(mayContainList, mayContain, 'No items returned.');
+    allergenContainer.classList.toggle('hidden', contains.length === 0 && mayContain.length === 0);
+    document.getElementById('analysis-results').classList.remove('hidden');
+    statusText.textContent = 'Analysis complete. Results are displayed below.';
+  };
+
+  const analyze = async () => {
+    if (!selectedFile || analyzing) return;
+    analyzing = true;
+    errorPanel.classList.add('hidden');
+    dropzone.classList.add('hidden');
+    selectedPanel.classList.add('hidden');
+    analyzeButton.classList.add('hidden');
+    analyzingPanel.classList.remove('hidden');
+    analyzingPanel.classList.add('flex');
+    statusText.textContent = 'Analyzing label';
+    const formData = new FormData();
+    formData.append('image', selectedFile);
+    try {
+      const response = await fetch('/analyze', { method: 'POST', body: formData });
+      let payload;
+      try { payload = await response.json(); }
+      catch (_) { throw new Error('The server response could not be read. Please retry.'); }
+      if (!response.ok) {
+        if (response.status === 400) throw new Error(asText(payload.message) || 'The upload could not be read. Choose a valid image and try again.');
+        if (response.status === 413) throw new Error('This upload exceeds the server limit. Choose an image smaller than 12 MiB.');
+        if (response.status === 503) throw new Error('Another label is being analyzed. Wait a moment, then retry.');
+        throw new Error(asText(payload.message) || 'The analysis service could not complete this request. Please retry.');
+      }
+      renderResults(payload);
+      document.getElementById('analysis-results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } catch (error) {
+      const message = error instanceof TypeError
+        ? 'The LabelLens server could not be reached. Check your connection and try again.'
+        : (error && error.message) || 'The image could not be analyzed. Please retry.';
+      showError('Analysis could not be completed', message);
+    } finally {
+      analyzing = false;
+      analyzingPanel.classList.add('hidden');
+      analyzingPanel.classList.remove('flex');
+      if (!errorPanel.classList.contains('hidden')) {
+        // Keep the retry panel visible while retaining the chosen image in memory.
+      } else {
+        setSelectedState();
+      }
+    }
+  };
+  analyzeButton.addEventListener('click', analyze);
+  document.getElementById('new-scan').addEventListener('click', () => {
+    document.getElementById('analysis-results').classList.add('hidden');
+    resetUpload();
+    document.getElementById('scan-workspace').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+})();
+</script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_6px_rgba(0,0,0,0.02)] mt-space-xl"><div class="max-w-[1120px] mx-auto px-margin-mobile lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg pb-space-xl"><div class="md:col-span-5 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="LabelLens Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UDcHEoLRuqVcXIUAFHOP0jPtdHzY5z-AEB1kqxY9994Uj1_v4wRmAT6e0Lm5U8iEh_kVhRxgXyQxdx3qEHSbYefOaZbU9mfR739ijD-MVAWPw8aNAYdPeX1fCAwJdBLEEBN9kViorXVCbDgkEwMauDC1j6z6wBNvEhtGWdiY00lVNnOzNzMV1NjU-JMrXmqaWuQRNmMh3asqwIQoJe9ioRquSLD5996njQhnE-OE0gUbycFRwQHhRy3xQ"/><span class="font-headline-md text-headline-md text-primary tracking-tight">LabelLens</span></div><p class="font-body-md text-body-md text-on-surface-variant font-medium">Your food, explained.</p><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-space-xs">Helping you understand the ingredients behind everyday food choices with clinical clarity and approachable guidance.</p></div><div class="md:col-span-4 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-on-surface font-semibold">Navigation</span><div class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#how-it-works">How it works</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="ingredient-guide" href="#guide">Ingredient Guide</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#about">About</a></div></div><div class="md:col-span-3 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-on-surface font-semibold">Quick Actions</span><a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#scan-workspace"><span class="material-symbols-outlined text-[18px]">document_scanner</span><span>Open Scanner Workspace</span></a></div></div><div class="p-space-md rounded-xl bg-surface-container border-0 flex items-start gap-space-sm mb-space-lg"><span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">info</span><p class="font-body-sm text-body-sm text-on-surface-variant"><strong class="text-on-surface font-semibold">Disclaimer:</strong> LabelLens provides evidence-informed educational explanations and is not a substitute for professional medical, clinical dietetic, or allergy advice.</p></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 LabelLens. All rights reserved.</p><p class="text-body-sm font-body-sm">Designed for transparent, mindful eating.</p></div></div></footer></body></html>

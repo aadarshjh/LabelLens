@@ -64,6 +64,8 @@ python run_frontend.py
 ```
 and open `http://localhost:8000`.
 
+The frontend accepts request bodies up to 12 MiB by default (including multipart framing); set `MAX_REQUEST_BODY_BYTES` to a positive byte count to change the limit. Analysis requests are processed one at a time while static requests remain available. The `/analyze` endpoint has no built-in authentication or per-client rate limit. Before exposing it publicly, put it behind an access-controlled reverse proxy with request rate limits and appropriate network restrictions; otherwise an unauthenticated client can consume configured Groq quota.
+
 ### Docker
 
 Build and run the production-style container from the repository root:
