@@ -24,3 +24,8 @@ htmlcov/
 .mypy_cache/
 .ruff_cache/
 .idea/
+Label*.jpg
+label*.jpeg
+data/images/
+data/ground_truth/
+frontend/design_references/

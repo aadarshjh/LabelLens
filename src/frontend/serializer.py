@@ -1,4 +1,5 @@
 import re
+from src.safety.assessment import assess_ingredient_safety
 
 
 UNREADABLE_INGREDIENT_MESSAGE = (
@@ -99,6 +100,7 @@ def serialize_for_frontend(phase4_results: list, phase2_summary: dict, product_n
             "what": what_text,
             "why": why_text,
             "know": know_text,
+            "safety_assessment": item.get("safety_assessment") or assess_ingredient_safety(item),
             "source": source_dict,
             "original_text": item.get("raw_name", item.get("ingredient", "")),
             "sub_ingredients": sub_consumer_items

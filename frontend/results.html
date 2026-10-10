@@ -9,7 +9,7 @@
 <!-- LEFT COLUMN: Ingredients Explorer List -->
 <div class="lg:col-span-6 flex flex-col gap-space-md"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm"><div><h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Ingredients</h2><p class="font-body-sm text-body-sm text-on-surface-variant">Tap an ingredient to see what it is and why it's used.</p></div><div class="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0" id="filter-container"><button class="font-label-sm text-label-sm px-3 py-1.5 rounded-full bg-primary text-on-primary transition-all flex items-center gap-1 shadow-sm" id="btn-filter-all" onclick="filterIngredients('all')"><span class="">All 15</span></button><button class="font-label-sm text-label-sm px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container transition-all flex items-center gap-1" id="btn-filter-identified" onclick="filterIngredients('identified')"><span class="material-symbols-outlined text-[13px] text-surface-tint">check</span><span class="">Identified 12</span></button><button class="font-label-sm text-label-sm px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container transition-all flex items-center gap-1" id="btn-filter-review" onclick="filterIngredients('review')"><span class="material-symbols-outlined text-[13px] text-secondary">help</span><span class="">Needs a closer look 2</span></button><button class="font-label-sm text-label-sm px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container transition-all flex items-center gap-1" id="btn-filter-unclear" onclick="filterIngredients('unclear')"><span class="material-symbols-outlined text-[13px] text-outline">horizontal_rule</span><span class="">Not identified 1</span></button></div></div><div id="allergen-container" class="hidden"></div><div class="flex flex-col gap-space-xs" id="ingredient-list"><div class="ingredient-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-space-md transition-all flex items-center justify-between gap-space-md" data-status="identified" onclick="selectIngredient('corn-meal')"><div class="flex items-start gap-space-sm min-w-0"><span class="font-label-sm text-label-sm w-5 text-on-surface-variant mt-0.5 font-semibold">01</span><div class="min-w-0"><h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Corn Meal</h3><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Main ingredient</p></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-1 rounded-full font-semibold"><span class="material-symbols-outlined text-[14px]">check</span><span class="">Identified</span></span><span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span></div></div><div class="ingredient-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-space-md transition-all flex items-center justify-between gap-space-md" data-status="identified" onclick="selectIngredient('palm-olein')"><div class="flex items-start gap-space-sm min-w-0"><span class="font-label-sm text-label-sm w-5 text-on-surface-variant mt-0.5 font-semibold">02</span><div class="min-w-0"><h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Palm Olein Oil</h3><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Vegetable oil</p></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-1 rounded-full font-semibold"><span class="material-symbols-outlined text-[14px]">check</span><span class="">Identified</span></span><span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span></div></div><div class="ingredient-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-space-md transition-all flex items-center justify-between gap-space-md" data-status="identified" onclick="selectIngredient('maltodextrin')"><div class="flex items-start gap-space-sm min-w-0"><span class="font-label-sm text-label-sm w-5 text-on-surface-variant mt-0.5 font-semibold">03</span><div class="min-w-0"><h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Maltodextrin</h3><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Food ingredient used in processed foods</p></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-1 rounded-full font-semibold"><span class="material-symbols-outlined text-[14px]">check</span><span class="">Identified</span></span><span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span></div></div><div class="ingredient-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-space-md transition-all flex items-center justify-between gap-space-md relative overflow-hidden" data-status="review" onclick="selectIngredient('milk-solids')"><div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary"></div><div class="flex items-start gap-space-sm min-w-0 pl-1"><span class="font-label-sm text-label-sm w-5 text-on-surface-variant mt-0.5 font-semibold">04</span><div class="min-w-0"><h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Milk Solids</h3><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Needs a closer look · Label creased in this area</p></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed-variant px-2.5 py-1 rounded-full font-semibold"><span class="material-symbols-outlined text-[14px]">help</span><span class="">Needs a closer look</span></span><span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span></div></div><div class="ingredient-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-space-md transition-all flex items-center justify-between gap-space-md" data-status="identified" onclick="selectIngredient('whey-powder')"><div class="flex items-start gap-space-sm min-w-0"><span class="font-label-sm text-label-sm w-5 text-on-surface-variant mt-0.5 font-semibold">05</span><div class="min-w-0"><h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Whey Powder</h3><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Milk-derived ingredient</p></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-1 rounded-full font-semibold"><span class="material-symbols-outlined text-[14px]">check</span><span class="">Identified</span></span><span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span></div></div><div class="ingredient-card cursor-pointer bg-surface-container-lowest rounded-lg p-space-md transition-all flex items-center justify-between gap-space-md shadow-md bg-surface-container-high/40" data-status="identified" id="card-msg" onclick="selectIngredient('msg')"><div class="flex items-start gap-space-sm min-w-0"><span class="font-label-sm text-label-sm w-5 text-primary mt-0.5 font-bold">06</span><div class="min-w-0"><h3 class="font-headline-sm text-headline-sm text-primary font-bold truncate">Monosodium Glutamate</h3><p class="font-body-sm text-body-sm text-on-surface truncate">Flavor enhancer</p></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-1 rounded-full font-semibold"><span class="material-symbols-outlined text-[14px]">check</span><span class="">Identified</span></span><span class="material-symbols-outlined text-primary text-[20px]">arrow_forward</span></div></div><div class="ingredient-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-space-md transition-all flex items-center justify-between gap-space-md" data-status="identified" onclick="selectIngredient('potassium-chloride')"><div class="flex items-start gap-space-sm min-w-0"><span class="font-label-sm text-label-sm w-5 text-on-surface-variant mt-0.5 font-semibold">07</span><div class="min-w-0"><h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Potassium Chloride</h3><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Salt substitute</p></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-1 rounded-full font-semibold"><span class="material-symbols-outlined text-[14px]">check</span><span class="">Identified</span></span><span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span></div></div><div class="ingredient-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-space-md transition-all flex items-center justify-between gap-space-md" data-status="identified" onclick="selectIngredient('citric-acid')"><div class="flex items-start gap-space-sm min-w-0"><span class="font-label-sm text-label-sm w-5 text-on-surface-variant mt-0.5 font-semibold">08</span><div class="min-w-0"><h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Citric Acid</h3><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Acidity regulator</p></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-1 rounded-full font-semibold"><span class="material-symbols-outlined text-[14px]">check</span><span class="">Identified</span></span><span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span></div></div><div class="ingredient-card cursor-pointer bg-surface-container-low hover:bg-surface-container rounded-lg p-space-md transition-all flex items-center justify-between gap-space-md" data-status="unclear" onclick="selectIngredient('unclear-fold')"><div class="flex items-start gap-space-sm min-w-0"><span class="font-label-sm text-label-sm w-5 text-outline-variant mt-0.5 font-semibold">09</span><div class="min-w-0"><h3 class="font-headline-sm text-headline-sm text-on-surface-variant font-medium truncate">Unreadable section (260, 296)</h3><p class="font-body-sm text-body-sm text-on-surface-variant truncate">Couldn't identify confidently from photo</p></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm bg-surface-dim text-on-surface-variant px-2.5 py-1 rounded-full font-semibold"><span class="material-symbols-outlined text-[14px]">horizontal_rule</span><span class="">Not identified</span></span><span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span></div></div></div><div class="p-space-sm bg-surface-container-lowest rounded-lg flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm" id="remaining-footer"><span class="">Remaining 6 ingredients parsed: Onion Powder, Garlic Powder, Paprika Extract, Salt, Yeast Extract, Tocopherols.</span></div></div>
 <!-- RIGHT COLUMN: Active Ingredient Drawer / Detail Card (Scientific Deep Dive) -->
-<div class="lg:col-span-6 lg:sticky lg:top-24 flex flex-col gap-space-md" id="detail-drawer"><div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md"><div class="flex items-start justify-between gap-space-md"><div class="flex flex-col gap-1 min-w-0"><h2 class="font-headline-lg text-headline-lg text-on-surface font-bold" id="detail-title">Monosodium Glutamate</h2><p class="font-headline-sm text-headline-sm text-on-surface-variant font-medium" id="detail-subtitle">Flavor enhancer</p></div><span class="inline-flex items-center gap-1.5 font-label-md text-label-md bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1.5 rounded-full font-bold shadow-sm flex-shrink-0" id="detail-status"><span class="material-symbols-outlined text-[16px]">check_circle</span><span class="">Identified</span></span></div><div class="flex flex-col gap-space-md"><div class="flex flex-col gap-1"><div class="flex items-center gap-1.5 text-primary font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[18px]">help_outline</span><h3 class="">What is it?</h3></div><p class="font-body-md text-body-md text-on-surface pl-6 leading-relaxed" id="detail-what">A savory seasoning derived from glutamic acid, an amino acid naturally found in foods like tomatoes, aged cheese, and mushrooms.</p></div><div class="flex flex-col gap-1"><div class="flex items-center gap-1.5 text-primary font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[18px]">restaurant</span><h3 class="">Why is it used?</h3></div><p class="font-body-md text-body-md text-on-surface pl-6 leading-relaxed" id="detail-why">Used to bring out savory umami flavors in snack seasonings and prepared foods.</p></div><div class="flex flex-col gap-1"><div class="flex items-center gap-1.5 text-primary font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[18px]">info</span><h3 class="">What should I know?</h3></div><p class="font-body-md text-body-md text-on-surface pl-6 leading-relaxed" id="detail-know">Widely used in everyday foods around the world. Standard food regulatory guidelines classify it as safe for general consumption.</p></div></div><div class="bg-surface-container-low p-space-md rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mt-1" id="detail-source-container"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-primary"><span class="material-symbols-outlined text-[20px]">public</span></div><div><span class="block font-label-md text-label-md text-on-surface font-semibold" id="detail-source-org">World Health Organization</span><span class="block font-body-sm text-body-sm text-on-surface-variant">Information source</span></div></div><a class="inline-flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md font-bold py-1 px-2 rounded hover:bg-surface-container transition-colors flex-shrink-0" href="https://www.who.int/" rel="noopener noreferrer" target="_blank" id="detail-source-link"><span class="">View source</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a></div><details class="bg-surface-container-high/30 rounded-lg p-space-sm text-on-surface-variant text-body-sm cursor-pointer group"><summary class="flex items-center justify-between font-label-sm text-label-sm font-semibold text-on-surface select-none"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">description</span><span class="">View detected text</span></span><span class="text-primary hover:underline font-normal text-body-sm">View original label</span></summary><p class="font-mono text-[12px] leading-tight text-on-surface-variant bg-surface-container-lowest p-2 rounded mt-2 select-text" id="detail-detected-text">“...CORN MEAL, PALM OLEIN, CHEESE SEASONING (MALTODEXTRIN, MILK SOLIDS, MSG, CITRIC ACID, SPICE BLEND)...”</p></details></div><div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm pl-2"><span class="material-symbols-outlined text-primary text-[18px]">photo_camera</span><span class="">Have another snack or ingredient label to decode?</span></div><a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-lg py-3 rounded-full font-label-md text-label-md font-semibold transition-all shadow-md active:scale-98" href="scan.html"><span class="material-symbols-outlined text-[18px]">photo_camera</span><span class="">Scan another label</span></a></div></div>
+<div class="lg:col-span-6 lg:sticky lg:top-24 flex flex-col gap-space-md" id="detail-drawer"><div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md"><div class="flex items-start justify-between gap-space-md"><div class="flex flex-col gap-1 min-w-0"><h2 class="font-headline-lg text-headline-lg text-on-surface font-bold" id="detail-title">Monosodium Glutamate</h2><p class="font-headline-sm text-headline-sm text-on-surface-variant font-medium" id="detail-subtitle">Flavor enhancer</p></div><span class="inline-flex items-center gap-1.5 font-label-md text-label-md bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1.5 rounded-full font-bold shadow-sm flex-shrink-0" id="detail-status"><span class="material-symbols-outlined text-[16px]">check_circle</span><span class="">Identified</span></span></div><div class="flex flex-col gap-space-md"><div class="flex flex-col gap-1"><div class="flex items-center gap-1.5 text-primary font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[18px]">help_outline</span><h3 class="">What is it?</h3></div><p class="font-body-md text-body-md text-on-surface pl-6 leading-relaxed" id="detail-what">A savory seasoning derived from glutamic acid, an amino acid naturally found in foods like tomatoes, aged cheese, and mushrooms.</p></div><div class="flex flex-col gap-1"><div class="flex items-center gap-1.5 text-primary font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[18px]">restaurant</span><h3 class="">Why is it used?</h3></div><p class="font-body-md text-body-md text-on-surface pl-6 leading-relaxed" id="detail-why">Used to bring out savory umami flavors in snack seasonings and prepared foods.</p></div><div class="flex flex-col gap-1"><div class="flex items-center gap-1.5 text-primary font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[18px]">info</span><h3 class="">What should I know?</h3></div><p class="font-body-md text-body-md text-on-surface pl-6 leading-relaxed" id="detail-know">Widely used in everyday foods around the world. Standard food regulatory guidelines classify it as safe for general consumption.</p></div><section class="rounded-lg border border-outline-variant/40 p-space-md flex flex-col gap-1.5" id="detail-safety"><h3 class="font-label-md font-bold">Ingredient safety assessment</h3><p id="detail-safety-status" class="font-label-sm"></p><p id="detail-safety-reason" class="font-body-sm"></p><p id="detail-safety-concerns" class="font-body-sm"></p><p id="detail-safety-uncertainty" class="font-body-sm text-on-surface-variant"></p><ul id="detail-safety-evidence" class="font-body-sm list-disc pl-5"></ul></section></div><div class="bg-surface-container-low p-space-md rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mt-1" id="detail-source-container"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-primary"><span class="material-symbols-outlined text-[20px]">public</span></div><div><span class="block font-label-md text-label-md text-on-surface font-semibold" id="detail-source-org">World Health Organization</span><span class="block font-body-sm text-body-sm text-on-surface-variant">Information source</span></div></div><a class="inline-flex items-center gap-1 text-primary hover:text-primary-container font-label-md text-label-md font-bold py-1 px-2 rounded hover:bg-surface-container transition-colors flex-shrink-0" href="https://www.who.int/" rel="noopener noreferrer" target="_blank" id="detail-source-link"><span class="">View source</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a></div><details class="bg-surface-container-high/30 rounded-lg p-space-sm text-on-surface-variant text-body-sm cursor-pointer group"><summary class="flex items-center justify-between font-label-sm text-label-sm font-semibold text-on-surface select-none"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">description</span><span class="">View detected text</span></span><span class="text-primary hover:underline font-normal text-body-sm">View original label</span></summary><p class="font-mono text-[12px] leading-tight text-on-surface-variant bg-surface-container-lowest p-2 rounded mt-2 select-text" id="detail-detected-text">“...CORN MEAL, PALM OLEIN, CHEESE SEASONING (MALTODEXTRIN, MILK SOLIDS, MSG, CITRIC ACID, SPICE BLEND)...”</p></details></div><div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm pl-2"><span class="material-symbols-outlined text-primary text-[18px]">photo_camera</span><span class="">Have another snack or ingredient label to decode?</span></div><a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-lg py-3 rounded-full font-label-md text-label-md font-semibold transition-all shadow-md active:scale-98" href="scan.html"><span class="material-symbols-outlined text-[18px]">photo_camera</span><span class="">Scan another label</span></a></div></div>
 
 </div>
 <!-- Comparative Transparency Grid / Educational Footnote -->
@@ -46,6 +46,45 @@
 <!-- Micro-interactions & Dynamic Data Script -->
   <script>
     // Global ingredient data store
+    const SAFETY_STATUS_LABELS = Object.freeze({
+      generally_safe: 'Generally safe',
+      potential_concern: 'Potential concern',
+      insufficient_evidence: 'Insufficient evidence'
+    });
+    const SAFETY_STATUS_STYLES = Object.freeze({
+      generally_safe: 'bg-emerald-100 text-emerald-900 ring-1 ring-emerald-300',
+      potential_concern: 'bg-amber-100 text-amber-950 ring-1 ring-amber-400',
+      insufficient_evidence: 'bg-slate-100 text-slate-900 ring-1 ring-slate-300'
+    });
+
+    function normalizeSafetyAssessment(assessment) {
+      const value = assessment && typeof assessment === 'object' && !Array.isArray(assessment)
+        ? assessment
+        : {};
+      const status = Object.prototype.hasOwnProperty.call(SAFETY_STATUS_LABELS, value.status)
+        ? value.status
+        : 'insufficient_evidence';
+      return {
+        ...value,
+        status,
+        reason_for_use: typeof value.reason_for_use === 'string' ? value.reason_for_use : '',
+        health_concerns: Array.isArray(value.health_concerns) ? value.health_concerns : [],
+        uncertainty: typeof value.uncertainty === 'string'
+          ? value.uncertainty
+          : 'Safety evidence is unavailable; no safety conclusion is made.',
+        evidence: Array.isArray(value.evidence) ? value.evidence : []
+      };
+    }
+
+    function createSafetyStatusBadge(assessment) {
+      const safety = normalizeSafetyAssessment(assessment);
+      const badge = document.createElement('span');
+      badge.className = `inline-flex max-w-full items-center whitespace-nowrap rounded-full px-2 py-1 text-[10px] sm:text-xs font-semibold ${SAFETY_STATUS_STYLES[safety.status]}`;
+      badge.setAttribute('data-safety-status', safety.status);
+      badge.textContent = SAFETY_STATUS_LABELS[safety.status];
+      return badge;
+    }
+
     window.ingredientData = {
       'corn-meal': {
         title: 'Corn Meal',
@@ -185,6 +224,36 @@
         ? 'The ingredient text could not be read reliably. Please check the original packaging.'
         : (data.know || 'Standard food ingredient.');
 
+      const assessment = normalizeSafetyAssessment(data.safetyAssessment);
+      const safetyStatus = document.getElementById('detail-safety-status');
+      if (safetyStatus) safetyStatus.textContent = SAFETY_STATUS_LABELS[assessment.status];
+      const safetyReason = document.getElementById('detail-safety-reason');
+      if (safetyReason) safetyReason.textContent = `Why used: ${assessment.reason_for_use || 'Not available in retrieved evidence.'}`;
+      const safetyConcerns = document.getElementById('detail-safety-concerns');
+      const concerns = Array.isArray(assessment.health_concerns) ? assessment.health_concerns : [];
+      if (safetyConcerns) safetyConcerns.textContent = concerns.length ? `Relevant concerns: ${concerns.join(' ')}` : 'Relevant concerns: none identified in retrieved evidence.';
+      const safetyUncertainty = document.getElementById('detail-safety-uncertainty');
+      if (safetyUncertainty) safetyUncertainty.textContent = assessment.uncertainty || '';
+      const safetyEvidence = document.getElementById('detail-safety-evidence');
+      if (safetyEvidence) {
+        safetyEvidence.replaceChildren();
+        (Array.isArray(assessment.evidence) ? assessment.evidence : []).forEach(ref => {
+          const li = document.createElement('li');
+          const label = [ref.title, ref.section].filter(Boolean).join(' · ') || 'Knowledge-base reference';
+          if (typeof ref.url === 'string' && /^https?:\/\//i.test(ref.url)) {
+            const link = document.createElement('a');
+            link.textContent = label;
+            link.href = ref.url;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            li.appendChild(link);
+          } else {
+            li.textContent = label;
+          }
+          safetyEvidence.appendChild(li);
+        });
+      }
+
       // Badge status styling
       const badge = document.getElementById('detail-status');
       if (badge) {
@@ -209,7 +278,7 @@
           const orgEl = document.getElementById('detail-source-org');
           if (orgEl) orgEl.textContent = data.source.organization;
           const linkEl = document.getElementById('detail-source-link');
-          if (linkEl) linkEl.href = data.source.url || '#';
+          if (linkEl) linkEl.href = typeof data.source.url === 'string' && /^https?:\/\//i.test(data.source.url) ? data.source.url : '#';
         } else {
           sourceContainer.style.display = 'none';
         }
@@ -297,7 +366,17 @@
 
       const dataStr = localStorage.getItem('current_scan');
       if (!dataStr) {
-        // If no stored scan, activate MSG or first mock card
+        // The design-reference cards have no verified safety assessments.
+        // Label them conservatively instead of leaving the list without status.
+        document.querySelectorAll('#ingredient-list .ingredient-card').forEach(card => {
+          const title = card.querySelector('h3');
+          if (title) {
+            const titleRow = document.createElement('div');
+            titleRow.className = 'flex min-w-0 flex-wrap items-center gap-1';
+            title.replaceWith(titleRow);
+            titleRow.append(title, createSafetyStatusBadge(null));
+          }
+        });
         window.selectIngredient('msg');
         return;
       }
@@ -358,26 +437,37 @@
         const allergenContainer = document.getElementById('allergen-container');
         if (allergenContainer) {
           const allergens = data.allergens;
-          const contains = (allergens && allergens.contains) ? allergens.contains : [];
-          const mayContain = (allergens && allergens.may_contain) ? allergens.may_contain : [];
-
+          const contains = (allergens && Array.isArray(allergens.contains)) ? allergens.contains : [];
+          const mayContain = (allergens && Array.isArray(allergens.may_contain)) ? allergens.may_contain : [];
           if (contains.length > 0 || mayContain.length > 0) {
-            allergenContainer.className = "bg-amber-500/10 border border-amber-500/30 rounded-xl p-space-md mb-space-md flex flex-col gap-1.5 shadow-sm";
-            let html = `
-              <div class="flex items-center gap-1.5 text-amber-900 font-bold font-headline-sm text-[15px]">
-                <span class="material-symbols-outlined text-amber-700 text-[20px]">warning</span>
-                <span>Allergen Declaration</span>
-              </div>
-              <div class="flex flex-col gap-1 text-[13px] text-on-surface pl-6">
-            `;
-            if (contains.length > 0) {
-              html += `<div><span class="font-bold text-amber-950">Contains:</span> <span class="font-medium text-on-surface">${contains.join(', ')}</span></div>`;
-            }
-            if (mayContain.length > 0) {
-              html += `<div><span class="font-bold text-amber-900">May Contain:</span> <span class="text-on-surface-variant">${mayContain.join(', ')}</span></div>`;
-            }
-            html += `</div>`;
-            allergenContainer.innerHTML = html;
+            allergenContainer.className = 'bg-amber-500/10 border border-amber-500/30 rounded-xl p-space-md mb-space-md flex flex-col gap-1.5 shadow-sm';
+            allergenContainer.replaceChildren();
+            const heading = document.createElement('div');
+            heading.className = 'flex items-center gap-1.5 text-amber-900 font-bold font-headline-sm text-[15px]';
+            const warningIcon = document.createElement('span');
+            warningIcon.className = 'material-symbols-outlined text-amber-700 text-[20px]';
+            warningIcon.textContent = 'warning';
+            const headingText = document.createElement('span');
+            headingText.textContent = 'Allergen Declaration';
+            heading.append(warningIcon, headingText);
+            allergenContainer.appendChild(heading);
+            const details = document.createElement('div');
+            details.className = 'flex flex-col gap-1 text-[13px] text-on-surface pl-6';
+            const addAllergenLine = (label, values, labelClass, valueClass) => {
+              if (!values.length) return;
+              const row = document.createElement('div');
+              const labelEl = document.createElement('span');
+              labelEl.className = labelClass;
+              labelEl.textContent = `${label}: `;
+              const valuesEl = document.createElement('span');
+              valuesEl.className = valueClass;
+              valuesEl.textContent = values.join(', ');
+              row.append(labelEl, valuesEl);
+              details.appendChild(row);
+            };
+            addAllergenLine('Contains', contains, 'font-bold text-amber-950', 'font-medium text-on-surface');
+            addAllergenLine('May Contain', mayContain, 'font-bold text-amber-900', 'text-on-surface-variant');
+            allergenContainer.appendChild(details);
             allergenContainer.style.display = 'flex';
           } else {
             allergenContainer.style.display = 'none';
@@ -389,96 +479,100 @@
         window.ingredientData = {}; // Clear mock data for actual scan
 
         function renderIngredientItem(ing, numStr, isSub = false) {
-          let styleClass = isSub
-            ? "bg-surface-container-lowest hover:bg-surface-container-low border border-outline-variant/30"
-            : "bg-surface-container-lowest hover:bg-surface-container-low";
-          let icon = "check";
-          let badgeClass = "bg-tertiary-fixed text-on-tertiary-fixed";
-          let badgeText = "Identified";
-          let textClass = "text-on-surface";
-
-          if (ing.status === 'review') {
-            styleClass += " relative overflow-hidden";
-            icon = "help";
-            badgeClass = "bg-secondary-fixed text-on-secondary-fixed-variant";
-            badgeText = "Needs a closer look";
-          } else if (ing.status === 'unclear') {
-            styleClass = isSub ? "bg-surface-container-low hover:bg-surface-container border border-outline-variant/30" : "bg-surface-container-low hover:bg-surface-container";
-            icon = "horizontal_rule";
-            badgeClass = "bg-surface-dim text-on-surface-variant";
-            badgeText = "Not identified";
-            textClass = "text-on-surface-variant";
-          }
-
           const safeId = ing.id || `ing-${numStr}`;
+          const status = ing.status || 'identified';
+          const badgeText = status === 'review' ? 'Needs a closer look' : status === 'unclear' ? 'Not identified' : 'Identified';
+          const safety = normalizeSafetyAssessment(ing.safety_assessment);
           const cardEl = document.createElement('div');
-          cardEl.className = `ingredient-card cursor-pointer rounded-lg p-space-md transition-all flex items-center justify-between gap-space-md ${styleClass}`;
+          cardEl.className = `ingredient-card cursor-pointer rounded-lg p-space-md transition-all flex items-center justify-between gap-space-md ${isSub ? 'bg-surface-container-lowest hover:bg-surface-container-low border border-outline-variant/30' : 'bg-surface-container-lowest hover:bg-surface-container-low'} ${status === 'review' ? 'relative overflow-hidden' : ''}`;
           cardEl.setAttribute('data-id', safeId);
-          cardEl.setAttribute('data-status', ing.status || 'identified');
-
-          let metaBadges = '';
-          if (ing.status === 'identified' && ing.code && /^(?:INS\s*\d{2,4}[a-z]?|E\s*\d{2,4}[a-z]?)$/i.test(ing.code.trim())) {
-            metaBadges += `<span class="font-mono text-[11px] bg-primary/10 text-primary px-1.5 py-0.5 rounded font-semibold ml-1.5">${ing.code}</span>`;
+          cardEl.setAttribute('data-status', status);
+          if (status === 'review') {
+            const marker = document.createElement('div');
+            marker.className = 'absolute left-0 top-0 bottom-0 w-1 bg-secondary';
+            cardEl.appendChild(marker);
           }
-          if (ing.aliases && ing.aliases.length > 0 && !ing.name.toLowerCase().includes(ing.aliases[0].toLowerCase())) {
-            metaBadges += `<span class="font-body-sm text-[11px] bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded ml-1">(${ing.aliases[0]})</span>`;
+          const left = document.createElement('div');
+          left.className = `flex items-start gap-space-sm min-w-0 ${status === 'review' ? 'pl-1' : ''}`;
+          const number = document.createElement('span');
+          number.className = 'font-label-sm text-label-sm w-5 text-on-surface-variant mt-0.5 font-semibold';
+          number.textContent = numStr;
+          const content = document.createElement('div');
+          content.className = 'min-w-0';
+          const title = document.createElement('h3');
+          title.className = `min-w-0 font-headline-sm text-headline-sm ${status === 'unclear' ? 'text-on-surface-variant' : 'text-on-surface'} font-semibold truncate`;
+          title.textContent = ing.name || 'Unknown';
+          const safetyBadge = createSafetyStatusBadge(safety);
+          const inlineMeta = document.createElement('span');
+          inlineMeta.className = 'inline-flex flex-wrap items-center gap-1';
+          const validCode = status === 'identified' && typeof ing.code === 'string' && /^(?:INS\s*\d{2,4}[a-z]?|E\s*\d{2,4}[a-z]?)$/i.test(ing.code.trim());
+          if (validCode) {
+            const code = document.createElement('span');
+            code.className = 'font-mono text-[11px] bg-primary/10 text-primary px-1.5 py-0.5 rounded font-semibold';
+            code.textContent = ing.code;
+            inlineMeta.appendChild(code);
           }
+          const alias = Array.isArray(ing.aliases) ? ing.aliases[0] : null;
+          if (alias && !(ing.name || '').toLowerCase().includes(alias.toLowerCase())) {
+            const aliasNode = document.createElement('span');
+            aliasNode.className = 'font-body-sm text-[11px] bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded';
+            aliasNode.textContent = `(${alias})`;
+            inlineMeta.appendChild(aliasNode);
+          }
+          const titleRow = document.createElement('div');
+          titleRow.className = 'flex min-w-0 items-center flex-wrap gap-1';
+          titleRow.append(title, safetyBadge, inlineMeta);
+          const why = document.createElement('p');
+          why.className = 'font-body-sm text-body-sm text-on-surface-variant truncate';
+          why.textContent = ing.safety_assessment?.reason_for_use || ing.why || 'Standard food ingredient';
+          content.append(titleRow, why);
+          left.append(number, content);
+          const right = document.createElement('div');
+          right.className = 'flex items-center gap-space-xs flex-shrink-0';
+          const badge = document.createElement('span');
+          const badgeStyle = status === 'review' ? 'bg-secondary-fixed text-on-secondary-fixed-variant' : status === 'unclear' ? 'bg-surface-dim text-on-surface-variant' : 'bg-tertiary-fixed text-on-tertiary-fixed';
+          badge.className = `inline-flex items-center gap-1 font-label-sm text-label-sm ${badgeStyle} px-2.5 py-1 rounded-full font-semibold`;
+          const badgeIcon = document.createElement('span');
+          badgeIcon.className = 'material-symbols-outlined text-[14px]';
+          badgeIcon.textContent = status === 'review' ? 'help' : status === 'unclear' ? 'horizontal_rule' : 'check';
+          const badgeLabel = document.createElement('span');
+          badgeLabel.textContent = badgeText;
+          badge.append(badgeIcon, badgeLabel);
+          right.append(badge);
+          const chevron = document.createElement('span');
+          chevron.className = 'material-symbols-outlined text-outline-variant text-[20px]';
+          chevron.textContent = 'chevron_right';
+          right.appendChild(chevron);
+          cardEl.append(left, right);
 
-          cardEl.innerHTML = `
-            ${ing.status === 'review' ? '<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary"></div>' : ''}
-            <div class="flex items-start gap-space-sm min-w-0 ${ing.status === 'review' ? 'pl-1' : ''}">
-              <span class="font-label-sm text-label-sm ${isSub ? 'w-6 text-[10px]' : 'w-5'} text-on-surface-variant mt-0.5 font-semibold">${numStr}</span>
-              <div class="min-w-0">
-                <div class="flex items-center flex-wrap gap-1">
-                  <h3 class="font-headline-sm text-headline-sm ${textClass} font-semibold truncate">${ing.name || 'Unknown'}</h3>
-                  ${metaBadges}
-                </div>
-                <p class="font-body-sm text-body-sm text-on-surface-variant truncate">${ing.why || 'Standard food ingredient'}</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-space-xs flex-shrink-0">
-              <span class="inline-flex items-center gap-1 font-label-sm text-label-sm ${badgeClass} px-2.5 py-1 rounded-full font-semibold">
-                <span class="material-symbols-outlined text-[14px]">${icon}</span>
-                <span>${badgeText}</span>
-              </span>
-              <span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span>
-            </div>
-          `;
-
-          let subtitle = (ing.original_text && ing.original_text !== ing.name) ? `Originally: ${ing.original_text}` : '';
+          const subtitle = (ing.original_text && ing.original_text !== ing.name) ? `Originally: ${ing.original_text}` : '';
           window.ingredientData[safeId] = {
-            title: ing.name || 'Unknown',
-            subtitle: subtitle,
-            code: ing.status === 'identified' && ing.code && /^(?:INS\s*\d{2,4}[a-z]?|E\s*\d{2,4}[a-z]?)$/i.test(ing.code.trim()) ? ing.code : null,
-            aliases: ing.aliases || [],
-            statusText: badgeText,
-            statusType: ing.status || 'identified',
-            what: ing.what || 'Not available from retrieved evidence.',
-            why: ing.why || 'Not available.',
-            know: ing.know || 'Standard food ingredient.',
-            source: ing.source,
-            originalText: ing.original_text || ing.name
+            title: ing.name || 'Unknown', subtitle,
+            code: status === 'identified' && ing.code && /^(?:INS\s*\d{2,4}[a-z]?|E\s*\d{2,4}[a-z]?)$/i.test(ing.code.trim()) ? ing.code : null,
+            aliases: ing.aliases || [], statusText: badgeText, statusType: status,
+            what: ing.what || 'Not available from retrieved evidence.', why: ing.why || 'Not available.',
+            know: ing.know || 'Standard food ingredient.', source: ing.source,
+            originalText: ing.original_text || ing.name, safetyAssessment: safety
           };
-
           return cardEl;
+        }
+
+        function appendIngredientTree(ing, numStr, container, isSub = false) {
+          container.appendChild(renderIngredientItem(ing, numStr, isSub));
+          if (!Array.isArray(ing.sub_ingredients) || ing.sub_ingredients.length === 0) return;
+
+          const nestedBox = document.createElement('div');
+          nestedBox.className = 'ml-6 pl-3 border-l-2 border-primary/20 flex flex-col gap-1.5 my-1.5';
+          ing.sub_ingredients.forEach((sub, subIdx) => {
+            appendIngredientTree(sub, `${numStr}.${subIdx + 1}`, nestedBox, true);
+          });
+          container.appendChild(nestedBox);
         }
 
         if (ingredients.length > 0) {
           ingredients.forEach((ing, i) => {
             const num = (i + 1).toString().padStart(2, '0');
-            const parentCard = renderIngredientItem(ing, num, false);
-            listContainer.appendChild(parentCard);
-
-            if (Array.isArray(ing.sub_ingredients) && ing.sub_ingredients.length > 0) {
-              const nestedBox = document.createElement('div');
-              nestedBox.className = "ml-6 pl-3 border-l-2 border-primary/20 flex flex-col gap-1.5 my-1.5";
-              ing.sub_ingredients.forEach((sub, subIdx) => {
-                const subNum = `${num}.${subIdx + 1}`;
-                const childCard = renderIngredientItem(sub, subNum, true);
-                nestedBox.appendChild(childCard);
-              });
-              listContainer.appendChild(nestedBox);
-            }
+            appendIngredientTree(ing, num, listContainer);
           });
 
           // Select the very first item

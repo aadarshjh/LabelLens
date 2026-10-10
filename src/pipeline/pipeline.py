@@ -16,6 +16,7 @@ from src.ocr.ocr import find_best_result, run_ocr_all_psms
 from src.ocr.preprocessing import get_all_strategies
 from src.pipeline.ingredient_pipeline import run_pipeline as run_ingredient_pipeline
 from src.rag.retriever import IngredientRetriever
+from src.safety.assessment import assess_ingredient_tree
 
 
 def run_pre_llm_pipeline(image_path: str | Path) -> dict[str, Any]:
@@ -64,6 +65,7 @@ def run_pre_llm_pipeline(image_path: str | Path) -> dict[str, Any]:
         f"OCR strategy={best_ocr.get('strategy')}, confidence={best_ocr.get('confidence', 0.0):.1f}%, extracted {len(phase2.get('ingredients', []))} ingredients"
     )
     phase3 = IngredientRetriever(store_dir=str(VECTORSTORE_DIR)).retrieve_for_phase2(phase2)
+    phase3 = assess_ingredient_tree(phase3)
     audit_log(
         STAGE_RAG_COMPLETED,
         f"Retrieved RAG evidence for {len(phase3)} top-level ingredients"
@@ -199,6 +201,7 @@ def run_batch_end_to_end_pipeline(image_path: str | Path, api_key: str | None = 
                 "code": node.get("code"),
                 "aliases_detected": node.get("aliases_detected", []),
                 "phase2_status": status,
+                "safety_assessment": node.get("safety_assessment"),
                 "llm_analysis": analysis,
                 "authoritative_evidence": evidence,
                 "tool_calls": [],
@@ -249,6 +252,7 @@ def run_end_to_end_pipeline(image_path: str | Path, api_key: str | None = None, 
             "code": node.get("code"),
             "aliases_detected": node.get("aliases_detected", []),
             "phase2_status": status,
+            "safety_assessment": node.get("safety_assessment"),
             "llm_analysis": validate_llm_analysis(status, evidence, analysis),
             "authoritative_evidence": evidence,
             "tool_calls": [],

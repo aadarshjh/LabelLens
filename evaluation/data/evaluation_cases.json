@@ -1,0 +1,62 @@
+{
+  "synthetic_unit_tests": [
+    {
+      "id": "unit_1_basic",
+      "ingredient_name": "Test Basic",
+      "phase2_status": "matched",
+      "retrieved_evidence": "Test Basic is a test."
+    }
+  ],
+  "mock_evaluation": [
+    {
+      "id": "mock_1_grounded",
+      "ingredient_name": "Apple",
+      "phase2_status": "matched",
+      "retrieved_evidence": "Apple is a fruit. Regulatory status: Approved.",
+      "scenario": "grounded_response"
+    },
+    {
+      "id": "mock_2_unsupported_cat_func",
+      "ingredient_name": "Apple",
+      "phase2_status": "matched",
+      "retrieved_evidence": "Apple is a fruit.",
+      "scenario": "unsupported_cat_func"
+    },
+    {
+      "id": "mock_3_unsupported_reg",
+      "ingredient_name": "Apple",
+      "phase2_status": "matched",
+      "retrieved_evidence": "Apple is a fruit.",
+      "scenario": "unsupported_reg"
+    },
+    {
+      "id": "mock_4_ambiguous_matched_attempt",
+      "ingredient_name": "Apple",
+      "phase2_status": "ambiguous",
+      "retrieved_evidence": "Apple is a fruit.",
+      "scenario": "ambiguous_to_matched"
+    },
+    {
+      "id": "mock_5_unknown_matched_attempt",
+      "ingredient_name": "Apple",
+      "phase2_status": "unknown",
+      "retrieved_evidence": "Apple is a fruit.",
+      "scenario": "unknown_to_matched"
+    },
+    {
+      "id": "mock_6_no_evidence_hallucination",
+      "ingredient_name": "Missing",
+      "phase2_status": "matched",
+      "retrieved_evidence": "No retrieved evidence available.",
+      "scenario": "no_evidence_hallucination"
+    },
+    {
+      "id": "mock_7_valid_no_evidence",
+      "ingredient_name": "Missing",
+      "phase2_status": "matched",
+      "retrieved_evidence": "No retrieved evidence available.",
+      "scenario": "valid_no_evidence"
+    }
+  ],
+  "empirical_evaluation": []
+}

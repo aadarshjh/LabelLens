@@ -85,11 +85,27 @@ For the browser demonstration, run `python run_frontend.py`, open `http://127.0.
 
 For live Groq analysis, copy `.env.example` to `.env` and set `GROQ_API_KEY`. `GROQ_MODEL` is optional and defaults to `openai/gpt-oss-120b`. Keep `.env` private; it is excluded by `.gitignore`.
 
-Run the complete regression suite with:
+Run the public, deterministic regression suite after installing `requirements.txt`:
 
 ```bash
-PYTHONPATH=$(pwd) bash run_all_tests.sh
+PYTHONPATH="$(pwd)" python -m pytest -q tests
+# Or use the same public default through the project runner:
+PYTHONPATH="$(pwd)" bash run_all_tests.sh
 ```
+
+`pytest.ini` registers the `model` and `private_data` markers and excludes those prerequisite-dependent tests from the default public suite. To run the semantic retrieval checks, first download the documented `all-MiniLM-L6-v2` model, then run:
+
+```bash
+PYTHONPATH="$(pwd)" python -m pytest -q tests -m "model and not private_data"
+```
+
+The private-data RAG evaluation additionally requires local `data/ground_truth/ground_truth.json` and `artifacts/reference_runs/extraction/extraction_results.json` files, which are not distributed. With those files and the model available, run:
+
+```bash
+PYTHONPATH="$(pwd)" python -m pytest -q tests -m private_data
+```
+
+The synthetic grounding tests use only public test support and do not call live LLM services. Evaluation reports are generated locally under the ignored `evaluation/results/` directory.
 
 OCR evaluates multiple preprocessing strategies and Tesseract segmentation modes. Extraction detects the ingredient section and parses compound ingredients. Normalization prioritizes exact names, aliases, and codes, then uses conservative fuzzy matching; uncertain identities remain `ambiguous` or `unknown`. RAG uses exact lookup and thresholded FAISS retrieval, preserving source provenance.
 

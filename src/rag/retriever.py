@@ -187,6 +187,21 @@ class IngredientRetriever:
                 and chunk["ingredient"].strip().casefold() == expected_ingredient.casefold()
             ]
 
+            # Keep the existing top-k evidence unchanged for explanation generation.
+            # Safety assessment needs regulatory and assessment sections, which
+            # may fall beyond that top-k window for exact matches.
+            safety_evidence = []
+            exact_canonical = self._alias_map.get(query_name.lower())
+            if status == "matched" and exact_canonical:
+                safety_evidence = self.retrieve(
+                    name, top_k=len(self.vector_store.chunk_metadata)
+                )
+                safety_evidence = [
+                    chunk for chunk in safety_evidence
+                    if isinstance(chunk.get("ingredient"), str)
+                    and chunk["ingredient"].strip().casefold() == exact_canonical.casefold()
+                ]
+
             entry = {
                 "ingredient": name,
                 "raw_name": ing.get("raw_name", ing.get("raw", name)),
@@ -197,6 +212,7 @@ class IngredientRetriever:
                 "phase2_match_type": ing.get("match_type"),
                 "phase2_similarity": ing.get("similarity_score"),
                 "evidence": evidence,
+                "safety_evidence": safety_evidence,
             }
 
             # Add retrieval status if no evidence passed the threshold

@@ -46,9 +46,9 @@ echo " LabelLens — Full Regression Test Suite"
 echo "============================================"
 
 if [ -x ".venv/bin/pytest" ]; then
-    .venv/bin/pytest -q tests
+    .venv/bin/pytest -q tests -m "not model and not private_data"
 else
-    python3 -m pytest -q tests
+    python3 -m pytest -q tests -m "not model and not private_data"
 fi
 
 
