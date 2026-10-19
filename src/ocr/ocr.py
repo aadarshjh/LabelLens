@@ -33,6 +33,36 @@ import os
 # Tesseract availability check
 # ---------------------------------------------------------------------------
 
+def _find_tesseract_cmd():
+    custom_path = pytesseract.pytesseract.tesseract_cmd
+    common_paths = [
+        custom_path,
+        "tesseract",                           # On system PATH
+        r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+        r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
+        os.path.join(os.environ.get("LOCALAPPDATA", ""), "Programs", "Tesseract-OCR", "tesseract.exe"),
+        os.environ.get("TESSERACT_PATH", ""),
+        "/opt/homebrew/bin/tesseract",          # Homebrew Apple Silicon
+        "/usr/local/bin/tesseract",             # Homebrew Intel Mac
+    ]
+
+    for path in common_paths:
+        if path and (shutil.which(path) or os.path.isfile(path)):
+            pytesseract.pytesseract.tesseract_cmd = path
+            try:
+                version = pytesseract.get_tesseract_version()
+                return path, version
+            except Exception:
+                continue
+    return None, None
+
+
+# Attempt auto-detection on import
+_found_cmd, _ = _find_tesseract_cmd()
+if _found_cmd:
+    pytesseract.pytesseract.tesseract_cmd = _found_cmd
+
+
 def check_tesseract():
     """
     Verify that Tesseract OCR is installed and accessible.
@@ -40,35 +70,22 @@ def check_tesseract():
     Returns the path to the Tesseract binary if found.
     Exits with a helpful error message if not found.
     """
-    # Check if pytesseract has a custom path set
-    custom_path = pytesseract.pytesseract.tesseract_cmd
-
-    # Check common macOS installation paths
-    common_paths = [
-        custom_path,
-        "tesseract",                           # On system PATH
-        "/opt/homebrew/bin/tesseract",          # Homebrew Apple Silicon
-        "/usr/local/bin/tesseract",             # Homebrew Intel Mac
-    ]
-
-    for path in common_paths:
-        if shutil.which(path):
-            pytesseract.pytesseract.tesseract_cmd = path
-            try:
-                version = pytesseract.get_tesseract_version()
-                print(f"  ✓ Tesseract found: {path} (version {version})")
-                return path
-            except Exception:
-                continue
+    path, version = _find_tesseract_cmd()
+    if path:
+        pytesseract.pytesseract.tesseract_cmd = path
+        print(f"  ✓ Tesseract found: {path} (version {version})")
+        return path
 
     # If we get here, Tesseract was not found
     print("\n" + "=" * 60)
     print("  ERROR: Tesseract OCR is NOT installed or not found!")
     print("=" * 60)
+    print("\n  To install on Windows, run:")
+    print("    winget install UB-Mannheim.TesseractOCR")
     print("\n  To install on macOS, run:")
     print("    brew install tesseract")
     print("\n  After installing, make sure it's on your PATH:")
-    print("    which tesseract")
+    print("    which tesseract  (or 'where.exe tesseract' on Windows)")
     print("    tesseract --version")
     print("=" * 60 + "\n")
     sys.exit(1)
