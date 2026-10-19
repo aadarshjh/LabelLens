@@ -221,7 +221,7 @@ def test_serializer_adds_safety_assessments_to_nested_ingredient_results():
 def test_frontend_renders_safety_and_dynamic_values_without_html_interpolation():
     from pathlib import Path
 
-    html = Path("frontend/index.html").read_text()
+    html = Path("frontend/index.html").read_text(encoding="utf-8")
     assert "const renderIngredient = (item, index" in html
     assert "data.name) || 'Unknown ingredient'" in html
     assert "data.safety_assessment" in html
@@ -237,7 +237,7 @@ def test_frontend_renders_safety_and_dynamic_values_without_html_interpolation()
 def test_frontend_safety_badge_maps_all_statuses_and_falls_back_conservatively():
     from pathlib import Path
 
-    html = Path("frontend/index.html").read_text()
+    html = Path("frontend/index.html").read_text(encoding="utf-8")
     assert "generally_safe: 'Generally safe'" in html
     assert "potential_concern: 'Potential concern'" in html
     assert "insufficient_evidence: 'Insufficient evidence'" in html
@@ -249,7 +249,7 @@ def test_frontend_safety_badge_maps_all_statuses_and_falls_back_conservatively()
 def test_static_allergen_and_identification_labels_remain_present():
     from pathlib import Path
 
-    html = Path("frontend/index.html").read_text()
+    html = Path("frontend/index.html").read_text(encoding="utf-8")
     assert "Contains" in html
     assert "May contain" in html
     assert "Identified" in html

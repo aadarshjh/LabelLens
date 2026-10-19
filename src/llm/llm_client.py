@@ -3,6 +3,7 @@
 import json
 import os
 from typing import Any
+from .evaluator import evaluate_answer
 
 
 class LLMUnavailableError(RuntimeError):
@@ -194,7 +195,9 @@ class LLMClient:
         try:
             parsed = json.loads(raw)
             audit_log(STAGE_JSON_PARSING_COMPLETED, "Parsed single ingredient JSON successfully")
-            return parsed
+            # Run lightweight RAGAS evaluation (no context supplied)
+            metrics = evaluate_answer(question=prompt, answer=json.dumps(parsed, ensure_ascii=False), contexts=[])
+            return {"result": parsed, "metrics": metrics}
         except json.JSONDecodeError as exc:
             audit_log(STAGE_JSON_PARSING_COMPLETED, f"Failed: non-JSON output ({exc})")
             raise LLMUnavailableError("Groq returned non-JSON structured output.") from exc

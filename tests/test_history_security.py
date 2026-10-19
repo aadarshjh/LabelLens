@@ -2,7 +2,7 @@ from pathlib import Path
 
 
 def test_single_page_renders_api_values_safely_and_separates_allergen_lists():
-    html = (Path(__file__).parents[1] / "frontend" / "index.html").read_text()
+    html = (Path(__file__).parents[1] / "frontend" / "index.html").read_text(encoding="utf-8")
     assert "insertAdjacentHTML" not in html
     assert "innerHTML" not in html
     assert "asText(data.name) || 'Unknown ingredient'" in html
@@ -13,7 +13,7 @@ def test_single_page_renders_api_values_safely_and_separates_allergen_lists():
 
 
 def test_compact_history_storage_contract():
-    html = (Path(__file__).parents[1] / "frontend" / "index.html").read_text()
+    html = (Path(__file__).parents[1] / "frontend" / "index.html").read_text(encoding="utf-8")
     assert "saveCompactScanHistory" in html
     assert "MAX_HISTORY_ENTRIES = 20" in html
     assert "labellens_recent_scans" in html

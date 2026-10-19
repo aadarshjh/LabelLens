@@ -16,11 +16,9 @@ import os
 import sys
 import shutil
 
-pytestmark = pytest.mark.skipif(shutil.which("tesseract") is None, reason="Tesseract executable unavailable")
-
-# Import the consolidated OCR package from the repository root.
 from src.ocr.preprocessing import get_all_strategies
 from src.ocr.ocr import (
+    _find_tesseract_cmd,
     run_ocr_all_psms,
     run_ocr_single,
     find_best_result,
@@ -30,6 +28,7 @@ from src.ocr.ocr import (
     check_tesseract,
 )
 from src.ocr.main import load_image
+pytestmark = pytest.mark.skipif(_find_tesseract_cmd()[0] is None, reason="Tesseract executable unavailable")
 
 # ---------------------------------------------------------------------------
 # Fixtures
